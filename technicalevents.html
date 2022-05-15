@@ -798,7 +798,7 @@ font-weight: 200;
                <div class="topnavborder">
                   <div class="navbar">
                      <i class="fa fa-bars" onclick="showheader(this)" ></i>
-                     <div class="navitem"><a class="link" href="home.html">Home</a></div>
+                     <div class="navitem"><a class="link" href="index.html">Home</a></div>
 					  <div  class="navitem main"><div style="position: relative;
   top: -10;" class="linkmain mainlink" class="dmcon"> <div class="dropdown link">
   <button style="top: -2;" class="dropbtn">Events</button>
@@ -1193,6 +1193,16 @@ color: white;
 								font-size: 8px; 
 								 
 							 }	 
+							 body:after{
+								 background: radial-gradient(ellipse at center, rgba(0, 105, 227, 0) 0%, #000 100%);
+z-index: -1;
+opacity: inherit;
+							 }
+							 .container{
+								 background: radial-gradient(ellipse at center, rgba(227, 0, 0, 0) 0%, #000000d1 100%);
+z-index: 1;
+opacity: inherit;
+							 }
 				</style>
                         <div class="event tech">
 							<div class="event tech"></div>
@@ -1225,6 +1235,30 @@ color: white;
 	   var name = mydata[type][obj.value]["name"];
 	
        document.getElementsByClassName("putdeatils")[0].innerHTML = document.getElementsByClassName("putdeatils")[0].innerHTML + "<h2 class='cyberpunk glitched'>"+name+"</h2>";	
+		
+				 var str ="<p class='cyberpunk inverse dotted'>";		
+for (i=0;i<mydata[type][obj.value]["desc"].length;i++){
+str = str + mydata[type][obj.value]["desc"][i];
+
+	
+}
+str = str + '</p>';		
+		
+		
+		
+document.getElementsByClassName("putdeatils")[0].innerHTML = document.getElementsByClassName("putdeatils")[0].innerHTML + str;		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		 var str ="<ul class='cyberpunk'>";		
 for (i=0;i<mydata[type][obj.value]["rules"].length;i++){
 str = str + "<li>"+mydata[type][obj.value]["rules"][i]+"</li>";
@@ -1252,7 +1286,32 @@ function getdeatils(obj){
 	 var mydata = JSON.parse(this.responseText);	
 	   var name = mydata[type][obj.value]["name"];
 	
-       document.getElementsByClassName("putdeatils")[0].innerHTML = document.getElementsByClassName("putdeatils")[0].innerHTML + "<h2 class='cyberpunk glitched'>"+name+"</h2>";	
+		
+	       document.getElementsByClassName("putdeatils")[0].innerHTML = document.getElementsByClassName("putdeatils")[0].innerHTML + "<h2 class='cyberpunk glitched'>"+name+"</h2>";	
+		
+		
+		
+		
+		 var str ="<p class='cyberpunk inverse dotted'>";		
+for (i=0;i<mydata[type][obj.value]["desc"].length;i++){
+str = str + mydata[type][obj.value]["desc"][i];
+
+	
+}
+str = str + '</p>';		
+		
+		
+		
+document.getElementsByClassName("putdeatils")[0].innerHTML = document.getElementsByClassName("putdeatils")[0].innerHTML + str;			
+		
+		
+		
+		
+		
+		
+		
+		
+	
 		 var str ="<ul class='cyberpunk'>";		
 for (i=0;i<mydata[type][obj.value]["rules"].length;i++){
 str = str + "<li>"+mydata[type][obj.value]["rules"][i]+"</li>";
@@ -1293,13 +1352,15 @@ str = '<form action="eventregister.html" onsubmit="return register()" methon="po
   animation-iteration-count: infinite;
   animation-direction: reverse;
   animation-timing-function: linear;
-						font-weight: 100;
-font-size: 1.3rem;
+												
+font-weight: 700;
+font-size: 2.3rem;
 line-height: 1.9rem;
 letter-spacing: 0.057em;
 color: white;
 margin-left: 20;
 margin-top: 50px;
+
 }
 h2.cyberpunk {
   font-size: 1.7rem;
