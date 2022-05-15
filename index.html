@@ -1,0 +1,93 @@
+<html>
+   <head>
+      <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <style>
+         body{
+         padding: 0px;
+         background-color: black;
+         }
+         .vertical-center {
+         margin: 0;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         -ms-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
+         color: white;
+         }
+         .container{
+         height: 100%;
+         position: relative;
+         }
+         .logo{
+         background: url('logoframes/frame1.png');
+         opacity: 0;
+         animation: fadein 2s forwards;
+         width:220px;
+         height: 400px;
+         background-size: cover;
+         -webkit-filter: blur(5px);
+         transform: rotateY(150deg);
+         }
+         @keyframes fadein{
+         0%{
+         opacity:0;
+         width:220px;
+         height: 400px;
+         filter: grayscale(100%);
+         transform: rotateX(150deg);
+         }
+         10%{
+         transform: rotateX(0deg);
+         }	
+         20%{
+         transform: rotateX(150deg);
+         transform: rotateZ(360deg);	
+         }				30%{
+         transform: rotateX(0deg);
+         }				40%{
+         transform: rotateX(150deg);
+         }				50%{
+         -webkit-filter: blur(0px);	
+         transform: rotateX(0deg);
+         }			
+         100%{
+         -webkit-filter: blur(0px);	  
+         opacity:1;
+         width:242px;
+         height: 440px;
+         transform: rotateZ(0deg);
+         filter: grayscale(0%);
+         }
+         }
+         .glitchwrap{
+         overflow: hidden;
+         position: relative;
+         }
+      
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="vertical-center">
+            <div class="glitchwrap">
+               <div class="logo"></div>
+            </div>
+         </div>
+      </div>
+      <script>
+         var count=1;
+         var intervalID = setInterval(function () {
+         
+            // Your logic here
+         
+            if (++count === 12) {
+                window.clearInterval(intervalID);
+            }
+         	// document.getElementsByClassName("logo")[0].style.backgroundImage ="url('logoframes/frame"+count+".png')"; 
+         }, 360);	
+         		
+         		
+      </script>
+   </body>
+</html>

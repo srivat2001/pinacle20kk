@@ -1,0 +1,96 @@
+ .datecontainer{
+         font-family: 'Roboto', sans-serif;
+         background-color: wheat;
+         color: black;
+         padding: 0.5rem;
+         font-size: 42px;
+         font-weight: 900;
+         margin-right: 10px;
+         width:50px;
+         height:50px;
+         text-align: center;
+         display: flex;
+         animation: fromtop 1s forwards;
+         opacity: 0;
+         transition:all 1s ease; 
+         }
+         .datecontainer:hover{
+         transform: rotateY(360deg);
+         }
+         .letter{
+         margin: auto;
+         position: relative;
+         }	
+         @keyframes fromtop{
+         0%{
+         opacity: 0;
+         }
+         100%{
+         opacity: 1;
+         }
+         }
+      .date{
+         display: flex;
+         padding: 1rem;
+         padding-left: 0;
+         }
+         .datecontainer:nth-child(1){
+         }
+         .datecontainer:nth-child(1){
+         animation-delay: 1s;
+         }
+         .datecontainer:nth-child(2){
+         animation-delay: 1.5s;
+         }
+         .datecontainer:nth-child(3){
+         margin-left: 20px;
+         animation-delay: 1.7s;
+         }
+         .datecontainer:nth-child(4){
+         animation-delay: 1.9s;
+         }
+         .datecontainer:nth-child(5){
+         animation-delay: 2.2s;
+         }
+         .datecontainer:nth-child(6){
+         animation-delay: 2.2s;
+         }
+         .datecontainer1{
+         display: flex;
+         height: 190;
+         position: relative;
+         }
+         .markyourdates{
+         position: absolute;
+         right: 0;
+         bottom: 0;
+         margin-left: auto;
+         margin-right: 90px;
+         color: white;
+         font-size: 33px;
+         animation: res 1s forwards;
+         animation-delay: 2.5s;
+         opacity: 0;
+         font-size: 17;
+         line-height: 1.2;
+         font-weight: 100;
+         letter-spacing: 0.034em;
+         }
+
+@media only screen and (max-width: 586px) {
+	
+	
+	         .datecontainer{
+         font-size: 20px;
+         height: auto;
+         width: auto;
+         }
+}
+        @media only screen and (max-width: 360px) {
+	      .datecontainer{
+         font-size: 20px;
+         }
+	   
+	
+             
+}
