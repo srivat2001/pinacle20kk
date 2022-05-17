@@ -6,20 +6,17 @@
       <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
       <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
       <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-	     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-	     <script src="js/addhtmlelment.js"></script>
-
+      <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+      <script src="js/addhtmlelment.js"></script>
       <link rel="stylesheet" href="css/date.css">
-
       <style>
-		  
          @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
          @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
          @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
          @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
          @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
          @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@1,900&display=swap');
-		  			 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
          body{
          padding: 0px;
          background-color: black;
@@ -35,17 +32,17 @@
          --pos:0;
          --pos1:0;
          --posdeg=0deg;
-			 --glitched-duration: 0.9s;
---glitched-long-duration: 3s;
---yellow-color: #f9f002;
---yellow-color-opacity: #f9f00242;
---orange-color: #ff9800;
---border-color: #8ae66e;
---red-color: #ff003c;
---blue-color: #136377;
---green-color: #446d44;
---purple-color: purple;
---neon-color: #39ff14;
+         --glitched-duration: 0.9s;
+         --glitched-long-duration: 3s;
+         --yellow-color: #f9f002;
+         --yellow-color-opacity: #f9f00242;
+         --orange-color: #ff9800;
+         --border-color: #8ae66e;
+         --red-color: #ff003c;
+         --blue-color: #136377;
+         --green-color: #446d44;
+         --purple-color: purple;
+         --neon-color: #39ff14;
          }
          .box {
          position: relative;
@@ -70,7 +67,7 @@
          }
          .topic1{
          position:relative;
-    width: 70%;
+         width: 80%;
          margin: auto;
          margin-top: 0px;
          background-color:transparent;
@@ -105,25 +102,21 @@
          text-align: justify;
          font-size: 18;
          }
-         
          .desc{
          text-align: justify;
          text-justify: inter-word;
          color: #c4b7b7;
-		 opacity: 0;
-			 animation: 1s 2s fadeindesc forwards;
+         opacity: 0;
+         animation: 1s 2s fadeindesc forwards;
          }
-		  @keyframes fadeindesc {
-			  
-			  0%{
-				  
-				opacity: 0;  
-			  }
-			  100%{
-				  
-				 opacity: 1; 
-			  }
-		  }
+         @keyframes fadeindesc {
+         0%{
+         opacity: 0;  
+         }
+         100%{
+         opacity: 1; 
+         }
+         }
          ol{
          margin-left: 0;
          padding-left: 20;
@@ -164,17 +157,13 @@
          padding-bottom: 0.2rem;
          font-weight: 100;
          }
-		  		   .mainintro{
-					   
-					   width: 50%;
-					   margin-top: 40px;
-					   
-				   }
+         .mainintro{
+         width: 50%;
+         }
          @media only screen and (max-width: 360px) {
-			 .mainintro{
-				 
-				 width: 100%;
-			 }
+         .mainintro{
+         width: 100%;
+         }
          .subline{
          font-size: 13px;
          }
@@ -192,7 +181,7 @@
          }
          .topic1{
          background-color: transparent;
-			 display: block;
+         display: block;
          }
          .topicdesc {
          padding-left: 0;
@@ -256,12 +245,11 @@
          color: #d10000;
          display: none;
          }
-		  .stripe{
-			  
-			  display: none;
-			  height: 100vh;
-		  }
-		           .vertical-center {
+         .stripe{
+         display: none;
+         height: 100vh;
+         }
+         .vertical-center {
          margin: 0;
          position: absolute;
          top: 50%;
@@ -315,23 +303,18 @@
          filter: grayscale(0%);
          }
          }
-		  .container2{
-			  display: block;
-			  animation: fadeout 1s  forwards;
-	
-		  }
-		  @keyframes fadeout {
-			  
-			  0%{
-				  
-				  display: block;
-			  }
-			  			  100%{
-				  
-				 
-							  display: none;
-			  }
-		  }
+         .container2{
+         display: block;
+         animation: fadeout 1s  forwards;
+         }
+         @keyframes fadeout {
+         0%{
+         display: block;
+         }
+         100%{
+         display: none;
+         }
+         }
          .glitchwrap{
          overflow: hidden;
          position: relative;
@@ -339,308 +322,249 @@
       </style>
    </head>
    <body>
-	        
-<style>
-			.mainintro{
-				
-padding: 0rem;
-margin-top: 50px;
-background-color: transparent;
-				color: #a6a6a6;
-				position: relative;
-				overflow: visible;
-			
-		
-			}
-					.mainintro:after {
-							background: url(robothide.png);
-								background-size: cover;
-background-repeat: no-repeat;
-background-position: center center;
-				top: var(--pos1);			
-			right: var(--pos2);
-					
-						
-  content: "";
-  position:absolute;
-
-  width:100px;
-  height:140px;
-						border-radius: 10px;
-  transform:rotateZ(var(--posdeg));
-						
-						z-index: -3;
-
-			
-			display: flex;
-						opacity: 0.1;
-}
-	.container p span.typed-text {
-  font-weight: normal;
-  color: #dd7732;
-}
-.container p span.cursor {
-  display: inline-block;
-  background-color: #ccc;
-  margin-left: 0.1rem;
-  width: 3px;
-  animation: blink 1s infinite;
-}
-.container p span.cursor.typing {
-  animation: none;
-}
-@keyframes blink {
-  0%  { background-color: #ccc; }
-  49% { background-color: #ccc; }
-  50% { background-color: transparent; }
-  99% { background-color: transparent; }
-  100%  { background-color: #ccc; }
-}
-	.typed-text{
-		
-		content: '20kk';
-	}
-	.maintopic{
-		
-		opacity: 0;
-		animation: 1s 1.2s fadeindesc ease forwards;
-	}
-	.container{
-		height: 100%;
-		
-	}
-	.fa-instagram{
-		font-size: 23px;
-		margin-top:50px;
-	}
-</style>
-	   <style>
-	   
-	   .topnavcontainer{
-width: 100%;
-display: flex;
-position: sticky;
-top: -10;
-z-index: 20;
-background-color: transparent;
-}
-.topnavborder{
-position:relative;
-height: 50px;
-margin-top: 20px;
-margin-left: auto;
-margin-right: 90px;
-border-right: 0px solid #555;;
-
-width: 40%;
-animation: increase_wid 2s forwards;
-}
-@keyframes increase_wid{
-0%{
-width: 0%;	
-}
-80%{
-width: 70%;
-}
-}
-
-@keyframes loop{
-0%{
-transform: rotateZ(405deg);	
-}
-100%{
-transform: rotateZ(45deg);	
-}
-}
-@keyframes top1{
-0%{
-transform: rotateZ(360deg);
-}
-100%{
-transform: rotateZ(45deg);
-}
-}
-.navbar{
-display: flex;
-margin-left: auto;
-margin-right: 90px;
-width: 100%;
-height: 25px;
-background-color: transparent;
-}
-.navitem{
-margin: 20px;
-margin-right: 20px;
-margin-left: 20px;
-position: relative;
-opacity: 0;
-color: #aeaeae;
-left: 30;
-animation: frombelow 1s forwards;
-margin-left: 0;
-margin-right: 80;
-font-size: 14;
-line-height: 1.2;
-font-weight: 100;
-letter-spacing: 0.034em;
-transition: 0.5s ease;			
-}
-.navitem a{
-	font-family: 'Bai Jamjuree', sans-serif;
-color: black;
-display: inline;
-text-decoration: none;
-
-padding: 0.5rem;
-	
-}
-		  
-.main{
-font-weight: 700;
-	
-}
-@keyframes 	frombelow{
-20%{
-top:-5;
-opacity: 0;	
-left: 30;
-}
-100%{
-top:0;
-opacity: 1;
-left: 0;
-}		
-}
-.navitem:nth-child(1){
-animation-delay: 0.2s
-}
-.navitem:nth-child(2){
-animation-delay: 0.4s
-}
-.navitem:nth-child(3){
-animation-delay: 0.6s
-}
-.navitem a{
-text-decoration: none;
-color: white;
-
-}
-.navitem:hover{
-cursor: pointer;
-letter-spacing: 0.058em;
-font-size: 15;
-
-}
-		   .navitem a:hover{
-			   
-			clip-path: polygon(25% 0%, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
-background-color: #6a0073a1;
+      <style>
+         .mainintro{
+         padding: 0rem;
+         background-color: transparent;
+         color: #a6a6a6;
+         position: relative;
+         }
+         .container p span.typed-text {
+         font-weight: normal;
+         color: #dd7732;
+         }
+         .container p span.cursor {
+         display: inline-block;
+         background-color: #ccc;
+         margin-left: 0.1rem;
+         width: 3px;
+         animation: blink 1s infinite;
+         }
+         .container p span.cursor.typing {
+         animation: none;
+         }
+         @keyframes blink {
+         0%  { background-color: #ccc; }
+         49% { background-color: #ccc; }
+         50% { background-color: transparent; }
+         99% { background-color: transparent; }
+         100%  { background-color: #ccc; }
+         }
+         .typed-text{
+         content: '20kk';
+         }
+         .maintopic{
+         opacity: 0;
+         animation: 1s 1.2s fadeindesc ease forwards;
+         }
+         .container{
+         height: 100vh;
+         overflow: hidden;
+         }
+         .fa-instagram{
+         font-size: 23px;
+         margin-top:50px;
+         }
+      </style>
+      <style>
+         .topnavcontainer{
+         width: 100%;
+         display: flex;
+         position: sticky;
+         top: -10;
+         z-index: 20;
+         background-color: transparent;
+         }
+         .topnavborder{
+         position:relative;
+         height: 50px;
+         margin-top: 20px;
+         margin-left: auto;
+         margin-right: 10px;
+         border-right: 0px solid #555;;
+         }
+         @keyframes loop{
+         0%{
+         transform: rotateZ(405deg);	
+         }
+         100%{
+         transform: rotateZ(45deg);	
+         }
+         }
+         @keyframes top1{
+         0%{
+         transform: rotateZ(360deg);
+         }
+         100%{
+         transform: rotateZ(45deg);
+         }
+         }
+         .navbar{
+         display: flex;
+         margin-left: auto;
+         margin-right: 90px;
+         width: 100%;
+         height: 25px;
+         background-color: transparent;
+         }
+         .navitem{
+         margin: 20px;
+         margin-right: 20px;
+         margin-left: 20px;
+         position: relative;
+         opacity: 0;
+         color: #aeaeae;
+         left: 30;
+         animation: frombelow 1s forwards;
+         margin-left: 0;
+         margin-right: 80;
+         font-size: 14;
+         line-height: 1.2;
+         font-weight: 100;
+         letter-spacing: 0.034em;
+         transition: 0.5s ease;			
+         }
+         .navitem a{
+         font-family: 'Bai Jamjuree', sans-serif;
+         color: black;
+         display: inline;
+         text-decoration: none;
+         padding: 0.5rem;
+         }
+         .main{
+         font-weight: 700;
+         }
+         @keyframes 	frombelow{
+         20%{
+         top:-5;
+         opacity: 0;	
+         left: 30;
+         }
+         100%{
+         top:0;
+         opacity: 1;
+         left: 0;
+         }		
+         }
+         .navitem:nth-child(1){
+         animation-delay: 0.2s
+         }
+         .navitem:nth-child(2){
+         animation-delay: 0.4s
+         }
+         .navitem:nth-child(3){
+         animation-delay: 0.6s
+         }
+         .navitem a{
+  
+			 text-decoration: none;
+color: #e6e6e6;
+font-weight: 500;
+         }
+         .navitem:hover{
+         cursor: pointer;
+         letter-spacing: 0.058em;
+         font-size: 15;
+         }
+         .navitem a:hover{
+clip-path: polygon(25% 0%, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
+background-color: #0000007d;
 border: 1px solid #5b5b5b;
-font-weight: 100;	   
-			   
-			   
-		   }
-		   .alinkhover{
-			clip-path: polygon(25% 0%, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
-background-color: #6a0073a1;
-border: 1px solid #5b5b5b;
-font-weight: 100;	   
-			   
-		   }
-		   
-@keyframes res{
-0%{
-opacity: 0;
-}
-100%{
-opacity: 1;	
-}}
-.fa-bars{
-	
-	display: none;
-}
-		     .main a{
-			   
-
-			   
-		   }
-@media only screen and (max-width: 586px) {
-.resmain{
-display: block;
-font-size: 30;
-}
-.responsivenavbg{
-overflow: hidden;
-background-color: #000000e6;
-position: fixed;
-top: 0;
-height: 100vh;
-}
-.responsivenavbarborder{
-padding-left: 20px;
-margin-top: 20px;
-height: 230px;
-}
-.resnavbar{
-display: block;
-}
-.topnavcontainer{
-position: fixed;
-} 
-
-.fa-bars,.fa-close{
-margin-top: 24px;
-	display: block;
-color: #aeaeae;
-margin-right: 10px;
-cursor: pointer;
-}
-.fa-close{
-font-size: 30px;
-}
-.navitem{
-margin-right: 10%;
-font-size: 20;
-display: none;
-}
-.topnavborder{
-margin-left: auto;
-margin-top: 30px;
-top: 0;
-margin-right: auto;
-}
-.main{
-display: block;
-line-height: 16px;
-font-size: 30px;
-	
-}
-.resnavitem{
-display: block;
-transition: 0.5s all ease;
-}
-}
-@media only screen and (max-width: 360px) {
-.topnavborder{
-width: 80%;
-}
-	.fa-bars,.fa-close{
-margin-top: 24px;
-	display: block;
-color: #aeaeae;
-margin-right: 10px;
-cursor: pointer;
-}
-}
-		   
-	   </style>
-	   <style>
-	         .stripe {
+         font-weight: 700;	   
+         }
+         .alinkhover{
+         clip-path: polygon(25% 0%, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
+         background-color: #6a0073a1;
+         border: 1px solid #5b5b5b;
+         font-weight: 100;	   
+         }
+         @keyframes res{
+         0%{
+         opacity: 0;
+         }
+         100%{
+         opacity: 1;	
+         }}
+         .fa-bars{
+         display: none;
+         }
+         .main a{
+         font-size: 17px;
+         }
+         @media only screen and (max-width: 586px) {
+         .resmain{
+         display: block;
+         font-size: 30;
+         }
+         .responsivenavbg{
+         overflow: hidden;
+         background-color: #000000e6;
+         position: fixed;
+         top: 0;
+         height: 100vh;
+         }
+         .responsivenavbarborder{
+         padding-left: 20px;
+         margin-top: 20px;
+         height: 230px;
+         }
+         .resnavbar{
+         display: block;
+         }
+         .topnavcontainer{
+         position: fixed;
+         } 
+         .fa-bars,.fa-close{
+         margin-top: 24px;
+         display: block;
+         color: #aeaeae;
+         margin-right: 10px;
+         cursor: pointer;
+         }
+         .fa-close{
+         font-size: 30px;
+         }
+         .navitem{
+         margin-right: 0;
+         font-size: 20;
+         display: none;
+         }
+         .topnavborder{
+         margin-left: auto;
+         margin-top: 30px;
+         top: 0;
+         margin-right: auto;
+         }
+         .main{
+         display: block;
+         line-height: 16px;
+         font-size: 30px;
+         }
+         .resnavitem{
+         display: block;
+         transition: 0.5s all ease;
+         }
+         }
+         @media only screen and (max-width: 360px) {
+         .topnavborder{
+         width: 80%;
+         }
+         .fa-bars,.fa-close{
+         margin-top: 24px;
+         display: block;
+         color: #aeaeae;
+         margin-right: 10px;
+         cursor: pointer;
+         }
+         }
+      </style>
+      <style>
+         .stripe {
          position: relative;
          display: flex;
          width: 100%;
          height: 100%;
-		  overflow:hidden;
+         overflow:hidden;
          }
          .stripe::before {
          content: "";
@@ -649,23 +573,18 @@ cursor: pointer;
          left: 0;
          width: calc(100% + var(--stripe-size));
          height: 100%;
-
-
-
-
          z-index: -1;
-			   background: url('dmatter.jpg');
-  opacity: 0.2;
-			 background-size: cover;
-}
-         
+         background: url('dmatter.jpg');
+         opacity: 0.2;
+         background-size: cover;
+         }
          .stripe::after {
          content: "";
          position: absolute;
          width: 100%;
          height: 100%;
          background-image: linear-gradient(rgba(255, 255, 255, 0.1) .1em, transparent .1em), linear-gradient(90deg, rgba(255, 255, 255, 0.1) .1em, transparent .1em);
-background-size: 6em 6em;
+         background-size: 6em 6em;
          z-index: -1;
          }
          @-webkit-keyframes stripeTransform {
@@ -676,127 +595,105 @@ background-size: 6em 6em;
          transform: translateX(-1200px);
          }
          }
-        
          .container{
          width: 100%;
-			 overflow-y: auto;
-			 height: 100%;
+         overflow-y: scroll;
+         height: 100%;
          }
-		   .mainlink{
-			   
-			   			 clip-path: polygon(25% 0%, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
-background-color: #6a0073a1;
-border: 1px solid #5b5b5b;
-font-weight: 700;  
-			   position: relative;
-		   }
-		   .dropdownlist{
-			   
-			   
-			   position: absolute;
-			   height: 50px;
-			   width: 100px;
-			   background-color: 50px;
-		   }
-	   li{
-			   
-	margin: 0px;
-color: black;
-padding: 10 0 10 20;
-width: 120;
-			   font-size: 11px;
-			   
-		   }
-		   ul{
-			   
-			   margin:0;
-			   padding: 0;
-			 
-		   }
-		   .link:hover +.dropdownlist {
-  display: block;
-}
-		   		   .link:hover .dropdownlist {
-  display: block;
-}
-		   .ondisplay{
-			   
-			    display: block;
-		   }
-		   .dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-			   font-family: 'Bai Jamjuree', sans-serif;
-			   
-color: black;
-display: inline;
-text-decoration: none;
-padding: 0.5rem;
-  padding-top: 0.5rem;
-background-color: transparent;
-color: #fff;
-font-weight: 100;
-padding-top: 0;
-font-size: 15;
-			   clip-path: polygon(25% 0%, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
-background-color: #6a0073a1;
-border: 1px solid #5b5b5b;
-font-weight: 700;
-			   padding-top: 10;
-margin-top: auto;
-position: relative;
-top: -10;
-background-color: transparent;
-border: 0px;
-font-weight: 200;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-	
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-	font-weight: 100;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  clip-path: polygon(25% 0%, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
-background-color: #6a0073a1;
-border: 1px solid #5b5b5b;
-font-weight: 200;
-	
-}
-		   .container{
-								 background: radial-gradient(ellipse at center, rgba(227, 0, 0, 0) 0%, #000000d1 100%);
-z-index: 1;
-opacity: inherit;
-							 }
-	   </style>
+         .mainlink{
+         clip-path: polygon(25% 0%, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
+     font-weight: 900;
+         }
+         .dmcon{
+         position:relative;
+         }
+         .dropdownlist{
+         position: absolute;
+         display: none;
+         background-color: wheat;
+         }
+         li{
+         margin: 0px;
+         color: black;
+         padding: 10 0 10 20;
+         width: 120;
+         font-size: 11px;
+         }
+         ul{
+         margin:0;
+         padding: 0;
+         }
+         .link:hover +.dropdownlist {
+         display: block;
+         }
+         .link:hover .dropdownlist {
+         display: block;
+         }
+         .ondisplay{
+         display: block;
+         }
+         .dropbtn {
+         background-color: #4CAF50;
+         color: white;
+         padding: 16px;
+         font-size: 16px;
+         border: none;
+         cursor: pointer;
+         font-family: 'Bai Jamjuree', sans-serif;
+         color: black;
+         display: inline;
+         text-decoration: none;
+         padding: 0.5rem;
+         padding-top: 0.5rem;
+         background-color: transparent;
+         color: #fff;
+         font-weight: 100;
+         padding-top: 0;
+         font-size: 15;
+         clip-path: polygon(25% 0%, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
+         background-color: #6a0073a1;
+         border: 1px solid #5b5b5b;
+         font-weight: 700;
+         padding-top: 10;
+         margin-top: auto;
+         position: relative;
+         top: -10;
+         background-color: transparent;
+         border: 0px;
+         font-weight: 200;
+         }
+         .dropdown {
+         position: relative;
+         display: inline-block;
+         }
+         .dropdown-content {
+         display: none;
+         position: absolute;
+         background-color: #f9f9f9;
+         min-width: 160px;
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         z-index: 1;
+         }
+         .dropdown-content a {
+         color: black;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+         }
+         .dropdown-content a:hover {background-color: #f1f1f1}
+         .dropdown:hover .dropdown-content {
+         display: block;
+         }
+         .dropdown:hover .dropbtn {
+         clip-path: polygon(25% 0%, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
+         background-color: #6a0073a1;
+         border: 1px solid #5b5b5b;
+         font-weight: 200;
+         }
+         .techevetnav{
+         display: block;
+         }
+      </style>
       <div class="stripe">
          <div class="container">
             <div class="topnavcontainer">
@@ -804,1123 +701,1346 @@ opacity: inherit;
                   <div class="navbar">
                      <i class="fa fa-bars" onclick="showheader(this)" ></i>
                      <div class="navitem"><a class="link" href="index.html">Home</a></div>
-					  <div  class="navitem main"><div style="position: relative;
-  top: -10;" class="linkmain mainlink" class="dmcon"> <div class="dropdown link">
-  <button style="top: -2;" class="dropbtn">Events</button>
-  <div class="dropdown-content">
-  <a href="technicalevents.html">Technical Event</a>
-  <a href="nontechnicalevents.html">Non Technical Event</a>
-  </div>
-</div></div> </div>
+                     <div class="navitem main"><a class="linkmain mainlink" style="font-weight: 900;" href="technicalevents.html">Technical Events</a></div>
+                     <div class="navitem"><a  class="link" href="nontechnicalevents.html">Non Technical Events</a></div>
                      <div class="navitem"><a class="link" href="#">Sponsors</a></div>
                   </div>
                </div>
             </div>
             <div class="box glowing"></div>
             <div class="maincontainer">
-				<script>
-
-				</script>
-
-			
+               <script></script>
                <style>
-	
-	:root {
-  --glitched-duration: 0.9s;
-  --glitched-long-duration: 3s;
-  --yellow-color: #f9f002;
-  --yellow-color-opacity: #f9f00242;
-  --orange-color: #ff9800;
-  --border-color: #8ae66e;
-  --red-color: #ff003c;
-  --blue-color: #136377;
-  --green-color: #446d44;
-  --purple-color: purple;
-}
-
-
-
-/* Titles */
-
-h1.cyberpunk,
-h2.cyberpunk,
-h3.cyberpunk,
-h4.cyberpunk {
-
-  line-height: 2.2rem;
-
-  position: relative;
-  padding-bottom: 15px;
-	font-size: 2.4rem;
-font-weight: 700;
-}
-
-h2.cyberpunk {
-  font-size: 1.7rem;
-  line-height: 1.9rem;
-  font-weight: 300;
-}
-
-h3.cyberpunk {
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  font-weight: 500;
-}
-
-h4.cyberpunk {
-  font-size: 1rem;
-  line-height: 1.2rem;
-  font-weight: 700;
-}
-
-h1.cyberpunk:before,
-h2.cyberpunk:before,
-h3.cyberpunk:before,
-h4.cyberpunk:before {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0px;
-    left: 2px;
-    width: 100%;
-    height: 10px;
-    background-color: #000;
-    clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
-}
-
-h1.cyberpunk.glitched {
-  animation-name: h1glitched;
-  animation-duration: calc(var(--glitched-duration) * 1.4);
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-h2.cyberpunk.glitched {
-  animation-name: h1glitched;
-  animation-duration: calc(var(--glitched-duration) * 1.7);
-  animation-iteration-count: infinite;
-  animation-direction: reverse;
-  animation-timing-function: linear;
-}
-
-h3.cyberpunk.glitched {
-  animation-name: h1glitched;
-  animation-duration: calc(var(--glitched-duration) * 1.1);
-  animation-iteration-count: infinite;
-  animation-direction: reverse;
-  animation-timing-function: ease-out;
-}
-
-h4.cyberpunk.glitched {
-  animation-name: h1glitched;
-  animation-duration: calc(var(--glitched-duration) * 2.1);
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes h1glitched {
-  0% {
-    transform: skew(-20deg);
-    left: -4px;
-  }
-  10% {
-    transform: skew(-20deg);
-    left: -4px;
-  }
-  11% {
-    transform: skew(0deg);
-    left: 2px;
-  }
-  50% {
-    transform: skew(0deg);
-  }
-  51% {
-    transform: skew(10deg);
-  }
-  59% {
-    transform: skew(10deg);
-  }
-  60% {
-    transform: skew(0deg);
-  }
-  100% {
-    transform: skew(0deg);
-  }
-}
-
-h1.cyberpunk.glitched:before {
-  animation-name: h1beforeglitched;
-  animation-duration: calc(var(--glitched-duration) * 2);
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes h1beforeglitched {
-  0% {
-    transform: skew(-20deg);
-    left: -4px;
-    clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
-  }
-  10% {
-    transform: skew(-20deg);
-    left: -4px;
-    clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
-  }
-  11% {
-    transform: skew(0deg);
-    left: 2px;
-    clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
-  }
-  50% {
-    transform: skew(0deg);
-    clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
-  }
-  51% {
-    transform: skew(0deg);
-    clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 40% 5px, calc(40% - 30px) 0px, calc(40% + 30px) 0px, calc(45% - 15px) 5px, 100% 5px, 100% 6px, calc(45% - 14px) 6px, calc(40% + 29px) 1px, calc(40% - 29px) 1px, calc(40% + 1px) 6px, 85px 6px, 80px 10px, 0px 10px);
-  }
-  59% {
-    transform: skew(0deg);
-    clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 40% 5px, calc(40% - 30px) 0px, calc(40% + 30px) 0px, calc(45% - 15px) 5px, 100% 5px, 100% 6px, calc(45% - 14px) 6px, calc(40% + 29px) 1px, calc(40% - 29px) 1px, calc(40% + 1px) 6px, 85px 6px, 80px 10px, 0px 10px);
-  }
-  60% {
-    transform: skew(0deg);
-    clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
-  }
-  100% {
-    transform: skew(0deg);
-    clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
-  }
-}
-
-h2.cyberpunk:before {
-  clip-path: polygon(0px 5px, 35px 5px, 40px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 20px 10px, 15px 6px, 0px 6px);
-}
-
-h2.cyberpunk.glitched:before {
-  animation-name: h2beforeglitched;
-  animation-duration: calc(var(--glitched-duration) * 2);
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes h2beforeglitched {
-  0% {
-    transform: scaleY(1);
-  }
-  10% {
-    transform: scaleY(1);
-  }
-  11% {
-    transform: scaleY(-1);
-  }
-  50% {
-    transform: scaleY(-1);
-  }
-  51% {
-    transform: scaleY(1);
-  }
-  59% {
-    transform: scaleY(1);
-  }
-  60% {
-    transform: scaleY(1);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-
-h3.cyberpunk:before {
-        clip-path: polygon(0px 5px, 10px 5px, 15px 0px, 40px 0px, 45px 5px, 100% 5px, 100% 6px, 31px 6px, 27px 2px, 15px 2px, 8px 10px, 0px 10px);
-}
-
-h4.cyberpunk:before {
-        clip-path: polygon(0px 3px, 15px 3px, 20px 0px, 80px 0px, 85px 3px, 100% 3px, 100% 4px, 85px 4px, 80px 7px, 20px 7px, 15px 4px, 0px 4px);
-}
-
-h1.cyberpunk:after,
-h2.cyberpunk:after,
-h3.cyberpunk:after,
-h4.cyberpunk:after,
-p.cyberpunk:after {
-  content: "_";
-  animation-name: hxafter;
-  animation-duration: var(--glitched-duration);
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-h3.cyberpunk:after,
-h4.cyberpunk:after {
-  animation-direction: reverse;
-  animation-duration: calc(var(--glitched-duration) / 2);
-}
-
-@keyframes hxafter {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  51% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-				   p.cyberpunk.inverse{
-					   
-		padding: 40px 15px 30px;
-clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
-background-color: #00000036;
-color: #888;
-border-right: 3px solid var(--border-color);
-	font-size: 0.9rem;
-font-weight: 100;				   
-					   
-				   }
-/* Separator */
-p.cyberpunk {
- border: 10px solid #bebebe;
-  border-right-color: rgb(190, 190, 190);
-  border-right-style: solid;
-  border-right-width: 10px;
-  border-bottom-color: rgb(190, 190, 190);
-  border-bottom-style: solid;
-  border-bottom-width: 10px;
-  border-left-color: rgb(190, 190, 190);
-  border-left-style: solid;
-  border-left-width: 10px;
-border-right-color: rgb(0, 0, 0);
-border-right-style: solid;
-border-right-width: 30px;
-border-bottom-color: rgb(0, 0, 0);
-border-bottom-style: solid;
-border-bottom-width: 30px;
-border-left-color: rgb(0, 0, 0);
-border-left-style: solid;
-border-left-width: 30px;
-border-right: 5px solid #000;
-border-left: 1px solid #afafaf;
-border-bottom: 1px solid #808080;
-padding: 5px;
-clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
-background-color: var(--yellow-color);
-font-size: 1.2rem;
-	position: relative;}
-p.cyberpunk.inverse::before {
-  content: "T-71";
-  right: 90px;
-  bottom: 9px;
-}
-p.cyberpunk::before {
-  content: "P-14";
-  display: block;
-  position: absolute;
-  bottom: -12px;
-  right: 25px;
-  padding: 2px 2px 0px 2px;
-  font-size: 0.6rem;
-  line-height: 0.6rem;
-  color: #000;
-  background-color: var(--yellow-color);
-  border-left: 2px solid var(--border-color);
-}
+                  :root {
+                  --glitched-duration: 0.9s;
+                  --glitched-long-duration: 3s;
+                  --yellow-color: #f9f002;
+                  --yellow-color-opacity: #f9f00242;
+                  --orange-color: #ff9800;
+                  --border-color: #8ae66e;
+                  --red-color: #ff003c;
+                  --blue-color: #136377;
+                  --green-color: #446d44;
+                  --purple-color: purple;
+                  }
+                  /* Titles */
+                  h1.cyberpunk,
+                  h2.cyberpunk,
+                  h3.cyberpunk,
+                  h4.cyberpunk {
+                  line-height: 2.2rem;
+                  position: relative;
+                  padding-bottom: 15px;
+                  font-size: 2.4rem;
+                  font-weight: 700;
+                  }
+                  h2.cyberpunk {
+                  font-size: 1.7rem;
+                  line-height: 1.9rem;
+                  font-weight: 300;
+                  }
+                  h3.cyberpunk {
+                  font-size: 1.4rem;
+                  line-height: 1.6rem;
+                  font-weight: 500;
+                  }
+                  h4.cyberpunk {
+                  font-size: 1rem;
+                  line-height: 1.2rem;
+                  font-weight: 700;
+                  }
+                  h1.cyberpunk:before,
+                  h2.cyberpunk:before,
+                  h3.cyberpunk:before,
+                  h4.cyberpunk:before {
+                  content: "";
+                  display: block;
+                  position: absolute;
+                  bottom: 0px;
+                  left: 2px;
+                  width: 100%;
+                  height: 10px;
+                  background-color: #000;
+                  clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+                  }
+                  h1.cyberpunk.glitched {
+                  animation-name: h1glitched;
+                  animation-duration: calc(var(--glitched-duration) * 1.4);
+                  animation-iteration-count: infinite;
+                  animation-timing-function: linear;
+                  }
+                  h2.cyberpunk.glitched {
+                  animation-name: h1glitched;
+                  animation-duration: calc(var(--glitched-duration) * 1.7);
+                  animation-iteration-count: infinite;
+                  animation-direction: reverse;
+                  animation-timing-function: linear;
+                  }
+                  h3.cyberpunk.glitched {
+                  animation-name: h1glitched;
+                  animation-duration: calc(var(--glitched-duration) * 1.1);
+                  animation-iteration-count: infinite;
+                  animation-direction: reverse;
+                  animation-timing-function: ease-out;
+                  }
+                  h4.cyberpunk.glitched {
+                  animation-name: h1glitched;
+                  animation-duration: calc(var(--glitched-duration) * 2.1);
+                  animation-iteration-count: infinite;
+                  animation-timing-function: ease-in-out;
+                  }
+                  @keyframes h1glitched {
+                  0% {
+                  transform: skew(-20deg);
+                  left: -4px;
+                  }
+                  10% {
+                  transform: skew(-20deg);
+                  left: -4px;
+                  }
+                  11% {
+                  transform: skew(0deg);
+                  left: 2px;
+                  }
+                  50% {
+                  transform: skew(0deg);
+                  }
+                  51% {
+                  transform: skew(10deg);
+                  }
+                  59% {
+                  transform: skew(10deg);
+                  }
+                  60% {
+                  transform: skew(0deg);
+                  }
+                  100% {
+                  transform: skew(0deg);
+                  }
+                  }
+                  h1.cyberpunk.glitched:before {
+                  animation-name: h1beforeglitched;
+                  animation-duration: calc(var(--glitched-duration) * 2);
+                  animation-iteration-count: infinite;
+                  animation-timing-function: linear;
+                  }
+                  @keyframes h1beforeglitched {
+                  0% {
+                  transform: skew(-20deg);
+                  left: -4px;
+                  clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+                  }
+                  10% {
+                  transform: skew(-20deg);
+                  left: -4px;
+                  clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+                  }
+                  11% {
+                  transform: skew(0deg);
+                  left: 2px;
+                  clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+                  }
+                  50% {
+                  transform: skew(0deg);
+                  clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+                  }
+                  51% {
+                  transform: skew(0deg);
+                  clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 40% 5px, calc(40% - 30px) 0px, calc(40% + 30px) 0px, calc(45% - 15px) 5px, 100% 5px, 100% 6px, calc(45% - 14px) 6px, calc(40% + 29px) 1px, calc(40% - 29px) 1px, calc(40% + 1px) 6px, 85px 6px, 80px 10px, 0px 10px);
+                  }
+                  59% {
+                  transform: skew(0deg);
+                  clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 40% 5px, calc(40% - 30px) 0px, calc(40% + 30px) 0px, calc(45% - 15px) 5px, 100% 5px, 100% 6px, calc(45% - 14px) 6px, calc(40% + 29px) 1px, calc(40% - 29px) 1px, calc(40% + 1px) 6px, 85px 6px, 80px 10px, 0px 10px);
+                  }
+                  60% {
+                  transform: skew(0deg);
+                  clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+                  }
+                  100% {
+                  transform: skew(0deg);
+                  clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+                  }
+                  }
+                  h2.cyberpunk:before {
+                  clip-path: polygon(0px 5px, 35px 5px, 40px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 20px 10px, 15px 6px, 0px 6px);
+                  }
+                  h2.cyberpunk.glitched:before {
+                  animation-name: h2beforeglitched;
+                  animation-duration: calc(var(--glitched-duration) * 2);
+                  animation-iteration-count: infinite;
+                  animation-timing-function: linear;
+                  }
+                  @keyframes h2beforeglitched {
+                  0% {
+                  transform: scaleY(1);
+                  }
+                  10% {
+                  transform: scaleY(1);
+                  }
+                  11% {
+                  transform: scaleY(-1);
+                  }
+                  50% {
+                  transform: scaleY(-1);
+                  }
+                  51% {
+                  transform: scaleY(1);
+                  }
+                  59% {
+                  transform: scaleY(1);
+                  }
+                  60% {
+                  transform: scaleY(1);
+                  }
+                  100% {
+                  transform: scaleY(1);
+                  }
+                  }
+                  h3.cyberpunk:before {
+                  clip-path: polygon(0px 5px, 10px 5px, 15px 0px, 40px 0px, 45px 5px, 100% 5px, 100% 6px, 31px 6px, 27px 2px, 15px 2px, 8px 10px, 0px 10px);
+                  }
+                  h4.cyberpunk:before {
+                  clip-path: polygon(0px 3px, 15px 3px, 20px 0px, 80px 0px, 85px 3px, 100% 3px, 100% 4px, 85px 4px, 80px 7px, 20px 7px, 15px 4px, 0px 4px);
+                  }
+                  h1.cyberpunk:after,
+                  h2.cyberpunk:after,
+                  h3.cyberpunk:after,
+                  h4.cyberpunk:after,
+                  p.cyberpunk:after {
+                  content: "_";
+                  animation-name: hxafter;
+                  animation-duration: var(--glitched-duration);
+                  animation-iteration-count: infinite;
+                  animation-timing-function: linear;
+                  }
+                  h3.cyberpunk:after,
+                  h4.cyberpunk:after {
+                  animation-direction: reverse;
+                  animation-duration: calc(var(--glitched-duration) / 2);
+                  }
+                  @keyframes hxafter {
+                  0% {
+                  opacity: 0;
+                  }
+                  50% {
+                  opacity: 0;
+                  }
+                  51% {
+                  opacity: 1;
+                  }
+                  100% {
+                  opacity: 1;
+                  }
+                  }
+                  p.cyberpunk.inverse{
+                  padding: 40px 15px 30px;
+                  background-color:  #1f41606b;
+                  color: white;
+                  border-right: 3px solid #0ff;
+                  font-size: 0.9rem;
+                  font-weight: 100;		
+                  margin-top: 0;
+                  margin-bottom: 0px;
+                  }
+                  /* Separator */
+                  p.cyberpunk {
+                  border: 10px solid #bebebe;
+                  border-right-color: rgb(190, 190, 190);
+                  border-right-style: solid;
+                  border-right-width: 10px;
+                  border-bottom-color: rgb(190, 190, 190);
+                  border-bottom-style: solid;
+                  border-bottom-width: 10px;
+                  border-left-color: rgb(190, 190, 190);
+                  border-left-style: solid;
+                  border-left-width: 10px;
+                  border-right-color: rgb(0, 0, 0);
+                  border-right-style: solid;
+                  border-right-width: 30px;
+                  border-bottom-color: rgb(0, 0, 0);
+                  border-bottom-style: solid;
+                  border-bottom-width: 30px;
+                  border-left-color: rgb(0, 0, 0);
+                  border-left-style: solid;
+                  border-left-width: 30px;
+                  border-right: 5px solid #000;
+                  border-left: 1px solid #afafaf;
+                  border-bottom: 1px solid #808080;
+                  padding: 5px;
+                  background-color: var(--yellow-color);
+                  font-size: 1.2rem;
+                  position: relative;}
+                  p.cyberpunk.inverse::before {
+                  content: "T-71";
+                  right: 90px;
+                  bottom: 9px;
+                  }
+                  p.cyberpunk::before {
+                  content: "P-14";
+                  display: block;
+                  position: absolute;
+                  bottom: -12px;
+                  right: 25px;
+                  padding: 2px 2px 0px 2px;
+                  font-size: 0.6rem;
+                  line-height: 0.6rem;
+                  color: #000;
+                  background-color: var(--yellow-color);
+                  border-left: 2px solid var(--border-color);
+                  }
                </style>
-				<style>
-				
-				   .mainpagecontainer{
-					   
-					   display: flex;
-					   width: 100%;
-				   }
-		
-				   .timeanddate{
-					   font-size: 25px;
-			margin-bottom: 30px;
-					   font-size: 19px;
-clip-path: polygon(25% 0%, 49.49% -72.03%, 49.29% 53.75%, 27.79% 302.5%, -35px 133.75%, 15px -14.30%);
-background-color: #6a00736b;
-border: 1px solid #5e5e5e;
-font-weight: 100;
-padding: 0.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-padding-top: 2;
-padding-bottom: 3;
-color: #ffffff70;
-				   }
-				   .maintopic{
-					   
-					   font-family: 'Bai Jamjuree', sans-serif;
-					  font-size: 47px;
-font-weight: 800;
-line-height: 0.7;
-				   }
-				   .desc{
-					   
-					   font-family: 'Bai Jamjuree', sans-serif;
-					   line-height: 1.2;
-font-weight: 300;
-font-size: 17px;
-				   }
-					.cyberpunk{
-						font-weight: 800;
-					}
-				</style>
+               <style>
+                  .mainpagecontainer{
+                  display: flex;
+                  width: 100%;
+                  }
+                  .timeanddate{
+                  font-size: 25px;
+                  margin-bottom: 30px;
+                  font-size: 19px;
+                  clip-path: polygon(25% 0%, 49.49% -72.03%, 49.29% 53.75%, 27.79% 302.5%, -35px 133.75%, 15px -14.30%);
+                  background-color: #6a00736b;
+                  border: 1px solid #5e5e5e;
+                  font-weight: 100;
+                  padding: 0.5rem;
+                  padding-top: 0.5rem;
+                  padding-bottom: 0.5rem;
+                  padding-top: 2;
+                  padding-bottom: 3;
+                  color: #ffffff70;
+                  }
+                  .maintopic{
+                  font-family: 'Bai Jamjuree', sans-serif;
+                  font-size: 47px;
+                  font-weight: 800;
+                  line-height: 0.7;
+                  }
+                  .desc{
+                  font-family: 'Bai Jamjuree', sans-serif;
+                  line-height: 1.2;
+                  font-weight: 300;
+                  font-size: 17px;
+                  }
+                  .cyberpunk{
+                  font-weight: 800;
+                  }
+                  body{
+                  overflow-x: hidden;
+                  overflow-y: hidden;
+                  }
+                  .container{
+                  background: radial-gradient(ellipse at center, rgba(40, 212, 216, 0.44) 0%, #000000d1 100%);
+                  z-index: 1;
+                  opacity: inherit;
+                  }
+               </style>
             </div>
             <style>
-				ul{
-					margin: 0[x;]
-				}
-				.event{
-					
-					display: flex;
-				}
-				.theevent{
-					
-					margin: auto;
-					margin: auto;
-clip-path: polygon(25% 0%, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
-background-color: #080644a1;
-border: 1px solid #5b5b5b;
-font-weight: 200;
-position: relative;
-color: white;
-				}
             </style>
             <div class="topic1">
-				         <style>
-							 #demo{
-								font-size: 8px; 
-								 
-							 }	 
-							 body:after{
-								 background: radial-gradient(ellipse at center, rgba(0, 105, 227, 0) 0%, #000 100%);
-z-index: -1;
-opacity: inherit;
-							 }
-							 .container{
-								 background: radial-gradient(ellipse at center, rgba(227, 0, 0, 0) 0%, #000000d1 100%);
-z-index: 1;
-opacity: inherit;
-							 }
-				</style>
-                        <div class="event tech">
-							<div class="event tech"></div>
-							<div class="putdeatils">
-							
-							
-							</div>
-							<div class="rules"></div>
-            
-                        </div>
-				<script>
-				  var type = "Technical";
-				  var xhttp = new XMLHttpRequest();
-					var getnum = document.getElementsByClassName("event tech")[0];
-					var putdeatils = document.getElementsByClassName("putdeatils")[0];
-					
-  xhttp.onreadystatechange = function() {
-	  var str = "";
-    if (this.readyState == 4 && this.status == 200) {
-	 var mydata = JSON.parse(this.responseText);	
-	for (const key in mydata[type]){
-	str = str + "<button onclick='getdeatils(this)' name='eventaname'  class='theevent'   value='"+key+"'>"+key+"</button> "
-
-}			
-	getnum.innerHTML = str;
-			 var mydata = JSON.parse(this.responseText);	
-		
-		var obj = document.getElementsByClassName("theevent")[0];
-
-	   var name = mydata[type][obj.value]["name"];
-	
-       document.getElementsByClassName("putdeatils")[0].innerHTML = document.getElementsByClassName("putdeatils")[0].innerHTML + "<h2 class='cyberpunk glitched'>"+name+"</h2>";	
-		
-				 var str ="<p class='cyberpunk inverse dotted'>";		
-for (i=0;i<mydata[type][obj.value]["desc"].length;i++){
-str = str + mydata[type][obj.value]["desc"][i];
-
-	
-}
-str = str + '</p>';		
-		
-		
-		
-document.getElementsByClassName("putdeatils")[0].innerHTML = document.getElementsByClassName("putdeatils")[0].innerHTML + str;		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		 var str ="<ul class='cyberpunk'>";		
-for (i=0;i<mydata[type][obj.value]["rules"].length;i++){
-str = str + "<li>"+mydata[type][obj.value]["rules"][i]+"</li>";
-	 console.log(mydata[type][obj.value]["rules"][i]);
-	
-}
-str = str + "</ul>";	
-   
-       document.getElementsByClassName("putdeatils")[0].innerHTML = document.getElementsByClassName("putdeatils")[0].innerHTML + str;	
-str = '<form action="eventregister.html" onsubmit="return register()" methon="post"><button name="eventname"  eventtype="Technical" value="'+name+'" class="cyberpunk2077 btnsubmit">Register</button></form>';
-		   document.getElementsByClassName("putdeatils")[0].innerHTML = document.getElementsByClassName("putdeatils")[0].innerHTML + str;	
-    }
-  };
-  xhttp.open("GET", "details.json", true);
-  xhttp.send();
-	
-function getdeatils(obj){
-	             var type = "Technical";
-				  var xhttp = new XMLHttpRequest();
-					var getnum = document.getElementsByClassName("event tech")[0];
-					var str = "";
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-		document.getElementsByClassName("putdeatils")[0].innerHTML = "";
-	 var mydata = JSON.parse(this.responseText);	
-	   var name = mydata[type][obj.value]["name"];
-	
-		
-	       document.getElementsByClassName("putdeatils")[0].innerHTML = document.getElementsByClassName("putdeatils")[0].innerHTML + "<h2 class='cyberpunk glitched'>"+name+"</h2>";	
-		
-		
-		
-		
-		 var str ="<p class='cyberpunk inverse dotted'>";		
-for (i=0;i<mydata[type][obj.value]["desc"].length;i++){
-str = str + mydata[type][obj.value]["desc"][i];
-
-	
-}
-str = str + '</p>';		
-		
-		
-		
-document.getElementsByClassName("putdeatils")[0].innerHTML = document.getElementsByClassName("putdeatils")[0].innerHTML + str;			
-		
-		
-		
-		
-		
-		
-		
-		
-	
-		 var str ="<ul class='cyberpunk'>";		
-for (i=0;i<mydata[type][obj.value]["rules"].length;i++){
-str = str + "<li>"+mydata[type][obj.value]["rules"][i]+"</li>";
-	 console.log(mydata[type][obj.value]["rules"][i]);
-	
-}
-str = str + "</ul>";	
-   
-       document.getElementsByClassName("putdeatils")[0].innerHTML = document.getElementsByClassName("putdeatils")[0].innerHTML + str;	
-str = '<form action="eventregister.html" onsubmit="return register()" methon="post"><button name="eventname"  eventtype="Technical" value="'+name+'" class="cyberpunk2077 btnsubmit">Register</button></form>';
-		   document.getElementsByClassName("putdeatils")[0].innerHTML = document.getElementsByClassName("putdeatils")[0].innerHTML + str;	
-    }
-  };
-  xhttp.open("GET", "details.json", true);
-  xhttp.send();
-			
-}
-				</script>
-                
-				<style>
-					
-	:root {
-  --glitched-duration: 0.9s;
-  --glitched-long-duration: 3s;
-  --yellow-color: #f9f002;
-  --yellow-color-opacity: #f9f00242;
-  --orange-color: #ff9800;
-  --border-color: #8ae66e;
-  --red-color: #ff003c;
-  --blue-color: #136377;
-  --green-color: #446d44;
-  --purple-color: purple;
-  --neon-color: #39ff14;
-}				
-					h2.cyberpunk.glitched {
-  animation-name: h1glitched;
-  animation-duration: calc(var(--glitched-duration) * 1.7);
-  animation-iteration-count: infinite;
-  animation-direction: reverse;
-  animation-timing-function: linear;
-												
-font-weight: 700;
-font-size: 2.3rem;
-line-height: 1.9rem;
-letter-spacing: 0.057em;
-color: white;
-margin-left: 20;
-margin-top: 50px;
-
-}
-h2.cyberpunk {
-  font-size: 1.7rem;
-  line-height: 1.9rem;
-  font-weight: 300;
-}
-h1.cyberpunk, h2.cyberpunk, h3.cyberpunk, h4.cyberpunk {
-  font-size: 2rem;
-  line-height: 2.2rem;
-  font-weight: 200;
-  position: relative;
-  padding-bottom: 15px;
-}
-body * {
-  font-family: "Advent Pro", arial;
-}
-section.cyberpunk {
-  color: #000;
-}
-
-
-h2.cyberpunk.glitched::before {
-  animation-name: h2beforeglitched;
-  animation-duration: calc(var(--glitched-duration) * 2);
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-h2.cyberpunk::before {
-  clip-path: polygon(0px 5px, 35px 5px, 40px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 20px 10px, 15px 6px, 0px 6px);
-}
-h1.cyberpunk::before, h2.cyberpunk::before, h3.cyberpunk::before, h4.cyberpunk::before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  left: 2px;
-  width: 100%;
-  height: 10px;
-  background-color: #000;
-  clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
-}
-h2.cyberpunk {
-  font-size: 1.7rem;
-  line-height: 1.9rem;
-  font-weight: 300;
-}h1.cyberpunk::after, h2.cyberpunk::after, h3.cyberpunk::after, h4.cyberpunk::after, p.cyberpunk::after {
-  content: "_";
-  animation-name: hxafter;
-  animation-duration: var(--glitched-duration);
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-h2.cyberpunk {
-  font-size: 1.7rem;
-  line-height: 1.9rem;
-  font-weight: 300;
-}
-h1.cyberpunk, h2.cyberpunk, h3.cyberpunk, h4.cyberpunk {
-  font-size: 2rem;
-  line-height: 2.2rem;
-  font-weight: 200;
-}
-body * {
-  font-family: "Advent Pro", arial;
-}
-section.cyberpunk {
-  color: #000;
-}
-
-					@keyframes hxafter {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  51% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes h2beforeglitched {
-  0% {
-    transform: scaleY(1);
-  }
-  10% {
-    transform: scaleY(1);
-  }
-  11% {
-    transform: scaleY(-1);
-  }
-  50% {
-    transform: scaleY(-1);
-  }
-  51% {
-    transform: scaleY(1);
-  }
-  59% {
-    transform: scaleY(1);
-  }
-  60% {
-    transform: scaleY(1);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-
-			
-				</style>
-
-				<style>
-				
-				p.cyberpunk.inverse {
-  border: none;
-    border-right-color: currentcolor;
-    border-right-style: none;
-    border-right-width: medium;
-  padding: 40px 15px 30px;
-  clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
-  background-color: #000;
-  color: var(--yellow-color);
-  border-right: 3px solid var(--border-color);
-}
-p.cyberpunk {
-  padding: 30px 15px 30px;
-  border: 30px solid #000;
-  border-right: 5px solid #000;
-  border-left: 5px solid #000;
-  border-bottom: 24px solid #000;
-  padding: 5px;
-  clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
-  background-color: var(--yellow-color);
-  font-size: 1.2rem;
-  position: relative;
-}
-.dotted, .dotted::before, .dotted::after {
-  background: #000;
-    background-color: rgb(0, 0, 0);
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-image: none;
-    background-size: auto;
-  background-image: radial-gradient(var(--yellow-color-opacity) 1px, transparent 0);
-  background-size: 5px 5px;
-  background-position: -13px -3px;
-}
-body * {
-  font-family: "Advent Pro", arial;
-}
-section.cyberpunk {
-  color: #000;
-}p.cyberpunk.inverse::before {
-  content: "T-71";
-  right: 90px;
-  bottom: 9px;
-}
-p.cyberpunk::before {
-  content: "P-14";
-  display: block;
-  position: absolute;
-  bottom: -12px;
-  right: 25px;
-  padding: 2px 2px 0px 2px;
-  font-size: 0.6rem;
-  line-height: 0.6rem;
-  color: #000;
-  background-color: var(--yellow-color);
-  border-left: 2px solid var(--border-color);
-}
-.dotted, .dotted::before, .dotted::after {
-  background: #000;
-    background-color: rgb(0, 0, 0);
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-image: none;
-    background-size: auto;
-  background-image: radial-gradient(var(--yellow-color-opacity) 1px, transparent 0);
-  background-size: 5px 5px;
-  background-position: -13px -3px;
-}
-					
-					h1.cyberpunk::after, h2.cyberpunk::after, h3.cyberpunk::after, h4.cyberpunk::after, p.cyberpunk::after {
-  content: "_";
-  animation-name: hxafter;
-  animation-duration: var(--glitched-duration);
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-.dotted, .dotted::before, .dotted::after {
-  background: #000;
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-image: none;
-    background-size: auto;
-  background-image: radial-gradient(var(--yellow-color-opacity) 1px, transparent 0);
-  background-size: 5px 5px;
-  background-position: -13px -3px;
-}
-p.cyberpunk.inverse {
-  color: var(--yellow-color);
-}
-				                  .topicdesc {
-                  padding-left: 0;
-                  margin-bottom: 16;
-                  }
-				</style>
-				
-				<div class="putdeatils">
-				
-				
-				
-				</div>
-				<style>
-				ul.cyberpunk li {
-  list-style: none;
-  position: relative;
-  width: 100%;
-			font-size: 15px;
-  font-weight: 300;
-  color: yellow;
-}
-ul.cyberpunk li::before {
-  content: " ";
-  top: 0px;
-  left: calc(-1.2rem - 10px);
-  width: 1.2rem;
-  height: 1.2rem;
-  background-color: #fff;
-  position: absolute;
-  display: block;
-  clip-path: polygon(0% 10%, 100% 70%, 40% 100%, 50% 70%);
-
-}
-ul.cyberpunk li {
-  list-style: none;
-	font-size: 15px;
-	margin-bottom: 8;
-}
-
-section.cyberpunk.black {
-  color: var(--yellow-color);
-}
-		button.cyberpunk2077, a.cyberpunk2077 {
-  --background-color: var(--red-color);
-  display: block;
-  border: none;
-    border-right-color: currentcolor;
-    border-right-style: none;
-    border-right-width: medium;
-  border-radius: 0%;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 600;
-  padding: 35px 75px;
-  margin: 10px 20px 10px 0px;
-  position: relative;
-  color: #fff;
-  border-right: 3px solid var(--border-color);
-  clip-path: polygon( -15px 0%, calc(100% + 15px) 0%, calc(100% + 15px) 100%, 20px 100%, );
-  cursor: pointer;
-  background-color: var(--background-color);
-  outline: none;
-  display: inline-block;
-						padding-top: 20;
-padding-bottom: 20;
-padding-left: 40;
-padding-right: 40;
-}
-button.cyberpunk2077,
-a.cyberpunk2077 {
-  --background-color: #ff003c;
-  display: block;
-  border: none;
-  border-radius: 0%;
-  font-size: 1rem;
-  line-height: 100%;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-family: "Advent Pro", arial;
-  padding: 35px 75px;
-  margin: 10px;
-  position: relative;
-  color: #fff;
-  border-right: 3px solid #8ae66e;
-  clip-path: polygon(
-    -15px 0%,
-    calc(100% + 15px) 0%,
-    calc(100% + 15px) 100%,
-    20px 100%,
-    -15px calc(100% - 35px)
-  );
-  cursor: pointer;
-  background-color: var(--background-color);
-  outline: none;
-	width: 10%;
-	text-align: center;
-	padding: 2rem;
-	  animation-name: hover;
-  animation-duration: var(--glitched-duration);
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
-						padding-top: 20;
-padding-bottom: 20;
-padding-left: 15;
+               <div class="mainpagecontainer">
+                  <div class="mainintro" id="typedtext" class="desc">
+                     <style>
+                        .texttopic{
+                        width: fit-content;
+                        background-color: #00ffff0d;
+                        padding: 1rem;
+                        position: relative;
+                        padding: 10px 10px 10px 10px;
+                        border-top: 1px solid #868686;
+                        border-left: 3px solid #00ffff59;
+                        border-right: 1px solid #868686;
+                        font-size: 25px;
+                        font-weight: 100;
+                        line-height: 1.1;
+                        letter-spacing: 0.17em;
+							font-weight: 900;
+							color: white;
+                        }
+						 select{
+							 
+							 
+							 color: white;
+							 font-weight: 900;
+						 }
+						 						 option{
+							 
+							 
+							 color: white;
+													  font-weight: 900;
+													 background-color: black;
+						 }
+                        .rulesnew{
+                        margin-top: 0;
+                        background-color: #1f41606b;
+                        color: #fff;
+                        line-height: 1.5;
+                        letter-spacing: 0em;
+                        font-size: 16px;
+                        width: fit-content;
+                        font-weight: 200;
+                        border-bottom: 1px solid #ffffff5e;
+                        padding: 1rem;
+                        width: auto;
+                        }
+                        button.cyberpunk2077, a.cyberpunk2077 {
+                       --background-color: #0071c8;
+                        display: block;
+                        border: none;
+                        border-right-color: currentcolor;
+                        border-right-style: none;
+                        border-right-width: medium;
+                        border-radius: 0%;
+                        font-size: 1.5rem;
+                        line-height: 1.5rem;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        padding: 35px 75px;
+                        margin: 10px 20px 10px 0px;
+                        position: relative;
+                        color: #fff;
+                        border-right: 3px solid var(--border-color);
+                        clip-path: polygon( -15px 0%, calc(100% + 15px) 0%, calc(100% + 15px) 100%, 20px 100%, );
+                        cursor: pointer;
+                        background-color: var(--background-color);
+                        outline: none;
+                        display: inline-block;
+                        padding-top: 20;
+                        padding-bottom: 20;
+                        padding-left: 40;
+                        padding-right: 40;
+                        }
+                        button.cyberpunk2077,
+                        a.cyberpunk2077 {
+                        --background-color: #0071c8;
+                        display: block;
+                        border: none;
+                        border-radius: 0%;
+                        font-size: 1rem;
+                        line-height: 100%;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-family: "Advent Pro", arial;
+                        padding: 35px 75px;
+                        margin: 10px;
+                        position: relative;
+                        color: #fff;
+                        border-right: 3px solid  #0ff;
+                        clip-path: polygon(
+                        -15px 0%,
+                        calc(100% + 15px) 0%,
+                        calc(100% + 15px) 100%,
+                        20px 100%,
+                        -15px calc(100% - 35px)
+                        );
+                        cursor: pointer;
+                        background-color: var(--background-color);
+                        outline: none;
+                        width: 10%;
+                        text-align: center;
+                        padding: 2rem;
+                        animation-name: hover;
+                        animation-duration: var(--glitched-duration);
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear; 
+                        padding-bottom: 20;
+                        padding-right: 0;
+                        width: fit-content;
+                        margin-left: auto;
+                        margin-top: 2;
+							padding-top: 20;
+						
 padding-right: 10;
-	width: fit-content;
-}
+							margin-right: 0;
+                        }
+                        button.cyberpunk2077:hover,
+                        a.cyberpunk2077:hover,
+                        button.cyberpunk2077:focus,
+                        a.cyberpunk2077:focus {
+                        animation-name: hover;
+                        animation-duration: var(--glitched-duration);
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear; 
+                        }
+                        button.cyberpunk2077.green,
+                        a.cyberpunk2077.green {
+                        --background-color: #446d44;
+                        }
+                        button.cyberpunk2077.purple,
+                        a.cyberpunk2077.purple {
+                        --background-color: purple;
+                        }
+                        button.cyberpunk2077.blue,
+                        a.cyberpunk2077.blue {
+                        --background-color: #136377;
+                        }
+                        button.cyberpunk2077:after,
+                        a.cyberpunk2077:after {
+                        content: "R-25";
+                        display: block;
+                        position: absolute;
+                        bottom: 0px;
+                        right: 25px;
+                        padding: 2px 2px 0px 2px;
+                        font-size: 0.6rem;
+                        line-height: 9px;
+                        color: #000;
+                        background-color: #f9f002;
+                        border-left: 2px solid #8ae66e;
+                        }
+                        button.cyberpunk2077:hover:after,
+                        a.cyberpunk2077:hover:after,
+                        button.cyberpunk2077:focus:after,
+                        a.cyberpunk2077:focus:after {
+                        animation-name: hoverafter;
+                        animation-duration: var(--glitched-duration);
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear;
+                        }
+                        button.cyberpunk2077:before,
+                        a.cyberpunk2077:before {
+                        --outside: 4px;
+                        content: "";
+                        position: absolute;
+                        display: none;
+                        background-color: var(--background-color);
+                        width: calc(100% + (var(--outside) * 2));
+                        height: 12px;
+                        top: 0px;
+                        left: calc(0px - 1px - var(--outside));
+                        border-left: 2px solid #8ae66e;
+                        border-right: 2px solid #8ae66e;
+                        }
+                        button.cyberpunk2077:hover:before,
+                        a.cyberpunk2077:hover:before,
+                        button.cyberpunk2077:focus:before,
+                        a.cyberpunk2077:focus:before {
+                        display: block;
+                        animation-name: hoverbefore;
+                        animation-duration: var(--glitched-duration);
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear;
+                        }
+                        @keyframes hover {
+                        0% {
+                        transform: skew(0deg);
+                        }
+                        60% {
+                        transform: skew(0deg);
+                        }
+                        61% {
+                        transform: skew(10deg);
+                        }
+                        70% {
+                        transform: skew(10deg);
+                        }
+                        71% {
+                        transform: skew(0deg);
+                        }
+                        100% {
+                        transform: skew(0deg);
+                        }
+                        }
+                        @keyframes hoverbefore {
+                        0% {
+                        display: none;
+                        top: 0px;
+                        }
+                        10% {
+                        display: none;
+                        top: 0px;
+                        }
+                        11% {
+                        display: block;
+                        top: 10px;
+                        left: calc(0px - 0px - var(--outside));
+                        }
+                        29% {
+                        top: 10px;
+                        }
+                        30% {
+                        display: none;
+                        top: 0px;
+                        }
+                        50% {
+                        display: none;
+                        top: 0px;
+                        }
+                        51% {
+                        display: block;
+                        top: 55px;
+                        filter: blur(1px);
+                        height: 22px;
+                        }
+                        90% {
+                        display: block;
+                        top: 55px;
+                        height: 22px;
+                        }
+                        91% {
+                        filter: blur(0px);
+                        display: none;
+                        top: 0px;
+                        height: 12px;
+                        }
+                        100% {
+                        display: none;
+                        top: 0px;
+                        }
+                        }
+                        @keyframes hoverafter {
+                        0% {
+                        right: 45px;
+                        }
+                        10% {
+                        right: 45px;
+                        }
+                        11% {
+                        right: 35px;
+                        }
+                        20% {
+                        transform: skew(0deg);
+                        }
+                        21% {
+                        transform: skew(-10deg);
+                        }
+                        40% {
+                        transform: skew(-10deg);
+                        }
+                        41% {
+                        transform: skew(0deg);
+                        }
+                        49% {
+                        right: 35px;
+                        }
+                        50% {
+                        right: 55px;
+                        }
+                        60% {
+                        right: 55px;
+                        }
+                        61% {
+                        right: 35px;
+                        }
+                        70% {
+                        transform: skew(0deg);
+                        }
+                        71% {
+                        transform: skew(10deg);
+                        }
+                        80% {
+                        transform: skew(10deg);
+                        }
+                        81% {
+                        transform: skew(0deg);
+                        }
+                        100% {
+                        right: 35px;
+                        }
+                        }		
+                        .theevent:hover{
+                        cursor: pointer;
+                        }  
+						 .btnsubmit{
+							 
+							 margin-left: auto;
+margin-right: 0;
 
-button.cyberpunk2077:hover,
-a.cyberpunk2077:hover,
-button.cyberpunk2077:focus,
-a.cyberpunk2077:focus {
-  animation-name: hover;
-  animation-duration: var(--glitched-duration);
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
-}
-
-button.cyberpunk2077.green,
-a.cyberpunk2077.green {
-  --background-color: #446d44;
-}
-
-button.cyberpunk2077.purple,
-a.cyberpunk2077.purple {
-  --background-color: purple;
-}
-
-button.cyberpunk2077.blue,
-a.cyberpunk2077.blue {
-  --background-color: #136377;
-}
-
-button.cyberpunk2077:after,
-a.cyberpunk2077:after {
-  content: "R-25";
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  right: 25px;
-  padding: 2px 2px 0px 2px;
-  font-size: 0.6rem;
-  line-height: 9px;
-  color: #000;
-  background-color: #f9f002;
-  border-left: 2px solid #8ae66e;
-}
-
-button.cyberpunk2077:hover:after,
-a.cyberpunk2077:hover:after,
-button.cyberpunk2077:focus:after,
-a.cyberpunk2077:focus:after {
-  animation-name: hoverafter;
-  animation-duration: var(--glitched-duration);
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-button.cyberpunk2077:before,
-a.cyberpunk2077:before {
-  --outside: 4px;
-  content: "";
-  position: absolute;
-  display: none;
-  background-color: var(--background-color);
-  width: calc(100% + (var(--outside) * 2));
-  height: 12px;
-  top: 0px;
-  left: calc(0px - 1px - var(--outside));
-  border-left: 2px solid #8ae66e;
-  border-right: 2px solid #8ae66e;
-}
-
-button.cyberpunk2077:hover:before,
-a.cyberpunk2077:hover:before,
-button.cyberpunk2077:focus:before,
-a.cyberpunk2077:focus:before {
-  display: block;
-  animation-name: hoverbefore;
-  animation-duration: var(--glitched-duration);
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes hover {
-  0% {
-    transform: skew(0deg);
-  }
-  60% {
-    transform: skew(0deg);
-  }
-  61% {
-    transform: skew(10deg);
-  }
-  70% {
-    transform: skew(10deg);
-  }
-  71% {
-    transform: skew(0deg);
-  }
-  100% {
-    transform: skew(0deg);
-  }
-}
-
-@keyframes hoverbefore {
-  0% {
-    display: none;
-    top: 0px;
-  }
-  10% {
-    display: none;
-    top: 0px;
-  }
-  11% {
-    display: block;
-    top: 10px;
-    left: calc(0px - 0px - var(--outside));
-  }
-  29% {
-    top: 10px;
-  }
-  30% {
-    display: none;
-    top: 0px;
-  }
-  50% {
-    display: none;
-    top: 0px;
-  }
-  51% {
-    display: block;
-    top: 55px;
-    filter: blur(1px);
-    height: 22px;
-  }
-  90% {
-    display: block;
-    top: 55px;
-    height: 22px;
-  }
-  91% {
-    filter: blur(0px);
-    display: none;
-    top: 0px;
-    height: 12px;
-  }
-  100% {
-    display: none;
-    top: 0px;
-  }
-}
-
-@keyframes hoverafter {
-  0% {
-    right: 45px;
-  }
-
-  10% {
-    right: 45px;
-  }
-  11% {
-    right: 35px;
-  }
-  20% {
-    transform: skew(0deg);
-  }
-  21% {
-    transform: skew(-10deg);
-  }
-  40% {
-    transform: skew(-10deg);
-  }
-  41% {
-    transform: skew(0deg);
-  }
-  49% {
-    right: 35px;
-  }
-  50% {
-    right: 55px;
-  }
-
-  60% {
-    right: 55px;
-  }
-  61% {
-    right: 35px;
-  }
-  70% {
-    transform: skew(0deg);
-  }
-  71% {
-    transform: skew(10deg);
-  }
-  80% {
-    transform: skew(10deg);
-  }
-  81% {
-    transform: skew(0deg);
-  }
-  100% {
-    right: 35px;
-  }
-}		
-					.theevent:hover{
-	cursor: pointer;
-	
-}
-				</style>
-			
-				
-				
-
-				
-				
+						 }
+                     </style>
+                     <br>           <br>
+                     <style>
+                     </style>
+                     <br>
+                     <select class="selectobj" selected="" id="mounth">
+                     </select>
+                     <script></script>
+                     <div class="eventdetails tech">
+                        <script>
+                           var type = "Technical";
+                           var xhttp = new XMLHttpRequest();
+                           
+                           
+                           
+                           xhttp.onreadystatechange = function() {
+                           document.getElementsByClassName("eventdetails tech")[0].innerHTML = "";
+                           var getnum = document.getElementsByClassName("selectobj")[0];
+                           var putdeatils = document.getElementsByClassName("eventdetails tech")[0];
+                           var str = "";
+                           if (this.readyState == 4 && this.status == 200) {
+                           var mydata = JSON.parse(this.responseText);	
+                           for (const key in mydata[type]){
+                           str = str + "<option onclick='getdeatils(this)' name='eventaname'  class='theevent'   value='"+key+"'>"+key+"</option> "
+                           
+                           }			
+                           getnum.innerHTML = str;
+                           var mydata = JSON.parse(this.responseText);	
+                           
+                           var obj = document.getElementsByTagName("option")[1];
+                           
+                           var name = mydata[type][obj.value]["name"];
+                           
+                            document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + "<div  class='texttopic' value="+name+">"+name+"</div>";	
+                           
+                           
+                           var str ="<p class='cyberpunk inverse'>";		
+                           for (i=0;i<mydata[type][obj.value]["desc"].length;i++){
+                           str = str +mydata[type][obj.value]["desc"][i];
+                           console.log(mydata[type][obj.value]["desc"][i]);
+                           
+                           }
+                           str = str + "</p>";	
+                           
+                            document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;		
+                           
+                                var str ="<ul class='rulesnew'> <div style='font-size: 23px;font-weight: 700;'>Rules</div>";		
+                           for (i=0;i<mydata[type][obj.value]["rules"].length;i++){
+                           str = str + "<li>"+mydata[type][obj.value]["rules"][i]+"</li>";
+                           console.log(mydata[type][obj.value]["rules"][i]);
+                           
+                           }
+                           str = str + "</ul>";	
+                           
+                            document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;	
+                           str = '<form action="eventregister.html" onsubmit="return register()" methon="post"><button name="eventname"  eventtype="Technical" value="'+name+'" class="cyberpunk2077 btnsubmit">Register</button></form>';
+                           document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;	
+                           }
+                           };  
+                           xhttp.open("GET", "details.json", true);
+                           xhttp.send();		
+                           
+                           function getdeatils(obj){
+                           document.getElementsByClassName("eventdetails tech")[0].innerHTML = "";
+                                 document.getElementsByClassName("selectobj")[0].setAttribute("selected",obj.value);
+                           var type = "Technical";
+                           var xhttp = new XMLHttpRequest();
+                           
+                           
+                           
+                           xhttp.onreadystatechange = function() {
+                             
+                           var eventget = document.getElementsByClassName("selectobj")[0].getAttribute("selected");
+                           var putdeatils = document.getElementsByClassName("eventdetails tech")[0];
+                           var str = "";
+                           if (this.readyState == 4 && this.status == 200) {
+                           var mydata = JSON.parse(this.responseText);	
+                           var mydata = JSON.parse(this.responseText);	
+                           
+                           var obj = document.getElementsByTagName("option")[1];
+                           
+                           var name = mydata[type][eventget]["name"];
+                           
+                            document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + "<div  class='texttopic' value="+name+">"+name+"</div>";	
+                           
+                           
+                           var str ="<p class='cyberpunk inverse'>";		
+                           for (i=0;i<mydata[type][eventget]["desc"].length;i++){
+                           str = str +mydata[type][eventget]["desc"][i];
+                           console.log(mydata[type][eventget]["desc"][i]);
+                           
+                           }
+                           str = str + "</p>";	
+                           
+                            document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;	
+                           
+                           
+                           var str ="<ul class='rulesnew'> <div style='font-size: 23px;font-weight: 700;'>Rules</div>";		
+                           for (i=0;i<mydata[type][eventget]["rules"].length;i++){
+                           str = str + "<li>"+mydata[type][eventget]["rules"][i]+"</li>";
+                           console.log(mydata[type][eventget]["rules"][i]);
+                           
+                           }
+                           str = str + "</ul>";	
+                           
+                            document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;	
+                           str = '<form action="eventregister.html" onsubmit="return register()" methon="post"><button name="eventname"  eventtype="Technical" value="'+name+'" class="cyberpunk2077 btnsubmit">Register</button></form>';
+                           document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;	
+                           }
+                           };  
+                           xhttp.open("GET", "details.json", true);
+                           xhttp.send();		
+                           
+                           }				
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                             
+                        </script>
+                        <!--
+                           <form action="eventregister.html" onsubmit="return register()" methon="post"><button name="eventname"  eventtype="Technical" value="'+name+'" class="cyberpunk2077 btnsubmit">Register</button></form>   
+                           
+                           
+                              <div class="texttopic">sdcsdcsdc</div>
+                              <p class="cyberpunk inverse">Easwari Engineering College's 
+                           Department of Information 
+                           Technology brings to you, </p>
+                           	   <div class="rulesnew"><div>1) THis is rule one</div><div>2) THis is rule two</div>	</div>	
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           -->
+                     </div>
+                     <div class="rightside"><img src="logo.png" style="width: 1500;
+                        margin-left: 200;
+                        margin-top: 0;"></div>
+                     <style>
+                        .rightside{
+                        position: absolute;
+                        width: 120%;
+                        top: -100;
+                        right: -400;
+                        transform: rotate(-25deg);
+                        z-index: -5;
+                        z-index: -5;
+                        }
+                        .ag-format-container {
+                        width: 1142px;
+                        margin: 0 auto;
+                        }
+                        img {
+                        max-width: 100%;
+                        }
+                        body {
+                        background-color: #000;
+                        }
+                        .ag-smoke-block {
+                        z-index: -4;
+                        position: relative;
+                        position: absolute;
+                        width: 123%;
+                        top: -500;
+                        left: -100;
+                        height: 100%;
+                        }
+                        .ag-smoke-1 {
+                        z-index: -1;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        -webkit-animation: an-smoke-1 6s ease-in-out infinite;
+                        -moz-animation: an-smoke-1 6s ease-in-out infinite;
+                        -o-animation: an-smoke-1 6s ease-in-out infinite;
+                        animation: an-smoke-1 6s ease-in-out infinite;
+                        }
+                        .ag-smoke-2 {
+                        width: 57.1em;
+                        z-index: -2;
+                        top: 7em;
+                        }
+                        .ag-smoke-2,
+                        .ag-smoke-3 {
+                        position: absolute;
+                        left: 0;
+                        -webkit-animation: an-smoke-2 6s ease-in-out infinite;
+                        -moz-animation: an-smoke-2 6s ease-in-out infinite;
+                        -o-animation: an-smoke-2 6s ease-in-out infinite;
+                        animation: an-smoke-2 6s ease-in-out infinite;
+                        }
+                        .ag-smoke-3 {
+                        width: 100%;
+                        z-index: -4;
+                        top: -32em;
+                        }
+                        .ag-smoke-4 {
+                        width: 61.4em;
+                        z-index: -3;
+                        position: absolute;
+                        top: 12em;
+                        right: 0;
+                        -webkit-animation: an-smoke-3 6s ease-in-out infinite;
+                        -moz-animation: an-smoke-3 6s ease-in-out infinite;
+                        -o-animation: an-smoke-3 6s ease-in-out infinite;
+                        animation: an-smoke-3 6s ease-in-out infinite;
+                        }
+                        .ag-smoke__delay-1 {
+                        -webkit-animation-delay: 2s;
+                        -moz-animation-delay: 2s;
+                        -o-animation-delay: 2s;
+                        animation-delay: 2s;
+                        }
+                        .ag-smoke__delay-2 {
+                        -webkit-animation-delay: 4s;
+                        -moz-animation-delay: 4s;
+                        -o-animation-delay: 4s;
+                        animation-delay: 4s;
+                        }
+                        @-webkit-keyframes an-smoke-1 {
+                        0% {
+                        opacity: 0;
+                        -webkit-transform: translateY(5%) rotate(.01deg);
+                        transform: translateY(5%) rotate(.01deg);
+                        }
+                        50% {
+                        opacity: .9;
+                        }
+                        to {
+                        opacity: 0;
+                        -webkit-transform: translateY(0) rotate(.01deg);
+                        transform: translateY(0) rotate(.01deg);
+                        }
+                        }
+                        @-moz-keyframes an-smoke-1 {
+                        0% {
+                        opacity: 0;
+                        -moz-transform: translateY(5%) rotate(.01deg);
+                        transform: translateY(5%) rotate(.01deg);
+                        }
+                        50% {
+                        opacity: .9;
+                        }
+                        to {
+                        opacity: 0;
+                        -moz-transform: translateY(0) rotate(.01deg);
+                        transform: translateY(0) rotate(.01deg);
+                        }
+                        }
+                        @-o-keyframes an-smoke-1 {
+                        0% {
+                        opacity: 0;
+                        -o-transform: translateY(5%) rotate(.01deg);
+                        transform: translateY(5%) rotate(.01deg);
+                        }
+                        50% {
+                        opacity: .9;
+                        }
+                        to {
+                        opacity: 0;
+                        -o-transform: translateY(0) rotate(.01deg);
+                        transform: translateY(0) rotate(.01deg);
+                        }
+                        }
+                        @keyframes an-smoke-1 {
+                        0% {
+                        opacity: 0;
+                        -webkit-transform: translateY(5%) rotate(.01deg);
+                        -moz-transform: translateY(5%) rotate(.01deg);
+                        -o-transform: translateY(5%) rotate(.01deg);
+                        transform: translateY(5%) rotate(.01deg);
+                        }
+                        50% {
+                        opacity: .9;
+                        }
+                        to {
+                        opacity: 0;
+                        -webkit-transform: translateY(0) rotate(.01deg);
+                        -moz-transform: translateY(0) rotate(.01deg);
+                        -o-transform: translateY(0) rotate(.01deg);
+                        transform: translateY(0) rotate(.01deg);
+                        }
+                        }
+                        @-webkit-keyframes an-smoke-2 {
+                        0% {
+                        opacity: 0;
+                        -webkit-transform: translate(-10%, 10%) rotate(.01deg);
+                        transform: translate(-10%, 10%) rotate(.01deg);
+                        }
+                        50% {
+                        opacity: .9;
+                        }
+                        to {
+                        opacity: 0;
+                        -webkit-transform: translateY(5%) rotate(.01deg);
+                        transform: translateY(5%) rotate(.01deg);
+                        }
+                        }
+                        @-moz-keyframes an-smoke-2 {
+                        0% {
+                        opacity: 0;
+                        -moz-transform: translate(-10%, 10%) rotate(.01deg);
+                        transform: translate(-10%, 10%) rotate(.01deg);
+                        }
+                        50% {
+                        opacity: .9;
+                        }
+                        to {
+                        opacity: 0;
+                        -moz-transform: translateY(5%) rotate(.01deg);
+                        transform: translateY(5%) rotate(.01deg);
+                        }
+                        }
+                        @-o-keyframes an-smoke-2 {
+                        0% {
+                        opacity: 0;
+                        -o-transform: translate(-10%, 10%) rotate(.01deg);
+                        transform: translate(-10%, 10%) rotate(.01deg);
+                        }
+                        50% {
+                        opacity: .9;
+                        }
+                        to {
+                        opacity: 0;
+                        -o-transform: translateY(5%) rotate(.01deg);
+                        transform: translateY(5%) rotate(.01deg);
+                        }
+                        }
+                        @keyframes an-smoke-2 {
+                        0% {
+                        opacity: 0;
+                        -webkit-transform: translate(-10%, 10%) rotate(.01deg);
+                        -moz-transform: translate(-10%, 10%) rotate(.01deg);
+                        -o-transform: translate(-10%, 10%) rotate(.01deg);
+                        transform: translate(-10%, 10%) rotate(.01deg);
+                        }
+                        50% {
+                        opacity: .9;
+                        }
+                        to {
+                        opacity: 0;
+                        -webkit-transform: translateY(5%) rotate(.01deg);
+                        -moz-transform: translateY(5%) rotate(.01deg);
+                        -o-transform: translateY(5%) rotate(.01deg);
+                        transform: translateY(5%) rotate(.01deg);
+                        }
+                        }
+                        @-webkit-keyframes an-smoke-3 {
+                        0% {
+                        opacity: 0;
+                        -webkit-transform: translateY(10%) rotate(.01deg);
+                        transform: translateY(10%) rotate(.01deg);
+                        }
+                        50% {
+                        opacity: .9;
+                        }
+                        to {
+                        opacity: 0;
+                        -webkit-transform: translate(-10%, 5%) rotate(.01deg);
+                        transform: translate(-10%, 5%) rotate(.01deg);
+                        }
+                        }
+                        @-moz-keyframes an-smoke-3 {
+                        0% {
+                        opacity: 0;
+                        -moz-transform: translateY(10%) rotate(.01deg);
+                        transform: translateY(10%) rotate(.01deg);
+                        }
+                        50% {
+                        opacity: .9;
+                        }
+                        to {
+                        opacity: 0;
+                        -moz-transform: translate(-10%, 5%) rotate(.01deg);
+                        transform: translate(-10%, 5%) rotate(.01deg);
+                        }
+                        }
+                        @-o-keyframes an-smoke-3 {
+                        0% {
+                        opacity: 0;
+                        -o-transform: translateY(10%) rotate(.01deg);
+                        transform: translateY(10%) rotate(.01deg);
+                        }
+                        50% {
+                        opacity: .9;
+                        }
+                        to {
+                        opacity: 0;
+                        -o-transform: translate(-10%, 5%) rotate(.01deg);
+                        transform: translate(-10%, 5%) rotate(.01deg);
+                        }
+                        }
+                        @keyframes an-smoke-3 {
+                        0% {
+                        opacity: 0;
+                        -webkit-transform: translateY(10%) rotate(.01deg);
+                        -moz-transform: translateY(10%) rotate(.01deg);
+                        -o-transform: translateY(10%) rotate(.01deg);
+                        transform: translateY(10%) rotate(.01deg);
+                        }
+                        50% {
+                        opacity: .9;
+                        }
+                        to {
+                        opacity: 0;
+                        -webkit-transform: translate(-10%, 5%) rotate(.01deg);
+                        -moz-transform: translate(-10%, 5%) rotate(.01deg);
+                        -o-transform: translate(-10%, 5%) rotate(.01deg);
+                        transform: translate(-10%, 5%) rotate(.01deg);
+                        }
+                        }
+                        @media only screen and (max-width: 767px) {
+                        .ag-format-container {
+                        width: 96%;
+                        }
+                        }
+                        @media only screen and (max-width: 639px) {
+                        }
+                        @media only screen and (max-width: 479px) {
+                        }
+                        @media (min-width: 768px) and (max-width: 979px) {
+                        .ag-format-container {
+                        width: 750px;
+                        }
+                        }
+                        @media (min-width: 980px) and (max-width: 1161px) {
+                        .ag-format-container {
+                        width: 960px;
+                        }
+                        }
+                        .mainintro{
+                        width: 606px;
+                        }		
+                     </style>
+                     <section class="ag-smoke-block">
+                        <div class="ag-smoke-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-1.png"></div>
+                        <div class="ag-smoke-1 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-1.png"></div>
+                        <div class="ag-smoke-1 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-1.png"></div>
+                        <div class="ag-smoke-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-2.png"></div>
+                        <div class="ag-smoke-2 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-2.png"></div>
+                        <div class="ag-smoke-2 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-2.png"></div>
+                        <div class="ag-smoke-3"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-3.png"></div>
+                        <div class="ag-smoke-3 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-3.png"></div>
+                        <div class="ag-smoke-3 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-3.png"></div>
+                        <div class="ag-smoke-4"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-4.png"></div>
+                        <div class="ag-smoke-4 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-4.png"></div>
+                        <div class="ag-smoke-4 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-4.png"></div>
+                        <div class="ag-format-container">
+                        </div>
+                     </section>
+                  </div>
+               </div>
             </div>
-		
-			 
          </div>
-      </div>
-     <script>
-	function register(obj)	  {
-		var btn = document.getElementsByClassName("cyberpunk2077 btnsubmit")[0];
-		localStorage.setItem("eventtype",btn.getAttribute("eventtype"));
-		localStorage.setItem("eventname",btn.value);
-		return true;
+         <style>
+            .lst{
+            display: none;
+            }
+            @media only screen and (max-width: 585px) {
+            .demconhide{
+            display: none;
+            }
+            .techevetnav{
+            display: none;
+            }
+            .lst{
+            display: block;
+            }
+            select {
+            width: 100%;
+            }
+            button.cyberpunk2077, a.cyberpunk2077 {
+            width: 100%;
+            }
+            .texttopic{
+            width: auto;
+            }
+            }
+			 li{
+				 
 		
-		
-	}
-var obj = document.getElementsByClassName("link");
-for (var i = 0; i < obj.length; i++) {
-	
-	obj[i].addEventListener("mouseenter",function(e){
-			  document.getElementsByClassName("linkmain")[0].classList.remove("mainlink")
-	
-	});
-		obj[i].addEventListener("mouseleave",function(e){
-			  document.getElementsByClassName("linkmain")[0].classList.add("mainlink")
-	
-	});
-	
-}		  
-		  
-	
-			  
-			  
-  
+				 font-size: 15px;
+color: white;
+width: 100%;
+padding: 10 0 5 10;
+margin-left: 25px;
+			 }
+         </style>
+         <script>
+            function register(obj)	  {
+            var btn = document.getElementsByClassName("cyberpunk2077 btnsubmit")[0];
+            localStorage.setItem("eventtype",btn.getAttribute("eventtype"));
+            localStorage.setItem("eventname",btn.value);
+            return true;
+            
+            
+            }
+            
+            
+         </script>
+         <script>
+            /*
+            var txt = "2k22";
+            var changetext = function(){
+            
+            //	document.getElementsByClassName("typed-text")[0].innerHTML=txt;
+            if(txt=="2k22"){
+            
+            txt="2022"
+            interval = setInterval(changetext, 3000)
+            }
+            else{
+            txt="2k22"
+            interval = setInterval(changetext, 4000)
+            }
+            }
+            var interval = setTimeout(changetext, 2000);
+            */
+            
+            var obj = document.getElementsByClassName("link");
+            for (var i = 0; i < obj.length; i++) {
+            
+            obj[i].addEventListener("mouseenter",function(e){
+            
+             document.getElementsByClassName("linkmain")[0].classList.remove("mainlink");
+            //	document.getElementsByClassName("dropdownlist")[0].classList.add("ondisplay");
+            
+            
+            });
+            obj[i].addEventListener("mouseleave",function(e){
+            if(e.target!=document.getElementsByClassName("dropdownlist")[0] )
+             document.getElementsByClassName("linkmain")[0].classList.add("mainlink")
+            //	document.getElementsByClassName("dropdownlist")[0].classList.remove("ondisplay");
+            
+            });
+            
+            }		  
+            
+            
+             
+             
+             
+            
+            $(".container2").delay(3000).fadeOut();
+            	  $(".stripe").delay(3100).fadeIn();
+             $(".topic1").delay(5000).fadeIn();
+                 function showheader(obj){
+                 	
+                        if(obj.classList.contains("fa-close")){
+                 		
+                 		obj.classList.remove("fa-close");
+                 		obj.classList.add("fa-bars");
+                 		
+                 	}
+                 	else{
+                 				obj.classList.remove("fa-bars");
+                 		obj.classList.add("fa-close");	
+                 		
+                 	}
+            
+                 	document.getElementsByClassName("topnavcontainer")[0].classList.toggle("responsivenavbg");
+                 	document.getElementsByClassName("navbar")[0].classList.toggle("resnavitem");
+                 	Array.from(document.getElementsByClassName("navitem")).forEach(obj=>{
+                 		if(obj.classList.contains("main")){
+                 			
+                 			obj.classList.toggle("resmain")
+                 		}else{
+                 			
+                 		obj.classList.toggle("resnavitem");	
+                 		}
+                 		
+                 	});
+                 		
+                 
+                 		
+                 	
+                 		
+                 	
+                 	
+                 	
+                 
+                 	document.getElementsByClassName("topnavborder")[0].classList.toggle("responsivenavbarborder");
+                 
+                 }
+            /*
+                 var r = document.querySelector(':root');
+                 var rs = getComputedStyle(r);
+                 var xnos = 0;
+                 var ynos = 0;
+                 var toptodown=1;
+                 var deg = 0;
+                 var lefttoright=1;
+                 setInterval(function () {
+                 	
+                 	r.style.setProperty('--posdeg',deg+"deg");
+                 	deg = deg+1;
+                 	r.style.setProperty('--pos1',xnos);
+                 	r.style.setProperty('--pos2',ynos);
+                     if(xnos<100  ){
+                 		if(toptodown==1){
+                 			
+                 		xnos = xnos+1	
+                 		}
+                 		else{
+                 			
+                 		xnos = xnos-1		
+                 		}
+                 		if(xnos==-100){
+                 			
+                 			toptodown=1;
+                 		}
+                 		
+                 	}
+                 	else if(xnos>=100 ){
+                 	
+                 		toptodown=0;
+                 		xnos=99;
+                 		
+                 		
+                 		
+                 	}
+                 		    if(ynos<800  ){
+                 		if(lefttoright==1){
+                 			
+                 		ynos = ynos+1	
+                 		}
+                 		else{
+                 			
+                 		ynos = ynos-1		
+                 		}
+                 		if(ynos==-200){
+                 			
+                 			lefttoright=1;
+                 		}
+                 		
+                 	}
+                 	else if(ynos>=1000 ){
+                 	
+                 		lefttoright=0;
+                 		ynos=999;
+                 		
+                 		
+                 		
+                 	}
+                 }, 
+                 			20);
+                 var num= 0;
+                 
+                 */
+                         
+                      
               
-      </script>
+         </script>
+         <style>
+            .ag-smoke-block {
+            z-index: -4;
+            position: relative;
+            position: absolute;
+            width: 100%;
+            top: -500;
+            left: -100;
+            height: 100%;
+            }
+         </style>
+      </div>
+      <section class="ag-smoke-block">
+         <div class="ag-smoke-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-1.png"></div>
+         <div class="ag-smoke-1 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-1.png"></div>
+         <div class="ag-smoke-1 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-1.png"></div>
+         <div class="ag-smoke-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-2.png"></div>
+         <div class="ag-smoke-2 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-2.png"></div>
+         <div class="ag-smoke-2 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-2.png"></div>
+         <div class="ag-smoke-3"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-3.png"></div>
+         <div class="ag-smoke-3 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-3.png"></div>
+         <div class="ag-smoke-3 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-3.png"></div>
+         <div class="ag-smoke-4"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-4.png"></div>
+         <div class="ag-smoke-4 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-4.png"></div>
+         <div class="ag-smoke-4 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-4.png"></div>
+         <div class="ag-format-container">
+         </div>
+      </section>
    </body>
 </html>
