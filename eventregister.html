@@ -92,7 +92,9 @@
          margin-left: 0;
          padding-left: 0;
          }
-	
+         h1{
+         margin-left: 20;
+         }		
          .topicdesc{
          margin: 3px;
          margin-left: 3px;
@@ -163,7 +165,17 @@
          padding-bottom: 0.2rem;
          font-weight: 100;
          }
+		  		   .mainintro{
+					   
+					   width: 50%;
+				
+					   
+				   }
          @media only screen and (max-width: 360px) {
+			 .mainintro{
+				 
+				 width: 100%;
+			 }
          .subline{
          font-size: 13px;
          }
@@ -181,7 +193,7 @@
          }
          .topic1{
          background-color: transparent;
-			 display: none;
+			 display: block;
          }
          .topicdesc {
          padding-left: 0;
@@ -223,12 +235,6 @@
          h1{
          margin-left: 0;
          margin-bottom: 5px;
-		
-  
-			 margin-left: 20;
-			 font-size: 24px;
-font-weight: 700;
-        	
          }
          h3{
          font-weight: 100;
@@ -250,13 +256,6 @@ font-weight: 700;
          font-size: 12px;
          color: #d10000;
          display: none;
-
-  position: relative;
-  top: -24;
-  left: 20;
-  color: white;
-  font-size: 9px;
-}
          }
 		  .stripe{
 			  
@@ -346,37 +345,15 @@ font-weight: 700;
 			.mainintro{
 				
 padding: 0rem;
-margin-top: 50px;
+
 background-color: transparent;
 				color: #a6a6a6;
 				position: relative;
-				overflow: visible;
+		
 			
 		
 			}
-					.mainintro:after {
-							background: url(robothide.png);
-								background-size: cover;
-background-repeat: no-repeat;
-background-position: center center;
-				top: var(--pos1);			
-			right: var(--pos2);
-					
-						
-  content: "";
-  position:absolute;
 
-  width:100px;
-  height:140px;
-						border-radius: 10px;
-  transform:rotateZ(var(--posdeg));
-						
-						z-index: -3;
-
-			
-			display: flex;
-						opacity: 0.1;
-}
 	.container p span.typed-text {
   font-weight: normal;
   color: #dd7732;
@@ -408,7 +385,8 @@ background-position: center center;
 		animation: 1s 1.2s fadeindesc ease forwards;
 	}
 	.container{
-		height: 100%;
+		height: 100vh;
+				overflow: hidden;
 		
 	}
 	.fa-instagram{
@@ -431,20 +409,10 @@ position:relative;
 height: 50px;
 margin-top: 20px;
 margin-left: auto;
-margin-right: 90px;
+margin-right: 10px;
 border-right: 0px solid #555;;
 
-width: 40%;
-animation: increase_wid 2s forwards;
-}
-@keyframes increase_wid{
-0%{
-width: 0%;	
-}
-80%{
-width: 70%;
-}
-}
+		   }
 
 @keyframes loop{
 0%{
@@ -492,14 +460,14 @@ transition: 0.5s ease;
 color: black;
 display: inline;
 text-decoration: none;
-background-color: transparent;
+
 padding: 0.5rem;
 	
 }
 		  
 .main{
 font-weight: 700;
-	
+
 }
 @keyframes 	frombelow{
 20%{
@@ -525,13 +493,31 @@ animation-delay: 0.6s
 .navitem a{
 text-decoration: none;
 color: white;
-background-color: transparent;
+
 }
 .navitem:hover{
 cursor: pointer;
 letter-spacing: 0.058em;
 font-size: 15;
+
 }
+		   .navitem a:hover{
+			   
+			clip-path: polygon(25% 0%, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
+background-color: #6a0073a1;
+border: 1px solid #5b5b5b;
+font-weight: 100;	   
+			   
+			   
+		   }
+		   .alinkhover{
+			clip-path: polygon(25% 0%, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
+background-color: #6a0073a1;
+border: 1px solid #5b5b5b;
+font-weight: 100;	   
+			   
+		   }
+		   
 @keyframes res{
 0%{
 opacity: 0;
@@ -545,10 +531,7 @@ opacity: 1;
 }
 		     .main a{
 			   
-			 clip-path: polygon(25% 0%, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
-background-color: #6a0073a1;
-border: 1px solid #5b5b5b;
-font-weight: 700;  
+font-size: 17px;
 			   
 		   }
 @media only screen and (max-width: 586px) {
@@ -586,7 +569,7 @@ cursor: pointer;
 font-size: 30px;
 }
 .navitem{
-margin-right: 10%;
+margin-right: 0;
 font-size: 20;
 display: none;
 }
@@ -594,6 +577,7 @@ display: none;
 margin-left: auto;
 margin-top: 30px;
 top: 0;
+margin-right: auto;
 }
 .main{
 display: block;
@@ -618,6 +602,7 @@ margin-right: 10px;
 cursor: pointer;
 }
 }
+		   
 	   </style>
 	   <style>
 	         .stripe {
@@ -664,10 +649,31 @@ background-size: 6em 6em;
         
          .container{
          width: 100%;
-			 overflow-y: auto;
+			 overflow-y: scroll;
 			 height: 100%;
          }
-	    li{
+		   .mainlink{
+			   
+			   			 clip-path: polygon(25% 0%, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
+background-color: #0000007d;
+border: 1px solid #5b5b5b;
+font-weight: 700;  
+		
+
+		   }
+		   .dmcon{
+			   
+			   position:relative;
+		   }
+	   	   .dropdownlist{
+			   
+			   
+			   position: absolute;
+		
+		 display: none;
+			   background-color: wheat;
+		   }
+		   li{
 			   
 	margin: 0px;
 color: black;
@@ -744,13 +750,8 @@ font-weight: 200;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-	font-weight: 100;
-	
 }
-.dropdown-content a {
-background-color: white;
-	
-}
+
 .dropdown-content a:hover {background-color: #f1f1f1}
 
 .dropdown:hover .dropdown-content {
@@ -764,6 +765,10 @@ border: 1px solid #5b5b5b;
 font-weight: 200;
 	
 }
+		   .techevetnav{
+			   
+			   display: block;
+		   }
 	   </style>
       <div class="stripe">
          <div class="container">
@@ -771,16 +776,12 @@ font-weight: 200;
                <div class="topnavborder">
                   <div class="navbar">
                      <i class="fa fa-bars" onclick="showheader(this)" ></i>
-                     <div class="navitem"><a class="link" href="home.html">Home</a></div>
-					  <div  class="navitem main"><div style="position: relative;
-  top: -10;" class="linkmain mainlink" class="dmcon"> <div class="dropdown link">
-  <button style="top: -2;" class="dropbtn">Events</button>
-  <div class="dropdown-content">
-  <a href="technicalevents.html">Technical Event</a>
-  <a href="nontechnicalevents.html">Non Technical Event</a>
-  </div>
-</div></div> </div>
+                     <div class="navitem"><a class="link" href="index.html">Home</a></div>
+
+					   <div class="navitem"><a class="link" href="technicalevents.html">Technical Events</a></div>
+					     <div class="navitem"><a class="link" href="nontechnicalevents.html">Non Technical Events</a></div>
                      <div class="navitem"><a class="link" href="#">Sponsors</a></div>
+					       <div class="navitem main"><a class="linkmain mainlink"  href="#">Registration</a></div>
                   </div>
                </div>
             </div>
@@ -1042,12 +1043,13 @@ h4.cyberpunk:after {
 				   p.cyberpunk.inverse{
 					   
 		padding: 40px 15px 30px;
-clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
-background-color: #000;
+
+background-color: #00000036;
 color: #888;
 border-right: 3px solid var(--border-color);
 	font-size: 0.9rem;
-font-weight: 100;				   
+font-weight: 100;		
+					   margin-top: 0;
 					   
 				   }
 /* Separator */
@@ -1075,7 +1077,7 @@ border-right: 5px solid #000;
 border-left: 1px solid #afafaf;
 border-bottom: 1px solid #808080;
 padding: 5px;
-clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
+
 background-color: var(--yellow-color);
 font-size: 1.2rem;
 	position: relative;}
@@ -1105,12 +1107,7 @@ p.cyberpunk::before {
 					   display: flex;
 					   width: 100%;
 				   }
-				   .mainintro{
-					   
-					   width: 50%;
-					   margin-top: 40px;
-					   
-				   }
+		
 				   .timeanddate{
 					   font-size: 25px;
 			margin-bottom: 30px;
@@ -1143,36 +1140,57 @@ font-size: 17px;
 					.cyberpunk{
 						font-weight: 800;
 					}
-					input[type="text"].cyberpunk, input[type="date"].cyberpunk, input[type="time"].cyberpunk, input[type="file"].cyberpunk, input[type="number"].cyberpunk, input[type="phone"].cyberpunk, input[type="password"].cyberpunk, textarea.cyberpunk, select.cyberpunk {width: calc(100% - 30px);
-border: 30px solid #474747;
-  border-right-color: rgb(71, 71, 71);
-  border-right-style: solid;
-  border-right-width: 30px;
-  border-bottom-color: rgb(71, 71, 71);
-  border-bottom-style: solid;
-  border-bottom-width: 30px;
-  border-left-color: rgb(71, 71, 71);
-  border-left-style: solid;
-  border-left-width: 30px;
-border-right-color: rgb(0, 0, 0);
-border-right-style: solid;
-border-right-width: 30px;
-border-bottom-color: rgb(0, 0, 0);
-border-bottom-style: solid;
-border-bottom-width: 30px;
-border-left-color: rgb(0, 0, 0);
-border-left-style: solid;
-border-left-width: 30px;
-border-left: 1px solid #2b2b2b;
-border-right: 5px solid #464646;
-border-bottom: 15px solid #4d4d4d;
-clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) calc(100% - 0px), 10px calc(100% - 0px), 0% calc(100% - 10px));
-margin-bottom: 10px;
-padding: 20px;
-font-size: 1.7rem;
-					font-size: 1.2rem;
-font-weight: 100;}
-					button.cyberpunk2077, a.cyberpunk2077 {
+					body{
+						overflow-x: hidden;
+					}
+						 .container{
+		background: radial-gradient(ellipse at center, rgba(40, 212, 216, 0.44) 0%, #000000d1 100%);
+z-index: 1;
+opacity: inherit;
+							 
+							 
+							 }
+				</style>
+            </div>
+            <style>
+            </style>
+            <div class="topic1">
+				<div class="mainpagecontainer">
+               <div class="mainintro" id="typedtext" class="desc">
+          				   
+				   <style>
+					   .texttopic{
+
+						   width: fit-content;
+background-color: #ff000045;
+padding: 1rem;
+position: relative;
+						     padding: 10px 10px 10px 10px;
+  border-top: 1px solid #868686;
+  border-left: 3px solid #88e66f;
+  border-right: 1px solid #fff;
+
+						   font-size: 25px;
+font-weight: 100;
+line-height: 1.1;
+letter-spacing: 0.17em;
+						   				   }
+						   .rulesnew{
+							   
+		margin-top: 0;
+background-color: #ec1d265c;
+color: #fff;
+line-height: 1.5;
+letter-spacing: 0em;
+font-size: 16px;
+width: fit-content;
+font-weight: 200;
+border-bottom: 1px solid #ffffff5e;
+padding: 1rem;
+						   }
+					   
+				
+		button.cyberpunk2077, a.cyberpunk2077 {
   --background-color: var(--red-color);
   display: block;
   border: none;
@@ -1206,7 +1224,7 @@ a.cyberpunk2077 {
   display: block;
   border: none;
   border-radius: 0%;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 100%;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1236,8 +1254,11 @@ a.cyberpunk2077 {
   animation-timing-function: linear; 
 						padding-top: 20;
 padding-bottom: 20;
-padding-left: 40;
-padding-right: 40;
+padding-left: 15;
+padding-right: 10;
+	width: fit-content;
+	margin-left: 0;
+margin-top: 2;
 }
 
 button.cyberpunk2077:hover,
@@ -1436,15 +1457,57 @@ a.cyberpunk2077:focus:before {
   100% {
     right: 35px;
   }
-}
-				</style>
-            </div>
-            <style>
-            </style>
-            <div class="topic1">
-	<h1>Registration</h1>
+}		
+					.theevent:hover{
+	cursor: pointer;
+	
+}   
+				   
+				   </style>      
+                  <br>           <br>
+				   
+				   <style>
+				input[type="text"].cyberpunk, input[type="date"].cyberpunk, input[type="time"].cyberpunk, input[type="file"].cyberpunk, input[type="number"].cyberpunk, input[type="phone"].cyberpunk, input[type="password"].cyberpunk, textarea.cyberpunk, select.cyberpunk {width: calc(100% - 30px);
+border: 30px solid #474747;
+  border-right-color: rgb(71, 71, 71);
+  border-right-style: solid;
+  border-right-width: 30px;
+  border-bottom-color: rgb(71, 71, 71);
+  border-bottom-style: solid;
+  border-bottom-width: 30px;
+  border-left-color: rgb(71, 71, 71);
+  border-left-style: solid;
+  border-left-width: 30px;
+border-right-color: rgb(0, 0, 0);
+border-right-style: solid;
+border-right-width: 30px;
+border-bottom-color: rgb(0, 0, 0);
+border-bottom-style: solid;
+border-bottom-width: 30px;
+border-left-color: rgb(0, 0, 0);
+border-left-style: solid;
+border-left-width: 30px;
+border-left: 1px solid #2b2b2b;
+border-right: 5px solid #464646;
+border-bottom: 15px solid #4d4d4d;
+clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) calc(100% - 0px), 10px calc(100% - 0px), 0% calc(100% - 10px));
+margin-bottom: 10px;
+padding: 20px;
+font-size: 1.7rem;
+					font-size: 1.2rem;
+font-weight: 100;}
+				   
+				   </style>				           <br>
+				   
+
+				
+				   <script>
+				  
+				   </script>
+				   
+				   <div class="eventdetails tech">	<h1>Registration</h1>
         
-				 <h3 class="eventdetailstopic" style="margin-left: 20px;">[ <?php echo $type; ?> Event - <?php echo $name; ?> ]</h3>
+				 <h3 class="eventdetailstopic" style="margin-left: 0px;"></h3>
 				<script>
 					document.getElementsByClassName("eventdetailstopic")[0].innerHTML ="[ "+ localStorage.getItem("eventtype") + " - " +localStorage.getItem("eventname")+"]";
 		</script>
@@ -1462,11 +1525,416 @@ a.cyberpunk2077:focus:before {
                </select>
                <input class="cyberpunk dept" placeholder="Enter Your department" type="text">
                <input class="cyberpunk mobile" placeholder="Enter Your Mobile Number" type="text"><br>
-      <a class="cyberpunk2077 formsubmit">Submit</a>
+      <a class="cyberpunk2077 formsubmit">Submit</a></div>
+  <div class="rightside"><img src="logo.png" style="width: 1500;
+margin-left: 200;
+margin-top: 0;"></div>
+	<style>
+		.rightside{
+position: absolute;
+width: 120%;
+top: -100;
+right: -400;
+transform: rotate(-25deg);
+z-index: -5;
+			z-index: -5;
+		}
+		.ag-format-container {
+  width: 1142px;
+  margin: 0 auto;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #000;
+}
+.ag-smoke-block {
+  z-index: -4;
+  position: relative;
+	position: absolute;
+width: 123%;
+top: -500;
+left: -100;
+height: 100%;
+}
+.ag-smoke-1 {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  -webkit-animation: an-smoke-1 6s ease-in-out infinite;
+  -moz-animation: an-smoke-1 6s ease-in-out infinite;
+  -o-animation: an-smoke-1 6s ease-in-out infinite;
+  animation: an-smoke-1 6s ease-in-out infinite;
+}
+.ag-smoke-2 {
+  width: 57.1em;
+
+  z-index: -2;
+  top: 7em;
+}
+.ag-smoke-2,
+.ag-smoke-3 {
+  position: absolute;
+  left: 0;
+
+  -webkit-animation: an-smoke-2 6s ease-in-out infinite;
+  -moz-animation: an-smoke-2 6s ease-in-out infinite;
+  -o-animation: an-smoke-2 6s ease-in-out infinite;
+  animation: an-smoke-2 6s ease-in-out infinite;
+}
+.ag-smoke-3 {
+  width: 100%;
+
+  z-index: -4;
+  top: -32em;
+}
+.ag-smoke-4 {
+  width: 61.4em;
+
+  z-index: -3;
+  position: absolute;
+  top: 12em;
+  right: 0;
+
+  -webkit-animation: an-smoke-3 6s ease-in-out infinite;
+  -moz-animation: an-smoke-3 6s ease-in-out infinite;
+  -o-animation: an-smoke-3 6s ease-in-out infinite;
+  animation: an-smoke-3 6s ease-in-out infinite;
+}
+.ag-smoke__delay-1 {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.ag-smoke__delay-2 {
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+@-webkit-keyframes an-smoke-1 {
+  0% {
+    opacity: 0;
+
+    -webkit-transform: translateY(5%) rotate(.01deg);
+    transform: translateY(5%) rotate(.01deg);
+  }
+  50% {
+    opacity: .9;
+  }
+  to {
+    opacity: 0;
+
+    -webkit-transform: translateY(0) rotate(.01deg);
+    transform: translateY(0) rotate(.01deg);
+  }
+}
+@-moz-keyframes an-smoke-1 {
+  0% {
+    opacity: 0;
+
+    -moz-transform: translateY(5%) rotate(.01deg);
+    transform: translateY(5%) rotate(.01deg);
+  }
+  50% {
+    opacity: .9;
+  }
+  to {
+    opacity: 0;
+
+    -moz-transform: translateY(0) rotate(.01deg);
+    transform: translateY(0) rotate(.01deg);
+  }
+}
+@-o-keyframes an-smoke-1 {
+  0% {
+    opacity: 0;
+
+    -o-transform: translateY(5%) rotate(.01deg);
+    transform: translateY(5%) rotate(.01deg);
+  }
+  50% {
+    opacity: .9;
+  }
+  to {
+    opacity: 0;
+
+    -o-transform: translateY(0) rotate(.01deg);
+    transform: translateY(0) rotate(.01deg);
+  }
+}
+@keyframes an-smoke-1 {
+  0% {
+    opacity: 0;
+
+    -webkit-transform: translateY(5%) rotate(.01deg);
+    -moz-transform: translateY(5%) rotate(.01deg);
+    -o-transform: translateY(5%) rotate(.01deg);
+    transform: translateY(5%) rotate(.01deg);
+  }
+  50% {
+    opacity: .9;
+  }
+  to {
+    opacity: 0;
+
+    -webkit-transform: translateY(0) rotate(.01deg);
+    -moz-transform: translateY(0) rotate(.01deg);
+    -o-transform: translateY(0) rotate(.01deg);
+    transform: translateY(0) rotate(.01deg);
+  }
+}
+
+@-webkit-keyframes an-smoke-2 {
+  0% {
+    opacity: 0;
+
+    -webkit-transform: translate(-10%, 10%) rotate(.01deg);
+    transform: translate(-10%, 10%) rotate(.01deg);
+  }
+  50% {
+    opacity: .9;
+  }
+  to {
+    opacity: 0;
+
+    -webkit-transform: translateY(5%) rotate(.01deg);
+    transform: translateY(5%) rotate(.01deg);
+  }
+}
+@-moz-keyframes an-smoke-2 {
+  0% {
+    opacity: 0;
+
+    -moz-transform: translate(-10%, 10%) rotate(.01deg);
+    transform: translate(-10%, 10%) rotate(.01deg);
+  }
+  50% {
+    opacity: .9;
+  }
+  to {
+    opacity: 0;
+
+    -moz-transform: translateY(5%) rotate(.01deg);
+    transform: translateY(5%) rotate(.01deg);
+  }
+}
+@-o-keyframes an-smoke-2 {
+  0% {
+    opacity: 0;
+
+    -o-transform: translate(-10%, 10%) rotate(.01deg);
+    transform: translate(-10%, 10%) rotate(.01deg);
+  }
+  50% {
+    opacity: .9;
+  }
+  to {
+    opacity: 0;
+
+    -o-transform: translateY(5%) rotate(.01deg);
+    transform: translateY(5%) rotate(.01deg);
+  }
+}
+@keyframes an-smoke-2 {
+  0% {
+    opacity: 0;
+
+    -webkit-transform: translate(-10%, 10%) rotate(.01deg);
+    -moz-transform: translate(-10%, 10%) rotate(.01deg);
+    -o-transform: translate(-10%, 10%) rotate(.01deg);
+    transform: translate(-10%, 10%) rotate(.01deg);
+  }
+  50% {
+    opacity: .9;
+  }
+  to {
+    opacity: 0;
+
+    -webkit-transform: translateY(5%) rotate(.01deg);
+    -moz-transform: translateY(5%) rotate(.01deg);
+    -o-transform: translateY(5%) rotate(.01deg);
+    transform: translateY(5%) rotate(.01deg);
+  }
+}
+
+@-webkit-keyframes an-smoke-3 {
+  0% {
+    opacity: 0;
+
+    -webkit-transform: translateY(10%) rotate(.01deg);
+    transform: translateY(10%) rotate(.01deg);
+  }
+  50% {
+    opacity: .9;
+  }
+  to {
+    opacity: 0;
+
+    -webkit-transform: translate(-10%, 5%) rotate(.01deg);
+    transform: translate(-10%, 5%) rotate(.01deg);
+  }
+}
+@-moz-keyframes an-smoke-3 {
+  0% {
+    opacity: 0;
+
+    -moz-transform: translateY(10%) rotate(.01deg);
+    transform: translateY(10%) rotate(.01deg);
+  }
+  50% {
+    opacity: .9;
+  }
+  to {
+    opacity: 0;
+
+    -moz-transform: translate(-10%, 5%) rotate(.01deg);
+    transform: translate(-10%, 5%) rotate(.01deg);
+  }
+}
+@-o-keyframes an-smoke-3 {
+  0% {
+    opacity: 0;
+
+    -o-transform: translateY(10%) rotate(.01deg);
+    transform: translateY(10%) rotate(.01deg);
+  }
+  50% {
+    opacity: .9;
+  }
+  to {
+    opacity: 0;
+
+    -o-transform: translate(-10%, 5%) rotate(.01deg);
+    transform: translate(-10%, 5%) rotate(.01deg);
+  }
+}
+@keyframes an-smoke-3 {
+  0% {
+    opacity: 0;
+
+    -webkit-transform: translateY(10%) rotate(.01deg);
+    -moz-transform: translateY(10%) rotate(.01deg);
+    -o-transform: translateY(10%) rotate(.01deg);
+    transform: translateY(10%) rotate(.01deg);
+  }
+  50% {
+    opacity: .9;
+  }
+  to {
+    opacity: 0;
+
+    -webkit-transform: translate(-10%, 5%) rotate(.01deg);
+    -moz-transform: translate(-10%, 5%) rotate(.01deg);
+    -o-transform: translate(-10%, 5%) rotate(.01deg);
+    transform: translate(-10%, 5%) rotate(.01deg);
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+}
+
+@media only screen and (max-width: 639px) {
+
+}
+
+@media only screen and (max-width: 479px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .ag-format-container {
+    width: 750px;
+  }
+
+}
+
+@media (min-width: 980px) and (max-width: 1161px) {
+  .ag-format-container {
+    width: 960px;
+  }
+
+}
+			
+		.mainintro{
+			
+			width: 606px;
+		}		
+					
+					</style>			
+			<section class="ag-smoke-block">
+    <div class="ag-smoke-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-1.png"></div>
+    <div class="ag-smoke-1 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-1.png"></div>
+    <div class="ag-smoke-1 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-1.png"></div>
+    <div class="ag-smoke-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-2.png"></div>
+    <div class="ag-smoke-2 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-2.png"></div>
+    <div class="ag-smoke-2 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-2.png"></div>
+    <div class="ag-smoke-3"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-3.png"></div>
+    <div class="ag-smoke-3 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-3.png"></div>
+    <div class="ag-smoke-3 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-3.png"></div>
+    <div class="ag-smoke-4"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-4.png"></div>
+    <div class="ag-smoke-4 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-4.png"></div>
+    <div class="ag-smoke-4 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-4.png"></div>
+    <div class="ag-format-container">
+
+    </div>
+  </section>	
+				
+				
+				</div>
+			
             </div>
+		
+			 
          </div>
       </div>
-      <script>
+		  <style>
+			  .lst{
+				  
+				  display: none;
+			  }
+			  			           @media only screen and (max-width: 585px) {
+			  .demconhide{
+				  
+				  display: none;
+			  }
+									   			      .techevetnav{
+			   
+			   display: none;
+		   }
+									   			  .lst{
+				  
+				  display: block;
+			  }
+									   select {
+										   
+										   width: 100%;
+									   }
+									   button.cyberpunk2077, a.cyberpunk2077 {
+										   
+										   width: 100%;
+									   }
+									   .texttopic{
+										   
+										   width: auto;
+									   }
+         }
+		  </style>
+		 <script>
+		
          document.getElementsByClassName("formsubmit cyberpunk2077")[0].addEventListener("click",function(e){	
          var obj = new Object();
          obj.name =document.getElementsByClassName("cyberpunk name")[0].value;
@@ -1622,139 +2090,7 @@ let isnum = /^\d+$/.test(obj.value);
 
          
 	   </script>
-				<i class="fa fa-instagram"></i>
-            </div>
-		
-			 
-         </div>
-      </div>
-      <script>
-		  /*
-var txt = "2k22";
-var changetext = function(){
-	
-//	document.getElementsByClassName("typed-text")[0].innerHTML=txt;
-	if(txt=="2k22"){
-		
-		txt="2022"
-		interval = setInterval(changetext, 3000)
-	}
-	else{
-		txt="2k22"
-		interval = setInterval(changetext, 4000)
-	}
-}
-var interval = setTimeout(changetext, 2000);
-*/
-
-		  $(".container2").delay(3000).fadeOut();
-		  	  $(".stripe").delay(3100).fadeIn();
-		   $(".topic1").delay(5000).fadeIn();
-         function showheader(obj){
-         	
-                if(obj.classList.contains("fa-close")){
-         		
-         		obj.classList.remove("fa-close");
-         		obj.classList.add("fa-bars");
-         		
-         	}
-         	else{
-         				obj.classList.remove("fa-bars");
-         		obj.classList.add("fa-close");	
-         		
-         	}
-         	
-         	document.getElementsByClassName("topnavcontainer")[0].classList.toggle("responsivenavbg");
-         	document.getElementsByClassName("navbar")[0].classList.toggle("resnavitem");
-         	Array.from(document.getElementsByClassName("navitem")).forEach(obj=>{
-         		if(obj.classList.contains("main")){
-         			
-         			obj.classList.toggle("resmain")
-         		}else{
-         			
-         		obj.classList.toggle("resnavitem");	
-         		}
-         		
-         	});
-         		
-         
-         		
-         	
-         		
-         	
-         	
-         	
-         
-         	document.getElementsByClassName("topnavborder")[0].classList.toggle("responsivenavbarborder");
-         
-         }
-		  /*
-         var r = document.querySelector(':root');
-         var rs = getComputedStyle(r);
-         var xnos = 0;
-         var ynos = 0;
-         var toptodown=1;
-         var deg = 0;
-         var lefttoright=1;
-         setInterval(function () {
-         	
-         	r.style.setProperty('--posdeg',deg+"deg");
-         	deg = deg+1;
-         	r.style.setProperty('--pos1',xnos);
-         	r.style.setProperty('--pos2',ynos);
-             if(xnos<100  ){
-         		if(toptodown==1){
-         			
-         		xnos = xnos+1	
-         		}
-         		else{
-         			
-         		xnos = xnos-1		
-         		}
-         		if(xnos==-100){
-         			
-         			toptodown=1;
-         		}
-         		
-         	}
-         	else if(xnos>=100 ){
-         	
-         		toptodown=0;
-         		xnos=99;
-         		
-         		
-         		
-         	}
-         		    if(ynos<800  ){
-         		if(lefttoright==1){
-         			
-         		ynos = ynos+1	
-         		}
-         		else{
-         			
-         		ynos = ynos-1		
-         		}
-         		if(ynos==-200){
-         			
-         			lefttoright=1;
-         		}
-         		
-         	}
-         	else if(ynos>=1000 ){
-         	
-         		lefttoright=0;
-         		ynos=999;
-         		
-         		
-         		
-         	}
-         }, 
-         			20);
-         var num= 0;
-         
-         */
-                 
               
-      </script>
+
    </body>
 </html>
