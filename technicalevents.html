@@ -40,7 +40,8 @@
          margin-top: 0;
          background-color: transparent;
          color: gray;
-         padding-top: 20px
+         padding-top: 20px;
+			 overflow-y: auto;
          }
          .desctopic {
          font-size: 45px;
@@ -2277,8 +2278,7 @@
                             document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;	
                            str = '<form action="eventregister.html" onsubmit="return register()" methon="post"><button name="eventname"  eventtype="Technical" value="'+name+'" class="cyberpunk2077 btnsubmit">Register</button></form>';
                            document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;	
-							       str = '<form action="eventregister.html" onsubmit="return register()" methon="post"><button name="eventname"  eventtype="Technical" value="'+name+'" class="cyberpunk2077 btnsubmit">Register</button></form>';
-                           document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;	
+							  
                            }
                            };  
                            xhttp.open("GET", "details.json", true);
