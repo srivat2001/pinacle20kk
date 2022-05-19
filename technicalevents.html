@@ -985,7 +985,7 @@
          position: relative;
          padding: 10px 10px 10px 10px;
          border-top: 1px solid #868686;
-         border-left: 3px solid #00ffff59;
+      border-left: 3px solid #0ff;
          border-right: 1px solid #868686;
          font-size: 25px;
          font-weight: 100;
@@ -2086,7 +2086,7 @@
          text-justify: inter-word
          }
          p.cyberpunk {
-         border: 10px solid #bebebe;
+         border: 10px solid #0ff;
          border-right-color: #bebebe;
          border-right-style: solid;
          border-right-width: 10px;
@@ -2173,6 +2173,7 @@
                      <div class="navitem main"><a class="linkmain mainlink" style="font-weight: 900;" href="technicalevents.html">Technical Events</a></div>
                      <div class="navitem"><a  class="link" href="nontechnicalevents.html">Non Technical Events</a></div>
                      <div class="navitem"><a class="link" href="sponsors.html">Sponsors</a></div>
+					                <div class="navitem"><a class="link" href="contactus.html">Contact us</a></div>
                   </div>
                </div>
             </div>
@@ -2188,8 +2189,13 @@
 					  						 <div style="margin-bottom: 10px;font-size: 11px;margin-top: 2;margin-bottom: 20px;position: relative;left: 2;color: #dedede;margin-left: auto;/*! text-align: end; */">Click the above dropdown to view more events
 
 </div>
+					 <div onclick="test()" >dcdcdcdcdc</div>
+					  
                      <div class="eventdetails tech">
+						 
                         <script>
+				
+							 
                            var type = "Technical";
                            var xhttp = new XMLHttpRequest();
                            
@@ -2232,14 +2238,25 @@
                            }
                            str = str + "</ul>";	
                            
-                            document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;	
+                            document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;
+							   		                           var str ="<ul class='rulesnew'> <div style='font-size: 23px;font-weight: 700;'>Contact us</div>";		
+                           for (i=0;i<mydata[type][eventget]["Contact"].length;i++){
+                           str = str + "<li>"+mydata[type][eventget]["Contact"][i]+"</li>";
+                           console.log(mydata[type][eventget]["Contact"][i]);
+                           
+                           }
+                           str = str + "</ul>";	
+                           if(mydata[type][eventget]["Contact"].length>0){
+							                               document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;
+							   
+						   }
                            str = '<form action="eventregister.html" onsubmit="return register()" methon="post"><button name="eventname"  eventtype="Technical" value="'+name+'" class="cyberpunk2077 btnsubmit">Register</button></form>';
                            document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;	
                            }
                            };  
                            xhttp.open("GET", "https://srivat2001.github.io/pinacle20kk/details.json", true);
                            xhttp.send();		
-                           
+                          
                            $('.selectobj').change(function(){
                            
                            document.getElementsByClassName("eventdetails tech")[0].innerHTML = "";
@@ -2285,12 +2302,24 @@
                            str = str + "</ul>";	
                            
                             document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;	
+							                           var str ="<ul class='rulesnew'> <div style='font-size: 23px;font-weight: 700;'>Contact us</div>";		
+                           for (i=0;i<mydata[type][eventget]["Contact"].length;i++){
+                           str = str + "<li>"+mydata[type][eventget]["Contact"][i]+"</li>";
+                           console.log(mydata[type][eventget]["Contact"][i]);
+                           
+                           }
+                           str = str + "</ul>";	
+                           if(mydata[type][eventget]["Contact"].length>0){
+							                               document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;
+							   
+						   }
+
                            str = '<form action="eventregister.html" onsubmit="return register()" methon="post"><button name="eventname"  eventtype="Technical" value="'+name+'" class="cyberpunk2077 btnsubmit">Register</button></form>';
                            document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;	
 							  
                            }
                            };  
-                           xhttp.open("GET", "https://srivat2001.github.io/pinacle20kk/details.json", true);
+                           xhttp.open("GET", "details.json", true);
                            xhttp.send();		
                            
                            		})	;	
