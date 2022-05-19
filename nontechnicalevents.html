@@ -2167,8 +2167,8 @@
                   <div class="navbar">
                      <i class="fa fa-bars" onclick="showheader(this)" ></i>
                      <div class="navitem"><a class="link" href="index.html">Home</a></div>
-                     <div class="navitem main"><a class="linkmain mainlink" style="font-weight: 900;" href="technicalevents.html">Technical Events</a></div>
-                     <div class="navitem"><a  class="link" href="nontechnicalevents.html">Non Technical Events</a></div>
+                     <div class="navitem"><a  style="font-weight: 900;" href="technicalevents.html">Technical Events</a></div>
+                     <div class="navitem main"><a class="linkmain mainlink" class="link" href="nontechnicalevents.html">Non Technical Events</a></div>
                      <div class="navitem"><a class="link" href="sponsors.html">Sponsors</a></div>
                   </div>
                </div>
@@ -2237,7 +2237,7 @@
                            
                            document.getElementsByClassName("eventdetails tech")[0].innerHTML = "";
                                  document.getElementsByClassName("selectobj")[0].setAttribute("selected",$(this).val());
-                           var type = "nonTechnical";
+                           var type = "NonTechnical";
                            var xhttp = new XMLHttpRequest();
                            
                            
