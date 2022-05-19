@@ -20,6 +20,12 @@
          overflow-x: hidden;
          margin: 0
          }
+		    .navitem a:hover {
+         clip-path: polygon(25% 0, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
+         background-color: black;
+         border: 1px solid #5b5b5b;
+         font-weight: 700
+         }
          .maincontainer {
          width: 70%;
          opacity: 0;
@@ -435,10 +441,10 @@
          font-size: 15
          }
          .navitem a:hover {
-         clip-path: polygon(25% 0, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
-         background-color: #6a0073a1;
+    clip-path: polygon(25% 0, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
+         background-color: #0000007d;
          border: 1px solid #5b5b5b;
-         font-weight: 100
+         font-weight: 700
          }
          .alinkhover {
          clip-path: polygon(25% 0, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
@@ -1362,9 +1368,9 @@
          }
          .navitem a:hover{
          clip-path: polygon(25% 0%, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
-         background-color: #6a0073a1;
+         background-color: black;
          border: 1px solid #5b5b5b;
-         font-weight: 100;	   
+         font-weight: 700;	   
          }
          .alinkhover{
          clip-path: polygon(25% 0%, 100% 1%, 100% 80%, 75% 100%, 0 100%, 0 18%);
@@ -1476,7 +1482,7 @@
                      <i class="fa fa-bars" onclick="showheader(this)" ></i>
                      <div class="navitem main"><a  class="linkmain mainlink" href="index.html">Home</a></div>
                      <div class="navitem"><a class="link" href="technicalevents.html">Technical Events</a></div>
-                     <div class="navitem "><a class="link" href="nontechnicalevents.html">Non Technical Events</a></div>
+                     <div class="navitem "><a  href="nontechnicalevents.html">Non Technical Events</a></div>
                      <div class="navitem"><a class="link" href="sponsors.html">Sponsors</a></div>
                   </div>
                </div>
@@ -1543,7 +1549,7 @@
          
          obj[i].addEventListener("mouseenter",function(e){
          
-          document.getElementsByClassName("linkmain")[0].classList.remove("mainlink");
+         document.getElementsByClassName("linkmain")[0].classList.remove("mainlink");
          //	document.getElementsByClassName("dropdownlist")[0].classList.add("ondisplay");
          
          
