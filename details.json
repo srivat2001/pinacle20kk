@@ -184,6 +184,29 @@
       ],
       "desc": [],
       "Rounds": []
+    },    "Job wreck": {
+      "name": "Job wreck",
+      "subline": "skill",
+      "rules": [
+        "The participants will have 2 minutes time for preparation and 3 minutes on stage",
+        "They will be given 2 minutes to convince the judge as to why they should get the job",
+        "Jobs on which they have to perform will be given on spot"
+
+      ],
+      "desc": [],
+      "Rounds": []
+    },    "Job wreck": {
+      "name": "Photography",
+      "subline": "skill",
+      "rules": [
+        "Participants should strictly follow the theme",
+        "Only one entry from each participant is considered",
+        "The photos can be captured through mobile and DSLR camera",
+        "Basic editing is allowed",
+        "The photograph should not contain any watermark"
+      ],
+      "desc": [],
+      "Rounds": []
     }
   }
 }
