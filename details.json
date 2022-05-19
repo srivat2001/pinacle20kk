@@ -31,7 +31,7 @@
         "Candidates should not Involve in Any Kind of Malpractice. If Caught, then the",
         "The panel's decision will be the final verdict"
       ],
-      "Rounds": []
+      "Rounds": [],"Contact":["Mrs Jananai : 982858585"]
     },
     "Brain squeezer": {
       "name": "Brain squeezer",
@@ -46,7 +46,7 @@
         "Candidates should not Involve in Any Kind of Malpractice. If Caught, then the",
         "The panel's decision will be the final verdict"
       ],
-      "Rounds": []
+      "Rounds": [],"Contact":[]
     },
     "iDesign": {
       "name": "iDesign",
@@ -65,7 +65,7 @@
         "Participants can use images of their own if necessary.",
         "Participants should not use the pre-defined components from the external resources"
       ],
-      "Rounds": []
+      "Rounds": [],"Contact":[]
     },
     "SharkTank": {
       "name": "SharkTank",
@@ -113,7 +113,7 @@
         "The organizing committee has full authority to revise the rules of the game"
       ],
       "desc": [],
-      "Rounds": []
+      "Rounds": [],"Contact":[]
     },
     "Boxcricket": {
       "name": "Boxcricket",
@@ -127,7 +127,7 @@
         "The organizing committee has full authority to revise the rules of the game"
       ],
       "desc": [],
-      "Rounds": []
+      "Rounds": [],"Contact":[]
     },
     "Fifa": {
       "name": "Fifa",
@@ -139,7 +139,7 @@
         "Refund of the registration fee will not be entertained strictly"
       ],
       "desc": [],
-      "Rounds": []
+      "Rounds": [],"Contact":[]
     },
     "BGMI": {
       "name": "BGMI",
@@ -156,7 +156,7 @@
       "Rounds": [
         "Round 1 : Squad match",
         "Round 2 : Top 4 teams from round 1 - TDM (only M416)"
-      ]
+      ],"Contact":[]
     },
     "Channelsurfing": {
       "name": "Channelsurfing",
@@ -170,7 +170,7 @@
         "Judge’s decision will be final"
       ],
       "desc": [],
-      "Rounds": []
+      "Rounds": [],"Contact":[]
     },
     "Treasurehunt": {
       "name": "Treasurehunt",
@@ -183,7 +183,7 @@
         "Winners will be based on the minimal finishing time"
       ],
       "desc": [],
-      "Rounds": []
+      "Rounds": [],"Contact":[]
     },    "Job wreck": {
       "name": "Job wreck",
       "subline": "skill",
@@ -194,7 +194,7 @@
 
       ],
       "desc": [],
-      "Rounds": []
+      "Rounds": [],"Contact":[]
     },    "Photography": {
       "name": "Photography",
       "subline": "skill",
