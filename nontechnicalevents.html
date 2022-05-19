@@ -988,7 +988,7 @@
          position: relative;
          padding: 10px 10px 10px 10px;
          border-top: 1px solid #868686;
-         border-left: 3px solid #00ffff59;
+border-left: 3px solid #0ff;
          border-right: 1px solid #868686;
          font-size: 25px;
          font-weight: 100;
@@ -2182,6 +2182,7 @@
                      <div class="navitem"><a  href="technicalevents.html">Technical Events</a></div>
                      <div class="navitem main"><a class="linkmain mainlink" class="link" href="nontechnicalevents.html">Non Technical Events</a></div>
                      <div class="navitem"><a class="link" href="sponsors.html">Sponsors</a></div>
+					     <div class="navitem"><a class="link" href="contactus.html">Contact us</a></div>
                   </div>
                </div>
             </div>
@@ -2232,7 +2233,19 @@
                            }
                            str = str + "</ul>";	
                            
-                            document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;	
+                            document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;
+							   
+							   			                           var str ="<ul class='rulesnew'> <div style='font-size: 23px;font-weight: 700;'>Contact us</div>";		
+                           for (i=0;i<mydata[type][obj.value]["Contact"].length;i++){
+                           str = str + "<li>"+mydata[type][obj.value]["Contact"][i]+"</li>";
+                           console.log(mydata[type][obj.value]["Contact"][i]);
+                           
+                           }
+                           str = str + "</ul>";	
+                           if(mydata[type][obj.value]["Contact"].length>0){
+							                               document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;
+							   
+						   }
                            str = '<form action="eventregister.html" onsubmit="return register()" methon="post"><button name="eventname"  eventtype="Technical" value="'+name+'" class="cyberpunk2077 btnsubmit">Register</button></form>';
                            document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;	
                            }
@@ -2275,7 +2288,19 @@
                            }
                            str = str + "</ul>";	
                            
-                            document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;	
+                            document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;
+							   
+							   		   		                           var str ="<ul class='rulesnew'> <div style='font-size: 23px;font-weight: 700;'>Contact us</div>";		
+                           for (i=0;i<mydata[type][eventget]["Contact"].length;i++){
+                           str = str + "<li>"+mydata[type][eventget]["Contact"][i]+"</li>";
+                           console.log(mydata[type][eventget]["Contact"][i]);
+                           
+                           }
+                           str = str + "</ul>";	
+                           if(mydata[type][eventget]["Contact"].length>0){
+							                               document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;
+							   
+						   }
                            str = '<form action="eventregister.html" onsubmit="return register()" methon="post"><button name="eventname"  eventtype="Technical" value="'+name+'" class="cyberpunk2077 btnsubmit">Register</button></form>';
                            document.getElementsByClassName("eventdetails tech")[0].innerHTML = document.getElementsByClassName("eventdetails tech")[0].innerHTML + str;	
 							  
