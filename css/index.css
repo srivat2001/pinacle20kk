@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100; 0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100; 0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
          @import url(https://fonts.googleapis.com/css2?family=Koulen&display=swap);
          @import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap);
          @import url(https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap);
@@ -996,6 +996,9 @@
          body {
          background-color: #000
          }
+  @import url('css/date.css');
+		   @import url('css/index.css');
+  
          .ag-smoke-block {
          z-index: -4;
          position: relative;
@@ -1493,4 +1496,26 @@ transform: rotate(-25deg);
          cursor: pointer;
          }
          }
-		  
+h1{
+	color: #0ff;
+	margin-top: 1px;
+margin-bottom: 0px;
+}
+.mainintro{
+	margin-top: 50px;
+}
+.fa-youtube i{
+	
+	font-size: 23px;
+}
+.photoholder{
+	
+	margin-bottom: 20px;
+margin-top: 7px;
+}
+.rightside img{
+	
+	width: 800;
+                     margin-left: 50px;
+                     margin-top: 0px;
+}
