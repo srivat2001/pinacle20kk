@@ -135,7 +135,7 @@
          margin-right: auto	;				   
          }
          }
-         @media only screen and (max-width:360px) {
+         @media only screen and (max-width:1050px) {
 
          .mainintro {
          width: 100%
@@ -516,7 +516,7 @@
          transition: .5s all ease
          }
          }
-         @media only screen and (max-width:360px) {
+         @media only screen and (max-width:1050px) {
          .topnavborder {
          width: 80%
          }
@@ -1485,7 +1485,7 @@ transform: rotate(-25deg);
          line-height: 24px;
          }
          }
-         @media only screen and (max-width: 360px) {
+         @media only screen and (max-width: 1050px) {
          .topnavborder{
          width: 80%;
          }
@@ -1513,7 +1513,7 @@ margin-bottom: 0px;
 	
 	font-size: 23px;
 	color: #ececec;
-font-size: 27;
+font-size: 27px;
 }
 .photoholder{
 	
@@ -1522,7 +1522,7 @@ margin-top: 7px;
 }
 .rightside img{
 	
-	width: 800;
+	width: 800px;
                      margin-left: 50px;
                      margin-top: 0px;
 }
