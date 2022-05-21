@@ -35,7 +35,7 @@ clip-path: circle();
 display: flex;
 padding: 1rem;
   padding-left: 1rem;
-padding-left: 0;
+padding-left: 0px;
 		  
          }
          .datecontainer:nth-child(1){
@@ -66,8 +66,8 @@ padding-left: 0;
          }
          .markyourdates{
          position: absolute;
-         right: 0;
-         bottom: 0;
+         right: 0px;
+         bottom: 0px;
          margin-left: auto;
          margin-right: 90px;
          color: white;
@@ -75,7 +75,7 @@ padding-left: 0;
          animation: res 1s forwards;
          animation-delay: 2.5s;
          opacity: 0;
-         font-size: 17;
+         font-size: 17px;
          line-height: 1.2;
          font-weight: 100;
          letter-spacing: 0.034em;
