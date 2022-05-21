@@ -58,13 +58,13 @@
          .topicdesc {
          margin: 3px;
          margin-left: 3px;
-         margin-left: 0;
-         padding-left: 0;
+         margin-left: 0px;
+         padding-left: 0px;
          width: 90%;
-         margin-left: 0;
+         margin-left: 0px;
          font-weight: 100;
          text-align: justify;
-         font-size: 18
+         font-size: 18px
          }
          .desc {
          text-align: justify;
@@ -161,17 +161,17 @@
          background-color: transparent
          }
          .rules {
-         margin-left: 0;
+         margin-left: 0px;
          font-size: 22px;
          font-weight: 800;
          color: #8d8d8d;
-         margin-bottom: 0;
+         margin-bottom: 0px;
          background-color: transparent;
-         padding-left: 0
+         padding-left: 0px
          }
          .rule {
-         padding-left: 0;
-         margin-left: 0
+         padding-left: 0px;
+         margin-left: 0px
          }
          }
          button {
@@ -187,12 +187,12 @@
          color: #fff
          }
          h1 {
-         margin-left: 0;
+         margin-left: 0px;
          margin-bottom: 5px
          }
          h3 {
          font-weight: 100;
-         margin-top: 0;
+         margin-top: 0px;
          font-size: 18px;
          margin-bottom: 30px
          }
@@ -289,7 +289,7 @@
          position: relative
          }
          .mainintro {
-         padding: 0;
+         padding: 0px;
          background-color: transparent;
          color: #a6a6a6;
          position: relative
@@ -346,7 +346,7 @@
          margin-top: 20px;
          margin-left: auto;
          margin-right: 10px;
-         border-right: 0 solid #555
+         border-right: 0px solid #555
          }
          @keyframes loop {
          0% {
@@ -383,7 +383,7 @@
          animation: frombelow 1s forwards;
          margin-left: 0px;
          margin-right: 80px;
-         font-size: 14;
+         font-size: 14px;
          line-height: 1.2;
          font-weight: 100;
          letter-spacing: .034em;
@@ -515,7 +515,7 @@
          transition: .5s all ease
          }
          }
-         @media only screen and (max-width:1050px) {
+         @media only screen and (max-width:720px) {
          .topnavborder {
          width: 80%
          }
@@ -538,8 +538,8 @@
          .stripe::before {
          content: "";
          position: absolute;
-         top: 0;
-         left: 0;
+         top: 0px;
+         left: 0px;
          width: calc(100% + var(--stripe-size));
          height: 100%;
          z-index: -1;
@@ -640,7 +640,7 @@
          position: absolute;
          background-color: #f9f9f9;
          min-width: 160px;
-         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+         box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, .2);
          z-index: 1
          }
          .dropdown-content a {
@@ -983,7 +983,6 @@ border-bottom: 0px;
       border-left: 3px solid #0ff;
 
          font-size: 25px;
-         font-weight: 100;
          line-height: 1.1;
          letter-spacing: .17em;
          font-weight: 900;
@@ -1007,15 +1006,10 @@ border-bottom: 0px;
          font-size: 16px;
          width: fit-content;
          font-weight: 200;
-         border-bottom: 0px solid #ffffff5e;
+
          padding: 1rem;
          width: auto;
 			 border-right: 3px solid #0ff;
-
-			 border-top: 25px solid #0ff;
-         }
-         .lastrules {
-			 border-top:0px;
          }
          a.cyberpunk2077,
          button.cyberpunk2077 {
@@ -1025,7 +1019,7 @@ border-bottom: 0px;
          border-right-color: currentcolor;
          border-right-style: none;
          border-right-width: medium;
-         border-radius: 0;
+         border-radius: 0px;
          font-size: 1.5rem;
          line-height: 1.5rem;
          letter-spacing: 2px;
@@ -1051,7 +1045,7 @@ border-bottom: 0px;
          --background-color: #0071c8;
          display: block;
          border: none;
-         border-radius: 0;
+         border-radius: 0px;
          font-size: 1rem;
          line-height: 100%;
          letter-spacing: 2px;
@@ -1174,11 +1168,11 @@ border-bottom: 0px;
          @keyframes hoverbefore {
          0% {
          display: none;
-         top: 0
+         top: 0px
          }
          10% {
          display: none;
-         top: 0
+         top: 0px
          }
          11% {
          display: block;
@@ -1190,11 +1184,11 @@ border-bottom: 0px;
          }
          30% {
          display: none;
-         top: 0
+         top: 0px
          }
          50% {
          display: none;
-         top: 0
+         top: 0px
          }
          51% {
          display: block;
@@ -1210,12 +1204,12 @@ border-bottom: 0px;
          91% {
          filter: blur(0);
          display: none;
-         top: 0;
+         top: 0px;
          height: 12px
          }
          100% {
          display: none;
-         top: 0
+         top: 0px
          }
          }
          @keyframes hoverafter {
@@ -1273,7 +1267,7 @@ border-bottom: 0px;
          }
          .btnsubmit {
          margin-left: auto;
-         margin-right: 0
+         margin-right: 0px
          }
          .rightside {
          position: absolute;
@@ -1306,8 +1300,8 @@ border-bottom: 0px;
          .ag-smoke-1 {
          z-index: -1;
          position: absolute;
-         top: 0;
-         right: 0;
+         top: 0px;
+         right: 0px;
          -webkit-animation: an-smoke-1 6s ease-in-out infinite;
          -moz-animation: an-smoke-1 6s ease-in-out infinite;
          -o-animation: an-smoke-1 6s ease-in-out infinite;
@@ -1606,7 +1600,7 @@ border-bottom: 0px;
          height: 100%
          }
          .mainintro {
-         padding: 0;
+         padding: 0px;
          background-color: transparent;
          color: #a6a6a6;
          position: relative
@@ -2220,7 +2214,7 @@ color: black;
 
 .select-details-holder .previous {
 color: #fff;
-font-weight: 900;
+
 background-color: #38010140;
 font-weight: 100;
 	margin-bottom: 10px;
@@ -2255,6 +2249,9 @@ color: #939393;
 padding: 0px;
 margin-top: 10px;
 }
+   .lastrules {
+			 border-top:0px;
+         }
 @media (max-width:500px) {
 	.item{
 		
