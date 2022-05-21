@@ -189,7 +189,7 @@
          }
          input {
          padding: 1rem;
-         outline: 0;
+         outline: 0px;
          border: 1px solid #494949;
          width: 50%;
          margin-bottom: 20px;
