@@ -124,7 +124,7 @@
          .mainintro {
          width: 50%
          }
-         @media only screen and (max-width:360px) {
+         @media only screen and (max-width:1050px) {
          .mainintro {
          width: 100%
          }
@@ -515,7 +515,7 @@
          transition: .5s all ease
          }
          }
-         @media only screen and (max-width:360px) {
+         @media only screen and (max-width:1050px) {
          .topnavborder {
          width: 80%
          }
@@ -1841,7 +1841,7 @@ border-bottom: 0px;
          transition: .5s all ease
          }
          }
-         @media only screen and (max-width:360px) {
+         @media only screen and (max-width:1050px) {
          .topnavborder {
          width: 80%
          }
@@ -2254,4 +2254,16 @@ border: 0px;
 color: #939393;
 padding: 0px;
 margin-top: 10px;
+}
+@media (max-width:500px) {
+	.item{
+		
+		text-align: center;
+	}
+	
+	.backupbtn {
+		width: 100%;
+		text-align: center;
+	}
+	
 }
