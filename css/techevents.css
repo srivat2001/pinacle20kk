@@ -58,13 +58,13 @@
          .topicdesc {
          margin: 3px;
          margin-left: 3px;
-         margin-left: 0;
-         padding-left: 0;
+         margin-left: 0px;
+         padding-left: 0px;
          width: 90%;
-         margin-left: 0;
+         margin-left: 0px;
          font-weight: 100;
          text-align: justify;
-         font-size: 18
+         font-size: 18px
          }
          .desc {
          text-align: justify;
@@ -346,7 +346,7 @@
          margin-top: 20px;
          margin-left: auto;
          margin-right: 10px;
-         border-right: 0 solid #555
+         border-right: 0px solid #555
          }
          @keyframes loop {
          0% {
@@ -383,7 +383,7 @@
          animation: frombelow 1s forwards;
          margin-left: 0px;
          margin-right: 80px;
-         font-size: 14;
+         font-size: 14px;
          line-height: 1.2;
          font-weight: 100;
          letter-spacing: .034em;
@@ -640,7 +640,7 @@
          position: absolute;
          background-color: #f9f9f9;
          min-width: 160px;
-         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+         box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, .2);
          z-index: 1
          }
          .dropdown-content a {
@@ -983,7 +983,6 @@ border-bottom: 0px;
       border-left: 3px solid #0ff;
 
          font-size: 25px;
-         font-weight: 100;
          line-height: 1.1;
          letter-spacing: .17em;
          font-weight: 900;
@@ -1205,7 +1204,7 @@ border-bottom: 0px;
          91% {
          filter: blur(0);
          display: none;
-         top: 0;
+         top: 0px;
          height: 12px
          }
          100% {
@@ -1601,7 +1600,7 @@ border-bottom: 0px;
          height: 100%
          }
          .mainintro {
-         padding: 0;
+         padding: 0px;
          background-color: transparent;
          color: #a6a6a6;
          position: relative
