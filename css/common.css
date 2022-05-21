@@ -57,13 +57,13 @@
          .topicdesc {
          margin: 3px;
          margin-left: 3px;
-         margin-left: 0;
-         padding-left: 0;
+
+         padding-left: 0px;
          width: 90%;
-         margin-left: 0;
+         margin-left: 0px;
          font-weight: 100;
          text-align: justify;
-         font-size: 18
+         font-size: 18px
          }
          .desc {
          text-align: justify;
@@ -92,7 +92,7 @@
          letter-spacing: .32em;
          line-height: 1.7;
          margin-bottom: 20px;
-         margin-top: 0;
+         margin-top: 0px;
          font-size: 17px
          }
          @media only screen and (max-width:1041px) {
@@ -135,7 +135,7 @@
          border-bottom: 0px;
          width: 80%;
          margin: auto;
-         margin-top: 0;
+         margin-top: 0px;
          color: gray;
          padding-top: 20px;
 			 
@@ -160,17 +160,17 @@
          background-color: transparent
          }
          .rules {
-         margin-left: 0;
+         margin-left: 0px;
          font-size: 22px;
          font-weight: 800;
          color: #8d8d8d;
-         margin-bottom: 0;
+         margin-bottom: 0px;
          background-color: transparent;
-         padding-left: 0
+         padding-left: 0px
          }
          .rule {
-         padding-left: 0;
-         margin-left: 0
+         padding-left: 0px;
+         margin-left: 0px;
          }
          }
          button {
@@ -178,7 +178,7 @@
          }
          input {
          padding: 1rem;
-         outline: 0;
+         outline: 0px;
          border: 1px solid #494949;
          width: 50%;
          margin-bottom: 20px;
@@ -288,7 +288,7 @@
          position: relative
          }
          .mainintro {
-         padding: 0;
+         padding: 0px;
          background-color: transparent;
          color: #a6a6a6;
          position: relative
@@ -345,7 +345,7 @@
          margin-top: 20px;
          margin-left: auto;
          margin-right: 10px;
-         border-right: 0 solid #555
+         border-right: 0px solid #555
          }
          @keyframes loop {
          0% {
@@ -382,7 +382,7 @@
          animation: frombelow 1s forwards;
          margin-left: 0px;
          margin-right: 80px;
-         font-size: 14;
+         font-size: 14px;
          line-height: 1.2;
          font-weight: 100;
          letter-spacing: .034em;
@@ -639,7 +639,7 @@
          position: absolute;
          background-color: #f9f9f9;
          min-width: 160px;
-         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+         box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, .2);
          z-index: 1
          }
          .dropdown-content a {
@@ -707,7 +707,7 @@
          content: "";
          display: block;
          position: absolute;
-         bottom: 0;
+         bottom: 0px;
          left: 2px;
          width: 100%;
          height: 10px;
@@ -1019,7 +1019,7 @@ border-bottom: 0px;
          border-right-color: currentcolor;
          border-right-style: none;
          border-right-width: medium;
-         border-radius: 0;
+         border-radius: 0px;
          font-size: 1.5rem;
          line-height: 1.5rem;
          letter-spacing: 2px;
@@ -1033,7 +1033,7 @@ border-bottom: 0px;
          clip-path: polygon(-15px 0, calc(100% + 15px) 0, calc(100% + 15px) 100%, 20px 100%, );
          cursor: pointer;
          background-color: var(--background-color);
-         outline: 0;
+         outline: 0px;
          display: inline-block;
          padding-top: 20px;
          padding-bottom: 20px;
@@ -1045,7 +1045,7 @@ border-bottom: 0px;
          --background-color: #0071c8;
          display: block;
          border: none;
-         border-radius: 0;
+         border-radius: 0px;
          font-size: 1rem;
          line-height: 100%;
          letter-spacing: 2px;
@@ -1060,7 +1060,7 @@ border-bottom: 0px;
          clip-path: polygon(-15px 0, calc(100% + 15px) 0, calc(100% + 15px) 100%, 20px 100%, -15px calc(100% - 35px));
          cursor: pointer;
          background-color: var(--background-color);
-         outline: 0;
+         outline: 0px;
          width: 10%;
          text-align: center;
          padding: 2rem;
@@ -1130,7 +1130,7 @@ border-bottom: 0px;
          background-color: var(--background-color);
          width: calc(100% + (var(--outside) * 2));
          height: 12px;
-         top: 0;
+         top: 0px;
          left: calc(0px - 1px - var(--outside));
          border-left: 2px solid #8ae66e;
          border-right: 2px solid #8ae66e
@@ -1168,11 +1168,11 @@ border-bottom: 0px;
          @keyframes hoverbefore {
          0% {
          display: none;
-         top: 0
+         top: 0px
          }
          10% {
          display: none;
-         top: 0
+         top: 0px
          }
          11% {
          display: block;
@@ -1184,11 +1184,11 @@ border-bottom: 0px;
          }
          30% {
          display: none;
-         top: 0
+         top: 0px
          }
          50% {
          display: none;
-         top: 0
+         top: 0px
          }
          51% {
          display: block;
@@ -1204,12 +1204,12 @@ border-bottom: 0px;
          91% {
          filter: blur(0);
          display: none;
-         top: 0;
+         top: 0px;
          height: 12px
          }
          100% {
          display: none;
-         top: 0
+         top: 0px
          }
          }
          @keyframes hoverafter {
@@ -1300,8 +1300,8 @@ border-bottom: 0px;
          .ag-smoke-1 {
          z-index: -1;
          position: absolute;
-         top: 0;
-         right: 0;
+         top: 0px;
+         right: 0px;
          -webkit-animation: an-smoke-1 6s ease-in-out infinite;
          -moz-animation: an-smoke-1 6s ease-in-out infinite;
          -o-animation: an-smoke-1 6s ease-in-out infinite;
@@ -1600,7 +1600,7 @@ border-bottom: 0px;
          height: 100%
          }
          .mainintro {
-         padding: 0;
+         padding: 0px;
          background-color: transparent;
          color: #a6a6a6;
          position: relative
@@ -2165,7 +2165,7 @@ border-bottom: 0px;
 	
 	
 	
-	margin-bottom: 10px;font-size: 11px;margin-top: 2;margin-bottom: 20px;position: relative;left: 2;color: #dedede;margin-left: auto;
+	margin-bottom: 10px;font-size: 11px;margin-top: 2px;margin-bottom: 20px;position: relative;left: 2px;color: #dedede;margin-left: auto;
 }
 
 						  .item{
