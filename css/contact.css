@@ -58,8 +58,8 @@
          .topicdesc {
          margin: 3px;
          margin-left: 3px;
-         margin-left: 0;
-         padding-left: 0;
+         margin-left: 0px;
+         padding-left: 0px;
          width: 90%;
          margin-left: 0;
          font-weight: 100;
@@ -136,7 +136,7 @@
          border-bottom: 0px;
          width: 80%;
          margin: auto;
-         margin-top: 0;
+         margin-top: 0px;
          color: gray;
          padding-top: 20px;
 			 
@@ -161,17 +161,17 @@
          background-color: transparent
          }
          .rules {
-         margin-left: 0;
+         margin-left: 0px;
          font-size: 22px;
          font-weight: 800;
          color: #8d8d8d;
-         margin-bottom: 0;
+         margin-bottom: 0px;
          background-color: transparent;
-         padding-left: 0
+         padding-left: 0px
          }
          .rule {
-         padding-left: 0;
-         margin-left: 0
+         padding-left: 0px;
+         margin-left: 0px
          }
          }
          button {
@@ -187,12 +187,12 @@
          color: #fff
          }
          h1 {
-         margin-left: 0;
+         margin-left: 0px;
          margin-bottom: 5px
          }
          h3 {
          font-weight: 100;
-         margin-top: 0;
+         margin-top: 0px;
          font-size: 18px;
          margin-bottom: 30px
          }
@@ -216,7 +216,7 @@
          height: 100vh
          }
          .vertical-center {
-         margin: 0;
+         margin: 0px;
          position: absolute;
          top: 50%;
          left: 50%;
@@ -346,7 +346,7 @@
          margin-top: 20px;
          margin-left: auto;
          margin-right: 10px;
-         border-right: 0 solid #555
+         border-right: 0px solid #555
          }
          @keyframes loop {
          0% {
@@ -538,8 +538,8 @@
          .stripe::before {
          content: "";
          position: absolute;
-         top: 0;
-         left: 0;
+         top: 0px;
+         left: 0px;
          width: calc(100% + var(--stripe-size));
          height: 100%;
          z-index: -1;
@@ -1131,7 +1131,7 @@ border-bottom: 0px;
          background-color: var(--background-color);
          width: calc(100% + (var(--outside) * 2));
          height: 12px;
-         top: 0;
+         top: 0px;
          left: calc(0px - 1px - var(--outside));
          border-left: 2px solid #8ae66e;
          border-right: 2px solid #8ae66e
@@ -1301,8 +1301,8 @@ border-bottom: 0px;
          .ag-smoke-1 {
          z-index: -1;
          position: absolute;
-         top: 0;
-         right: 0;
+         top: 0px;
+         right: 0px;
          -webkit-animation: an-smoke-1 6s ease-in-out infinite;
          -moz-animation: an-smoke-1 6s ease-in-out infinite;
          -o-animation: an-smoke-1 6s ease-in-out infinite;
@@ -1601,7 +1601,7 @@ border-bottom: 0px;
          height: 100%
          }
          .mainintro {
-         padding: 0;
+         padding: 0px;
          background-color: transparent;
          color: #a6a6a6;
          position: relative
@@ -2286,7 +2286,7 @@ font-weight: 500;
 							  
 							   font-size: 26px;
   font-weight: 100;
-								margin-top: 0;
+								margin-top: 0px;
 }
 						  }
 						  @media only screen and (max-width:1050px) {
