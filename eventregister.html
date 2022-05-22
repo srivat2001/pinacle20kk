@@ -3,9 +3,8 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	   	      <link rel="stylesheet" href="css/common.css">
+      <link rel="stylesheet" href="css/common.css">
       <link rel="stylesheet" href="css/register.css">
-
    </head>
    <body>
       <div class="stripe">
@@ -19,7 +18,7 @@
                      <div class="navitem"><a  class="link" href="nontechnicalevents.html">Non Technical Events</a></div>
                      <div class="navitem"><a class="link" href="sponsors.html">Sponsors</a></div>
                      <div class="navitem"><a class="link" href="contactus.html">Contact us</a></div>
-					  <div class="navitem main"><a class="linkmain mainlink" class="link" href="#">Registration</a></div>
+                     <div class="navitem main"><a class="linkmain mainlink" class="link" href="#">Registration</a></div>
                   </div>
                </div>
             </div>
@@ -29,280 +28,186 @@
             <div class="topic1">
                <div class="mainpagecontainer">
                   <div class="mainintro" id="typedtext" class="desc">
-   <div class="eventdetails tech">	<h1>Registration</h1>
-        
-				 <h3 class="eventdetailstopic" ></h3>
-				<script>
-					document.getElementsByClassName("eventdetailstopic")[0].innerHTML ="[ "+ localStorage.getItem("eventtype") + " - " +localStorage.getItem("eventname")+"]";
-		</script>
-	        
-               <input class="cyberpunk name" placeholder="Enter Your Name" name="name" type="text">
-               <div class="validerror name">Enter Valid name</div>
-               <input class="cyberpunk email" placeholder="Enter Your Email" name="Email" type="text">
-               <div class="validerror email">Enter Valid Email</div>
-               <input class="cyberpunk college" placeholder="Enter Your College" name="College" type="text">
-	       <input class="cyberpunk dob" placeholder="Dateofbirth" name="College" type="date">
-               <select class="cyberpunk year" class="name">
-
-                  <option value="1">1st year</option>
-                  <option value="2">2nd year</option>
-                  <option value="3">3rd year</option>
-                  <option value="4">4th year</option>
-               </select>
-               <input class="cyberpunk dept" placeholder="Enter Your department" type="text">
-               <input class="cyberpunk mobile" placeholder="Enter Your Mobile Number" type="number"><br>
-      <a class="cyberpunk2077 formsubmit">Submit</a></div>
-					   <a class="cyberpunk2077 formsubmit">Submit</a>
-
-<script>
-
-	
-	
-	  
-		
-         document.getElementsByClassName("formsubmit cyberpunk2077")[0].addEventListener("click",function(e){	
-         var obj = new Object();
-         obj.name =document.getElementsByClassName("cyberpunk name")[0].value;
-         obj.email =document.getElementsByClassName("cyberpunk email")[0].value;
-			var myDate = document.getElementsByClassName("cyberpunk dob")[0].value;
-myDate = myDate.split("-");
-var newDate = new Date( myDate[2], myDate[1] - 1, myDate[0]);
-console.log(newDate.getTime());
-			 obj.dob =newDate.getTime();
-         obj.institute =document.getElementsByClassName("cyberpunk college")[0].value;
-         //obj.dept =document.getElementsByClassName("cyberpunk dept")[0].value;
-         obj.mobile =document.getElementsByClassName("cyberpunk mobile")[0].value;
-		// obj.year =document.getElementsByClassName("cyberpunk year")[0].value;	 
-       //  obj.eventtype =localStorage.getItem("eventtype");
-       //  obj.eventname =localStorage.getItem("eventname");
-         var jsondata = JSON.stringify(obj);
-         			//	  $.post("https://6f08-2400-6180-100-d0-00-aa3-1001.in.ngrok.io/api/v1/register-me",{"name":obj.name,
-			var url = "https://6f08-2400-6180-100-d0-00-aa3-1001.in.ngrok.io/api/v1/register-me";
-
-var xhr = new XMLHttpRequest();
-xhr.open("POST", url);
-
-xhr.setRequestHeader("Content-Type", "application/json");
-
-xhr.onreadystatechange = function () {
-   if (xhr.readyState === 4) {
-	  if(parseInt(xhr.status)==200){
-		  
-		  alert("Registered Successfully - Your Registration ID is: "+xhr.responseText);
-	  }
-	   else if(parseInt(xhr.status)==406){
-		   
-		  alert("You are already Registered"); 
-		   
-	   }
-      console.log(xhr.status);
-      console.log(xhr.responseText);
-   }};
-
-var data = `{
-	"name":"`+obj.name+`",
-	"email":"`+obj.email+`",
-	"mobile":`+obj.mobile+`,
-	"dob":`+obj.dob+`,
-	"institute":"`+obj.institute+`"
-}`;
-
-xhr.send(data);																								//"email":obj.email,
-																										///	"dob":obj.dob, 
-																										//	"institute":obj.institute,
-																										//	"mobile":obj.mobile
-																										//	},function(data, status){
-   // alert("Data: " + data + "\nStatus: " + status);
-//  });
-			 
-		
-			 return false;
-     /*    if(obj.name.length<1 || obj.email.length<1 ||  obj.college.length<1 ||  obj.dept.length<1 ||  obj.year.length<1 || obj.eventtype.length<1 || obj.eventname.length<1){
-			 
-			 alert("Dont Leave empty inputs");
-			 return false;
-			 
-		 }	
-			          	obj=document.getElementsByClassName("cyberpunk email")[0];
-         if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(obj.value))
-         {
-           document.getElementsByClassName("validerror email")[0].style.display="block";
-	document.getElementsByClassName("validerror email")[0].scrollIntoView();
-			 alert("enter valid email");
-			 	$(".validerror.email").delay(10000).fadeOut(1000);	 
-			 return false;
-         }
-			 
-			 obj=document.getElementsByClassName("cyberpunk mobile")[0];
-
-let isnum = /^\d+$/.test(obj.value);
-			 if(!isnum || obj.value.length!=10){
-				
-			  alert("enter valid mobile number");
-	 return false;
-				
-			 }
-
-         
-     
-	
-         form = document.createElement("form");
-         input = document.createElement("input");
-         	
-         	
-         let  method = document.createAttribute("method");			
-         method.value="post";
-         form.setAttributeNode(method);
-         	
-         let  action = document.createAttribute("action");			
-         action.value="https://6f08-2400-6180-100-d0-00-aa3-1001.in.ngrok.io/api/v1/register-me.php";	
-         form.setAttributeNode(action);
-         	
-         document.getElementsByClassName("topic1")[0].appendChild(form);	
-         	
-         	
-         	
-         let typeinput = document.createAttribute("type");
-         typeinput.value = "hidden";
-         input.setAttributeNode(typeinput);
-         	
-         let nameofinput = document.createAttribute("name");
-         nameofinput.value = "regdeatils";
-         input.setAttributeNode(nameofinput);
-         	
-         let inputvalue = document.createAttribute("value");
-         inputvalue.value = string;
-         input.setAttributeNode(inputvalue);
-         
-         document.getElementsByTagName("form")[0].appendChild(input);	
-
-       //  form.submit();*/
-         
-         });
-         document.getElementsByClassName("cyberpunk name")[0].addEventListener("keyup",function(e){	
-         obj=e.target;
-			 
-if(!/^[A-Za-z\s]*$/.test(obj.value)){
-	
-	
-	obj.value = obj.value.slice(0,-1);
-	
-	
-}
-         });
-           document.getElementsByClassName("cyberpunk college")[0].addEventListener("keyup",function(e){	
-         obj=e.target;
-if(!/^[A-Za-z\s]*$/.test(obj.value)){
-	
-	
-	obj.value = obj.value.slice(0,-1);
-	
-	
-}
-         });       
-         
-         
-         
-         document.getElementsByClassName("cyberpunk mobile")[0].addEventListener("keyup",function(e){	
-         obj=e.target;
-let isnum = /^\d+$/.test(obj.value);
-			 if(!isnum || obj.value.length>10){
-				
-				 obj.value = obj.value.slice(0,-1);
-				
-				}});
-		
- 
-
-         document.getElementsByClassName("cyberpunk email")[0].addEventListener("keyup",function(e){	
-
-         
-         	
-         });
-         
-         
-
-
-         
-         function showheader(obj){
-         
-               if(obj.classList.contains("fa-close")){
-         	
-         	obj.classList.remove("fa-close");
-         	obj.classList.add("fa-bars");
-         	
-         }
-         else{
-         			obj.classList.remove("fa-bars");
-         	obj.classList.add("fa-close");	
-         	
-         }
-         
-         document.getElementsByClassName("topnavcontainer")[0].classList.toggle("responsivenavbg");
-         document.getElementsByClassName("navbar")[0].classList.toggle("resnavitem");
-         Array.from(document.getElementsByClassName("navitem")).forEach(obj=>{
-         	if(obj.classList.contains("main")){
-         		
-         		obj.classList.toggle("resmain")
-         	}else{
-         		
-         	obj.classList.toggle("resnavitem");	
-         	}
-         	
-         });
-         	
-         
-         	
-         
-         	
-		 }
-         
-         
-
-         
-	   </script>
-         <script>
-                 function showheader(obj){
-                 	
-                        if(obj.classList.contains("fa-close")){
-                 		
-                 		obj.classList.remove("fa-close");
-                 		obj.classList.add("fa-bars");
-                 		
-                 	}
-                 	else{
-                 				obj.classList.remove("fa-bars");
-                 		obj.classList.add("fa-close");	
-                 		
-                 	}
-            
-                 	document.getElementsByClassName("topnavcontainer")[0].classList.toggle("responsivenavbg");
-                 	document.getElementsByClassName("navbar")[0].classList.toggle("resnavitem");
-                 	Array.from(document.getElementsByClassName("navitem")).forEach(obj=>{
-                 		if(obj.classList.contains("main")){
-                 			
-                 			obj.classList.toggle("resmain")
-                 		}else{
-                 			
-                 		obj.classList.toggle("resnavitem");	
-                 		}
-                 		
-                 	});
-                 		
-                 
-                 		
-                 	
-                 		
-                 	
-                 	
-                 	
-                 
-                 	document.getElementsByClassName("topnavborder")[0].classList.toggle("responsivenavbarborder");
-                 
-                 }
-            
-         </script>
-
+                     <div class="eventdetails tech">
+                        <h1>Registration</h1>
+                        <h3 class="eventdetailstopic" ></h3>
+                        <script>
+                           document.getElementsByClassName("eventdetailstopic")[0].innerHTML ="[ "+ localStorage.getItem("eventtype") + " - " +localStorage.getItem("eventname")+"]";
+                        </script>
+                        <input class="cyberpunk name" placeholder="Enter Your Name" name="name" type="text">
+                        <div class="validerror name">Enter Valid name</div>
+                        <input class="cyberpunk email" placeholder="Enter Your Email" name="Email" type="text">
+                        <div class="validerror email">Enter Valid Email</div>
+                        <input class="cyberpunk college" placeholder="Enter Your College" name="College" type="text">
+                        <input class="cyberpunk mobile" placeholder="Enter Your Mobile Number" type="number"><br>
+                        <a class="cyberpunk2077 formsubmit">Submit</a>
+                     </div>
+                     <a class="cyberpunk2077 formsubmit">Submit</a>
+                     <script>
+                        document.getElementsByClassName("formsubmit cyberpunk2077")[0].addEventListener("click",function(e){	
+                        var obj = new Object();
+                        obj.name =document.getElementsByClassName("cyberpunk name")[0].value;
+                        obj.email =document.getElementsByClassName("cyberpunk email")[0].value;
+                        obj.institute =document.getElementsByClassName("cyberpunk college")[0].value;
+                        obj.mobile =document.getElementsByClassName("cyberpunk mobile")[0].value;
+                        var jsondata = JSON.stringify(obj);
+                        			//	  $.post("https://6f08-2400-6180-100-d0-00-aa3-1001.in.ngrok.io/api/v1/register-me",{"name":obj.name,
+                        var url = "https://6f08-2400-6180-100-d0-00-aa3-1001.in.ngrok.io/api/v1/register-me";
+                        
+                        var xhr = new XMLHttpRequest();
+                        xhr.open("POST", url);
+                        
+                        xhr.setRequestHeader("Content-Type", "application/json");
+                        
+                        xhr.onreadystatechange = function () {
+                        if (xhr.readyState === 4) {
+                        if(parseInt(xhr.status)==200){
+                        
+                        alert("Registered Successfully - Your Registration ID is: "+xhr.responseText);
+                        }
+                        else if(parseInt(xhr.status)==406){
+                        
+                        alert("You are already Registered"); 
+                        
+                        }
+                        console.log(xhr.status);
+                        console.log(xhr.responseText);
+                        }};
+                        
+                        var data = `{
+                        "name":"`+obj.name+`",
+                        "email":"`+obj.email+`",
+                        "mobile":`+obj.mobile+`,
+                        "institute":"`+obj.institute+`"
+                        }`;
+                        
+                        xhr.send(data);																								
+                        
+                        
+                        });
+                        document.getElementsByClassName("cyberpunk name")[0].addEventListener("keyup",function(e){	
+                        obj=e.target;
+                        
+                        if(!/^[A-Za-z\s]*$/.test(obj.value)){
+                        
+                        
+                        obj.value = obj.value.slice(0,-1);
+                        
+                        
+                        }
+                        });
+                          document.getElementsByClassName("cyberpunk college")[0].addEventListener("keyup",function(e){	
+                        obj=e.target;
+                        if(!/^[A-Za-z\s]*$/.test(obj.value)){
+                        
+                        
+                        obj.value = obj.value.slice(0,-1);
+                        
+                        
+                        }
+                        });       
+                        
+                        
+                        
+                        document.getElementsByClassName("cyberpunk mobile")[0].addEventListener("keyup",function(e){	
+                        obj=e.target;
+                        let isnum = /^\d+$/.test(obj.value);
+                        if(!isnum || obj.value.length>10){
+                        
+                        obj.value = obj.value.slice(0,-1);
+                        
+                        }});
+                        
+                        
+                        
+                        document.getElementsByClassName("cyberpunk email")[0].addEventListener("keyup",function(e){	
+                        
+                        
+                        	
+                        });
+                        
+                        
+                        
+                        
+                        
+                        function showheader(obj){
+                        
+                              if(obj.classList.contains("fa-close")){
+                        	
+                        	obj.classList.remove("fa-close");
+                        	obj.classList.add("fa-bars");
+                        	
+                        }
+                        else{
+                        			obj.classList.remove("fa-bars");
+                        	obj.classList.add("fa-close");	
+                        	
+                        }
+                        
+                        document.getElementsByClassName("topnavcontainer")[0].classList.toggle("responsivenavbg");
+                        document.getElementsByClassName("navbar")[0].classList.toggle("resnavitem");
+                        Array.from(document.getElementsByClassName("navitem")).forEach(obj=>{
+                        	if(obj.classList.contains("main")){
+                        		
+                        		obj.classList.toggle("resmain")
+                        	}else{
+                        		
+                        	obj.classList.toggle("resnavitem");	
+                        	}
+                        	
+                        });
+                        	
+                        
+                        	
+                        
+                        	
+                        }
+                        
+                        
+                        
+                        
+                     </script>
+                     <script>
+                        function showheader(obj){
+                        	
+                               if(obj.classList.contains("fa-close")){
+                        		
+                        		obj.classList.remove("fa-close");
+                        		obj.classList.add("fa-bars");
+                        		
+                        	}
+                        	else{
+                        				obj.classList.remove("fa-bars");
+                        		obj.classList.add("fa-close");	
+                        		
+                        	}
+                        
+                        	document.getElementsByClassName("topnavcontainer")[0].classList.toggle("responsivenavbg");
+                        	document.getElementsByClassName("navbar")[0].classList.toggle("resnavitem");
+                        	Array.from(document.getElementsByClassName("navitem")).forEach(obj=>{
+                        		if(obj.classList.contains("main")){
+                        			
+                        			obj.classList.toggle("resmain")
+                        		}else{
+                        			
+                        		obj.classList.toggle("resnavitem");	
+                        		}
+                        		
+                        	});
+                        		
+                        
+                        		
+                        	
+                        		
+                        	
+                        	
+                        	
+                        
+                        	document.getElementsByClassName("topnavborder")[0].classList.toggle("responsivenavbarborder");
+                        
+                        }
+                        
+                     </script>
                      <div class="rightside"><img src="logo.png" ></div>
                      <style>
                      </style>
@@ -328,9 +233,8 @@ let isnum = /^\d+$/.test(obj.value);
          </div>
          <style>
          </style>
-
          <script>
-			            function register(type)	  {
+            function register(type)	  {
             var btn = document.getElementsByClassName("cyberpunk2077 btnsubmit")[0];
             localStorage.setItem("eventtype",type);
             localStorage.setItem("eventname",btn.value);
@@ -338,63 +242,63 @@ let isnum = /^\d+$/.test(obj.value);
             
             
             }
-                   
+                
             var obj = document.getElementsByClassName("link");
             for (var i = 0; i < obj.length; i++) {
             
             obj[i].addEventListener("mouseenter",function(e){
             
-             document.getElementsByClassName("linkmain")[0].classList.remove("mainlink");     
+            document.getElementsByClassName("linkmain")[0].classList.remove("mainlink");     
             });
             obj[i].addEventListener("mouseleave",function(e){
             if(e.target!=document.getElementsByClassName("dropdownlist")[0] )
-             document.getElementsByClassName("linkmain")[0].classList.add("mainlink")
+            document.getElementsByClassName("linkmain")[0].classList.add("mainlink")
             
             });
             
             }		  
             
             $(".container2").delay(3000).fadeOut();
-            	  $(".stripe").delay(3100).fadeIn();
-             $(".topic1").delay(5000).fadeIn();
-                 function showheader(obj){
-                 	
-                        if(obj.classList.contains("fa-close")){
-                 		
-                 		obj.classList.remove("fa-close");
-                 		obj.classList.add("fa-bars");
-                 		
-                 	}
-                 	else{
-                 				obj.classList.remove("fa-bars");
-                 		obj.classList.add("fa-close");	
-                 		
-                 	}
+            $(".stripe").delay(3100).fadeIn();
+            $(".topic1").delay(5000).fadeIn();
+              function showheader(obj){
+              	
+                     if(obj.classList.contains("fa-close")){
+              		
+              		obj.classList.remove("fa-close");
+              		obj.classList.add("fa-bars");
+              		
+              	}
+              	else{
+              				obj.classList.remove("fa-bars");
+              		obj.classList.add("fa-close");	
+              		
+              	}
             
-                 	document.getElementsByClassName("topnavcontainer")[0].classList.toggle("responsivenavbg");
-                 	document.getElementsByClassName("navbar")[0].classList.toggle("resnavitem");
-                 	Array.from(document.getElementsByClassName("navitem")).forEach(obj=>{
-                 		if(obj.classList.contains("main")){
-                 			
-                 			obj.classList.toggle("resmain")
-                 		}else{
-                 			
-                 		obj.classList.toggle("resnavitem");	
-                 		}
-                 		
-                 	});
-                 		
-                 
-                 		
-                 	
-                 		
-                 	
-                 	
-                 	
-                 
-                 	document.getElementsByClassName("topnavborder")[0].classList.toggle("responsivenavbarborder");
-                 
-                 }
+              	document.getElementsByClassName("topnavcontainer")[0].classList.toggle("responsivenavbg");
+              	document.getElementsByClassName("navbar")[0].classList.toggle("resnavitem");
+              	Array.from(document.getElementsByClassName("navitem")).forEach(obj=>{
+              		if(obj.classList.contains("main")){
+              			
+              			obj.classList.toggle("resmain")
+              		}else{
+              			
+              		obj.classList.toggle("resnavitem");	
+              		}
+              		
+              	});
+              		
+              
+              		
+              	
+              		
+              	
+              	
+              	
+              
+              	document.getElementsByClassName("topnavborder")[0].classList.toggle("responsivenavbarborder");
+              
+              }
             
          </script>
          <style>
