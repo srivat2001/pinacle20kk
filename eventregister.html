@@ -3,6 +3,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	   <script src="js/nav.js"></script>
       <link rel="stylesheet" href="css/common.css">
       <link rel="stylesheet" href="css/register.css">
    </head>
@@ -168,44 +169,7 @@
                         
                      </script>
                      <script>
-                        function showheader(obj){
-                        	
-                               if(obj.classList.contains("fa-close")){
-                        		
-                        		obj.classList.remove("fa-close");
-                        		obj.classList.add("fa-bars");
-                        		
-                        	}
-                        	else{
-                        				obj.classList.remove("fa-bars");
-                        		obj.classList.add("fa-close");	
-                        		
-                        	}
-                        
-                        	document.getElementsByClassName("topnavcontainer")[0].classList.toggle("responsivenavbg");
-                        	document.getElementsByClassName("navbar")[0].classList.toggle("resnavitem");
-                        	Array.from(document.getElementsByClassName("navitem")).forEach(obj=>{
-                        		if(obj.classList.contains("main")){
-                        			
-                        			obj.classList.toggle("resmain")
-                        		}else{
-                        			
-                        		obj.classList.toggle("resnavitem");	
-                        		}
-                        		
-                        	});
-                        		
-                        
-                        		
-                        	
-                        		
-                        	
-                        	
-                        	
-                        
-                        	document.getElementsByClassName("topnavborder")[0].classList.toggle("responsivenavbarborder");
-                        
-                        }
+              
                         
                      </script>
                      <div class="rightside"><img src="logo.png" ></div>
@@ -261,44 +225,7 @@
             $(".container2").delay(3000).fadeOut();
             $(".stripe").delay(3100).fadeIn();
             $(".topic1").delay(5000).fadeIn();
-              function showheader(obj){
-              	
-                     if(obj.classList.contains("fa-close")){
-              		
-              		obj.classList.remove("fa-close");
-              		obj.classList.add("fa-bars");
-              		
-              	}
-              	else{
-              				obj.classList.remove("fa-bars");
-              		obj.classList.add("fa-close");	
-              		
-              	}
-            
-              	document.getElementsByClassName("topnavcontainer")[0].classList.toggle("responsivenavbg");
-              	document.getElementsByClassName("navbar")[0].classList.toggle("resnavitem");
-              	Array.from(document.getElementsByClassName("navitem")).forEach(obj=>{
-              		if(obj.classList.contains("main")){
-              			
-              			obj.classList.toggle("resmain")
-              		}else{
-              			
-              		obj.classList.toggle("resnavitem");	
-              		}
-              		
-              	});
-              		
-              
-              		
-              	
-              		
-              	
-              	
-              	
-              
-              	document.getElementsByClassName("topnavborder")[0].classList.toggle("responsivenavbarborder");
-              
-              }
+        
             
          </script>
          <style>
