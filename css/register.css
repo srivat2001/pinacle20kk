@@ -45,3 +45,27 @@ font-weight: 100;}
 	
 	margin-left: 0px;
 }
+@media only screen and (max-width:780px) {
+	input[type="text"].cyberpunk, input[type="date"].cyberpunk, input[type="time"].cyberpunk, input[type="file"].cyberpunk, input[type="number"].cyberpunk, input[type="phone"].cyberpunk, input[type="password"].cyberpunk, textarea.cyberpunk, select.cyberpunk {
+  width: calc(100%);
+  border: 3px solid #474747;
+  clip-path: none;
+  margin-bottom: 10px;
+  padding: 20px;
+  font-size: 1.7rem;
+  font-size: 1.2rem;
+  font-weight: 100;
+		border-radius: 20px;
+		margin-bottom: 25px;
+		
+	}
+	.rightside{
+		
+		display: none;
+	}
+	a.cyberpunk2077, button.cyberpunk2077 {
+		
+		width: auto;
+	}
+	
+}

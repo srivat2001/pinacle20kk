@@ -415,12 +415,21 @@
          }
          }
          .navitem:nth-child(1) {
-         animation-delay: .2s
+         animation-delay: .1s
          }
          .navitem:nth-child(2) {
-         animation-delay: .4s
+         animation-delay: .2s
          }
          .navitem:nth-child(3) {
+         animation-delay: .3s
+         }
+         .navitem:nth-child(4) {
+         animation-delay: .4s
+         }
+         .navitem:nth-child(5) {
+         animation-delay: .5s
+         }
+         .navitem:nth-child(6) {
          animation-delay: .6s
          }
          .navitem a {
@@ -643,7 +652,7 @@
          position: absolute;
          background-color: #f9f9f9;
          min-width: 160px;
-         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2);
+         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
          z-index: 1
          }
          .dropdown-content a {
@@ -938,7 +947,7 @@ margin-top: 20px;
          position: absolute;
          bottom: -12px;
          right: 25px;
-         padding: 2px 2px 0px 2px;
+         padding: 2px 2px 0 2px;
          font-size: .6rem;
          line-height: .6rem;
          color: #000;
@@ -1349,15 +1358,7 @@ margin-top: 20px;
          left: 0px;
          }		
          }
-         .navitem:nth-child(1){
-         animation-delay: 0.2s
-         }
-         .navitem:nth-child(2){
-         animation-delay: 0.4s
-         }
-         .navitem:nth-child(3){
-         animation-delay: 0.6s
-         }
+    
          .navitem a{
          text-decoration: none;
          color: white;
@@ -1423,7 +1424,7 @@ color: white;
  position: absolute;
 width: 40%;
 top: -13px;
-right: -0px;
+right: -0;
 transform: rotate(-25deg);
 }
          .resmain{
@@ -1521,7 +1522,7 @@ font-size: 27px;
 margin-top: 7px;
 }
 .rightside img{
-	
+	display: block;
 	width: 800px;
                      margin-left: 50px;
                      margin-top: 0px;
@@ -1534,10 +1535,53 @@ padding: 0.2rem;
   padding-right: 0.2rem;
   padding-left: 0.2rem;
 border-radius: 20px;
-padding-right: 10px;
-padding-left: 10px;
+padding-right: 10;
+padding-left: 10;
 color: #1e1e1e;
 font-weight: 600;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+.middlelogo{
+display: none;
+}
+  @media only screen and (max-width: 500px) {
+	  .rightside img{
+	display: none;
+
+                     margin-left: 50px;
+                     margin-top: 0px;
+}
+	  h1.cyberpunk.glitched {
+		  
+		  
+		  position: relative;
+left: 18px;
+text-align: center;	  }
+.descholder{
+	
+	margin-top: 220px;
+}
+.middlelogo{
+	display: block;
+	max-width: 80%;
+position: absolute;
+top: 150px;
+transform: translateX(+15%);
+}
+p.cyberpunk.inverse {
+	
+	padding: 20px 15px 30px;
+	
+	
+}
+}
+@media only screen and (max-width:780px) {
+	.rightside{
+		
+		display: none;
+	}
+	
+	
 }

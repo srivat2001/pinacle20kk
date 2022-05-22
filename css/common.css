@@ -410,13 +410,22 @@
          left: 0px
          }
          }
-         .navitem:nth-child(1) {
-         animation-delay: .2s
+       .navitem:nth-child(1) {
+         animation-delay: .1s
          }
          .navitem:nth-child(2) {
-         animation-delay: .4s
+         animation-delay: .2s
          }
          .navitem:nth-child(3) {
+         animation-delay: .3s
+         }
+         .navitem:nth-child(4) {
+         animation-delay: .4s
+         }
+         .navitem:nth-child(5) {
+         animation-delay: .5s
+         }
+         .navitem:nth-child(6) {
          animation-delay: .6s
          }
          .navitem a {
@@ -1731,15 +1740,7 @@ border-bottom: 0px;
          left: 0px
          }
          }
-         .navitem:nth-child(1) {
-         animation-delay: .2s
-         }
-         .navitem:nth-child(2) {
-         animation-delay: .4s
-         }
-         .navitem:nth-child(3) {
-         animation-delay: .6s
-         }
+
          .navitem a {
          text-decoration: none;
          color: #e6e6e6;
@@ -2220,6 +2221,7 @@ font-weight: 100;
 	margin-bottom: 10px;
 }
 .rightside {
+
 position: fixed;
 width: 40%;
 right: -25px;
