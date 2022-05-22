@@ -1,212 +1,217 @@
 {"Technical": {
     "BUGSMASH": {
       "name": "BUGSMASH",
-      "subline": "DEBUGGING",
-      "desc": [
+      "subline": "DEBUGGING",      "desc":[
         "The event would be conducted in a Relay manner i.e.",
         " each team mate should debug one after another.",
         " Certain hindrances would be there to increase the difficulty.",
         " The complexity would increase with the rounds"
       ],
+	 "contents":[{
       "rules": [
         "A team must contain 3 members",
         "Basic programming knowledge is required",
         "Discussion among participants will not be entertained.. If found so, the team will be disqualified.",
         "The winner is determined by the total points of each team."
-      ],
-      "Rounds": []
-    },
-    "Codezilla": {
+      ]
+	 },
+      {"Rounds": []},{"Contact":["Mrs Jananai : 982858585"]}
+    ]}
+,    "Codezilla": {
       "name": "Codezilla",
-      "subline": "Coding event",
-      "desc": [
-        "The event would be conducted in a Relay manner i.e.",
+      "subline": "DEBUGGING",      "desc":[
+    "The event would be conducted in a Relay manner i.e.",
         " each team mate should debug one after another.",
         " Certain hindrances would be there to increase the difficulty.",
         " The complexity would increase with the rounds"
       ],
+	 "contents":[{
       "rules": [
         "This is an individual event",
         "No of Rounds Will Be Decided Based On The Number Of Participants.",
         "Candidates should not Involve in Any Kind of Malpractice. If Caught, then the",
         "The panel's decision will be the final verdict"
-      ],
-      "Rounds": [],"Contact":["Mrs Jananai : 982858585"]
-    },
-    "Brain squeezer": {
+      ]
+	 },
+      {"Rounds": []},{"Contact":["Mrs Jananai : 982858585"]}
+    ]}, "Brain squeezer": {
       "name": "Brain squeezer",
-      "subline": "Technical quiz event",
-      "desc": [
-        "The questions will be displayed on a projector and the candidate has to answer the questions.",
+      "subline": "Technical quiz event",      "desc":[
+           "The questions will be displayed on a projector and the candidate has to answer the questions.",
         "Certain hindrances will be given to distract the contestants."
       ],
+	 "contents":[{
       "rules": [
         "This is an individual event",
         "No of Rounds Will Be Decided Based On The Number Of Participants.",
         "Candidates should not Involve in Any Kind of Malpractice. If Caught, then the",
         "The panel's decision will be the final verdict"
-      ],
-      "Rounds": [],"Contact":[]
-    },
-    "iDesign": {
+      ]
+	 },
+      {"Rounds": []},{"Contact":["Mrs Jananai : 982858585"]}
+    ]}, "iDesign": {
       "name": "iDesign",
-      "subline": "UI/UX Design",
-      "desc": [
-        "This is an individual event which takes place for 2 hours",
+    "subline": "UI/UX Design",      "desc":[
+         "This is an individual event which takes place for 2 hours",
         "It is a single round event where the participants will be given a website to recreate the UI/UX. ",
         "The participant whose design is closest to the website wins."
       ],
+	 "contents":[{
       "rules": [
-        "This is an Individual event.",
+     "This is an Individual event.",
         "Participants have to bring their own laptops.",
         "Designing should be done in Figma.",
         "Design should not be done prior to the competition.",
         "Participants should share their Figma URL.",
         "Participants can use images of their own if necessary.",
         "Participants should not use the pre-defined components from the external resources"
-      ],
-      "Rounds": [],"Contact":[]
-    },
-    "SharkTank": {
+      ]
+	 },
+      {"Rounds": []},{"Contact":["Mrs Jananai : 982858585"]}
+    ]}, "SharkTank": {
       "name": "SharkTank",
-      "subline": "Buisness",
-      "desc": [
-        "This event is to provide a platform for people to build their entrepreneurial journey by pitching and validating their ideas so that they can be implemented and get a chance to network with like-minded industry professionals."
+      "subline": "Buisness","desc":[
+      "This event is to provide a platform for people to build their entrepreneurial journey by pitching and validating their ideas so that they can be implemented and get a chance to network with like-minded industry professionals."
       ],
+	 "contents":[{
       "rules": [
-        "A team can have a maximum of 5 students",
+    "A team can have a maximum of 5 students",
         "A team can have a maximum of 5 students",
         "Create a pitch deck with your ideas and upload the following documents, including all the details contained in Guideline.",
         "Each Team will have ten minutes to present their ideas",
         "Copying an idea is strictly prohibited and disqualifies you.",
         "The jury's decision is final",
         "The award will be based on the innovativeness and feasibility of the presented idea."
-      ],
-      "Rounds": [
-        "Ideas would be pitched to professors",
-        "Ideas would be pitched to professors"
       ]
-    },
-    "Connections-Connexus": {
+	 },
+      {"Rounds": []},{"Contact":["Mrs Jananai : 982858585"]}
+    ]}
+	, "Connections-Connexus": {
       "name": "Connections-Connexus",
-		   "subline": "quiz",
-      "desc": [
-        "This would be a buzzer based event. A couple of pictures will be displayed on a projector. ",
+      "subline": "quiz",      "desc":[
+       "This would be a buzzer based event. A couple of pictures will be displayed on a projector. ",
         "The participants must identify a technical word by analyzing all the photos given as clues."
       ],
+	 "contents":[{
       "rules": [
-        "A team must contain 3 members",
+    "A team must contain 3 members",
         "Whichever team hits the buzzer first should answer within 10 seconds.",
         "Host will decide who hit the buzzer first. Host’s decision would be final"
-      ],
-      "Rounds": []
-    }
-  },
-  "NonTechnical": {
-    "Futsal": {
+      ]
+	 },
+      {"Rounds": []},{"Contact":["Mrs Jananai : 982858585"]}
+    ]}
+},  "NonTechnical": {
+	 "Futsal": {
       "name": "Futsal",
-      "subline": "Game",
-      "rules": [
-        "Team length-3+2 (rolling substitutes)",
+      "subline": "Game",      "desc":[
+
+      ],
+	 "contents":[{
+      "rules": [         "Team length-3+2 (rolling substitutes)",
         "Time : 4 - 1 - 4",
         "Refund of the registration fee will not be entertained strictly",
-        "The organizing committee has full authority to revise the rules of the game"
-      ],
-      "desc": [],
-      "Rounds": [],"Contact":[]
-    },
-    "Boxcricket": {
+        "The organizing committee has full authority to revise the rules of the game"]
+	 },
+      {"Rounds": []},{"Contact":["Mrs Jananai : 982858585"]}
+    ]}, "Boxcricket": {
       "name": "Boxcricket",
-      "subline": "Game",
-      "rules": [
-        "5 players per team + 2",
+      "subline": "Game",      "desc":[
+
+      ],
+	 "contents":[{
+      "rules": [          "5 players per team + 2",
         "Number of overs : 4",
         "The umpire’s decision is final",
         "Refund of the registration fee will not be entertained strictly",
         "Fixtures based on number of entries.",
-        "The organizing committee has full authority to revise the rules of the game"
-      ],
-      "desc": [],
-      "Rounds": [],"Contact":[]
-    },
-    "Fifa": {
+        "The organizing committee has full authority to revise the rules of the game"]
+	 },
+      {"Rounds": []},{"Contact":["Mrs Jananai : 982858585"]}
+    ]}, "Fifa": {
       "name": "Fifa",
-      "subline": "Game",
-      "rules": [
-        "2 players per team (2 v 2)",
+      "subline": "Game",      "desc":[
+
+      ],
+	 "contents":[{
+      "rules": [         "2 players per team (2 v 2)",
         "Time : 6 minutes per half",
         "Fixtures based on number of entries.",
-        "Refund of the registration fee will not be entertained strictly"
-      ],
-      "desc": [],
-      "Rounds": [],"Contact":[]
-    },
-    "BGMI": {
+        "Refund of the registration fee will not be entertained strictly"]
+	 },
+      {"Rounds": []},{"Contact":["Mrs Jananai : 982858585"]}
+    ]}, "BGMI": {
       "name": "BGMI",
-      "subline": "Game",
-      "rules": [
-        "Bring your own device with proper internet connection ",
+      "subline": "Game",      "desc":[
+
+      ],
+	 "contents":[{
+      "rules": [      "Bring your own device with proper internet connection ",
         "Refund of the registration fee will not be entertained strictly",
         "Fixtures based on number of entries.",
         "Refund of the registration fee will not be entertained strictly",
         "First place vs Second place from round 1",
-        "Third place vs Fourth place from round 1"
-      ],
-      "desc": [],
-      "Rounds": [
-        "Round 1 : Squad match",
-        "Round 2 : Top 4 teams from round 1 - TDM (only M416)"
-      ],"Contact":[]
-    },
-    "Channelsurfing": {
+        "Third place vs Fourth place from round 1"]
+	 },
+      {"Rounds": []},{"Contact":["Mrs Jananai : 982858585"]}
+    ]},"Channelsurfing": {
       "name": "Channelsurfing",
-      "subline": "Game",
-      "rules": [
-        "A team must contain 5-6 members",
+      "subline": "Game",      "desc":[
+
+      ],
+	 "contents":[{
+      "rules": [  "A team must contain 5-6 members",
         "All the members of the team must be included in the enacting",
         "Every team gets around 4-5 minutes of enacting time",
         "No preparation time will be given",
         "No vulgarity will be entertained",
-        "Judge’s decision will be final"
-      ],
-      "desc": [],
-      "Rounds": [],"Contact":[]
-    },
-    "Treasurehunt": {
+        "Judge’s decision will be final"]
+	 },
+      {"Rounds": []},{"Contact":["Mrs Jananai : 982858585"]}
+    ]},"Treasurehunt": {
       "name": "Treasurehunt",
-      "subline": "Game",
-      "rules": [
-        "A team must contain 5-6 members",
+      "subline": "Game",      "desc":[
+
+      ],
+	 "contents":[{
+      "rules": [   "A team must contain 5-6 members",
         "The hints will be placed in various locations around the campus",
         "Hints will be given through a QR code which you can scan using your mobiles",
         "The QR scan code gives the hint to proceed for the next QR scan",
-        "Winners will be based on the minimal finishing time"
-      ],
-      "desc": [],
-      "Rounds": [],"Contact":[]
-    },    "Job wreck": {
+        "Winners will be based on the minimal finishing time"]
+	 },
+      {"Rounds": []},{"Contact":["Mrs Jananai : 982858585"]}
+    ]},"Job wreck": {
       "name": "Job wreck",
-      "subline": "skill",
-      "rules": [
-        "The participants will have 2 minutes time for preparation and 3 minutes on stage",
-        "They will be given 2 minutes to convince the judge as to why they should get the job",
-        "Jobs on which they have to perform will be given on spot"
+      "subline": "Game",      "desc":[
 
       ],
-      "desc": [],
-      "Rounds": [],"Contact":[]
-    },    "Photography": {
+	 "contents":[{
+      "rules": [   "The participants will have 2 minutes time for preparation and 3 minutes on stage",
+        "They will be given 2 minutes to convince the judge as to why they should get the job",
+        "Jobs on which they have to perform will be given on spot"]
+	 },
+      {"Rounds": []},{"Contact":["Mrs Jananai : 982858585"]}
+    ]}
+	,"Photography": {
       "name": "Photography",
-      "subline": "skill",
-      "rules": [
-        "Participants should strictly follow the theme",
+      "subline": "skill",      "desc":[
+
+      ],
+	 "contents":[{
+      "rules": [          "Participants should strictly follow the theme",
         "Only one entry from each participant is considered",
         "The photos can be captured through mobile and DSLR camera",
         "Basic editing is allowed",
-        "The photograph should not contain any watermark"
-      ],
-      "desc": [],
-      "Rounds": []
-    }
-  }
+        "The photograph should not contain any watermark"]
+	 },
+      {"Rounds": []},{"Contact":["Mrs Jananai : 982858585"]}
+    ]}
+	
+	
+	
+	
+	
 }
+}
+
