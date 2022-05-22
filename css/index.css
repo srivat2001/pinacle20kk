@@ -3150,13 +3150,13 @@ top: -90;
 .middlelogo{
 
 background-image: url("logo.png");
-width: 300px;
-height: 300px;
+width: 240px;
+height: 250px;
 background-position: center;
 background-size: cover;
 top: 110px;
-	display: block;
-		margin: auto;
+display: block;
+margin: auto;
 
 }
 
