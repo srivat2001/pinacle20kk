@@ -35,11 +35,13 @@
 				<script>
 					document.getElementsByClassName("eventdetailstopic")[0].innerHTML ="[ "+ localStorage.getItem("eventtype") + " - " +localStorage.getItem("eventname")+"]";
 		</script>
+	        
                <input class="cyberpunk name" placeholder="Enter Your Name" name="name" type="text">
                <div class="validerror name">Enter Valid name</div>
                <input class="cyberpunk email" placeholder="Enter Your Email" name="Email" type="text">
                <div class="validerror email">Enter Valid Email</div>
                <input class="cyberpunk college" placeholder="Enter Your College" name="College" type="text">
+	       <input class="cyberpunk dob" placeholder="Dateofbirth" name="College" type="date">
                <select class="cyberpunk year" class="name">
 
                   <option value="1">1st year</option>
@@ -48,26 +50,74 @@
                   <option value="4">4th year</option>
                </select>
                <input class="cyberpunk dept" placeholder="Enter Your department" type="text">
-               <input class="cyberpunk mobile" placeholder="Enter Your Mobile Number" type="text"><br>
+               <input class="cyberpunk mobile" placeholder="Enter Your Mobile Number" type="number"><br>
       <a class="cyberpunk2077 formsubmit">Submit</a></div>
 					   <a class="cyberpunk2077 formsubmit">Submit</a>
 
+<script>
 
- <script>
+	
+	
+	  
 		
          document.getElementsByClassName("formsubmit cyberpunk2077")[0].addEventListener("click",function(e){	
          var obj = new Object();
          obj.name =document.getElementsByClassName("cyberpunk name")[0].value;
          obj.email =document.getElementsByClassName("cyberpunk email")[0].value;
-         obj.college =document.getElementsByClassName("cyberpunk college")[0].value;
-         obj.dept =document.getElementsByClassName("cyberpunk dept")[0].value;
+			var myDate = document.getElementsByClassName("cyberpunk dob")[0].value;
+myDate = myDate.split("-");
+var newDate = new Date( myDate[2], myDate[1] - 1, myDate[0]);
+console.log(newDate.getTime());
+			 obj.dob =newDate.getTime();
+         obj.institute =document.getElementsByClassName("cyberpunk college")[0].value;
+         //obj.dept =document.getElementsByClassName("cyberpunk dept")[0].value;
          obj.mobile =document.getElementsByClassName("cyberpunk mobile")[0].value;
-		 obj.year =document.getElementsByClassName("cyberpunk year")[0].value;	 
-         obj.eventtype =localStorage.getItem("eventtype");
-         obj.eventname =localStorage.getItem("eventname");
-         var string = JSON.stringify(obj);
-         	
-         if(obj.name.length<1 || obj.email.length<1 ||  obj.college.length<1 ||  obj.dept.length<1 ||  obj.year.length<1 || obj.eventtype.length<1 || obj.eventname.length<1){
+		// obj.year =document.getElementsByClassName("cyberpunk year")[0].value;	 
+       //  obj.eventtype =localStorage.getItem("eventtype");
+       //  obj.eventname =localStorage.getItem("eventname");
+         var jsondata = JSON.stringify(obj);
+         			//	  $.post("https://6f08-2400-6180-100-d0-00-aa3-1001.in.ngrok.io/api/v1/register-me",{"name":obj.name,
+			var url = "https://6f08-2400-6180-100-d0-00-aa3-1001.in.ngrok.io/api/v1/register-me";
+
+var xhr = new XMLHttpRequest();
+xhr.open("POST", url);
+
+xhr.setRequestHeader("Content-Type", "application/json");
+
+xhr.onreadystatechange = function () {
+   if (xhr.readyState === 4) {
+	  if(parseInt(xhr.status)==200){
+		  
+		  alert("Registered Successfully - Your Registration ID is: "+xhr.responseText);
+	  }
+	   else if(parseInt(xhr.status)==406){
+		   
+		  alert("You are already Registered"); 
+		   
+	   }
+      console.log(xhr.status);
+      console.log(xhr.responseText);
+   }};
+
+var data = `{
+	"name":"`+obj.name+`",
+	"email":"`+obj.email+`",
+	"mobile":`+obj.mobile+`,
+	"dob":`+obj.dob+`,
+	"institute":"`+obj.institute+`"
+}`;
+
+xhr.send(data);																								//"email":obj.email,
+																										///	"dob":obj.dob, 
+																										//	"institute":obj.institute,
+																										//	"mobile":obj.mobile
+																										//	},function(data, status){
+   // alert("Data: " + data + "\nStatus: " + status);
+//  });
+			 
+		
+			 return false;
+     /*    if(obj.name.length<1 || obj.email.length<1 ||  obj.college.length<1 ||  obj.dept.length<1 ||  obj.year.length<1 || obj.eventtype.length<1 || obj.eventname.length<1){
 			 
 			 alert("Dont Leave empty inputs");
 			 return false;
@@ -105,7 +155,7 @@ let isnum = /^\d+$/.test(obj.value);
          form.setAttributeNode(method);
          	
          let  action = document.createAttribute("action");			
-         action.value="check.php";	
+         action.value="https://6f08-2400-6180-100-d0-00-aa3-1001.in.ngrok.io/api/v1/register-me.php";	
          form.setAttributeNode(action);
          	
          document.getElementsByClassName("topic1")[0].appendChild(form);	
@@ -125,7 +175,8 @@ let isnum = /^\d+$/.test(obj.value);
          input.setAttributeNode(inputvalue);
          
          document.getElementsByTagName("form")[0].appendChild(input);	
-         form.submit();
+
+       //  form.submit();*/
          
          });
          document.getElementsByClassName("cyberpunk name")[0].addEventListener("keyup",function(e){	

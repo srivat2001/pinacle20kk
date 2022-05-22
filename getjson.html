@@ -1,0 +1,45 @@
+
+<style>
+	#demo{
+		
+		font-size: 10px;
+	}
+</style>
+<div id="demo"></div><br>
+
+<button onclick="get()">Get details</button>
+<div id="decrypt"></div><br>
+<script>
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "details.json", true);
+  xhttp.send();
+	
+function get(){
+var result = [];
+var mydata = JSON.parse(document.getElementById("demo").innerHTML);
+
+
+//console.log(mydata["NonTechnical"]["Futsal"]["name"]);
+for (const key in mydata["NonTechnical"]){
+	
+	console.log(key);
+}
+for (i=0;mydata["NonTechnical"].length;i++){
+	
+	 console.log(mydata["NonTechnical"][i]);
+	
+}
+
+
+for(i=0;mydata.length;i++){
+    var element = mydata[i];
+
+	 console.log(element);
+}
+}
+</script>
