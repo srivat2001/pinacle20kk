@@ -45,6 +45,12 @@ font-weight: 100;}
 	
 	margin-left: 0px;
 }
+.navitem {
+	
+	margin-left: 0;
+	margin-right: 50;
+	
+}
 @media only screen and (max-width:780px) {
 	input[type="text"].cyberpunk, input[type="date"].cyberpunk, input[type="time"].cyberpunk, input[type="file"].cyberpunk, input[type="number"].cyberpunk, input[type="phone"].cyberpunk, input[type="password"].cyberpunk, textarea.cyberpunk, select.cyberpunk {
   width: calc(100%);
