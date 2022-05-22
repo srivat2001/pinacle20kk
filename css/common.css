@@ -34,7 +34,7 @@
          margin-top: 0px;
          background-color: transparent;
          color: gray;
-         padding-top: 20px;
+         padding-top: 0px;
 			 
          }
          .desctopic {
@@ -97,7 +97,7 @@
          }
          @media only screen and (max-width:1041px) {
          .maincontainer {
-         margin-top: 80px
+         margin-top: 0px
          }
          }
          .rules {
@@ -1802,7 +1802,7 @@ border-bottom: 0px;
          display: block
          }
          .topnavcontainer {
-         position: fixed
+         position: inherit
          }
          .fa-bars,
          .fa-close {
