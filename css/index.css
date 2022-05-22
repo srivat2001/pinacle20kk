@@ -1447,7 +1447,7 @@ transform: rotate(-25deg);
          display: block;
          }
          .topnavcontainer{
-         position: fixed;
+         position: inherit;
          } 
          .fa-bars,.fa-close{
          margin-top: 24px;
