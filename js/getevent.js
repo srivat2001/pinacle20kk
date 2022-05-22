@@ -28,7 +28,7 @@ xhttp.onreadystatechange = function() {
 
     }
 };
-xhttp.open("GET", "https://srivat2001.github.io/pinacle20kk/js/details1.json", true);
+xhttp.open("GET", "details1.json", true);
 xhttp.send();
 
 $(document).ready(function() {
@@ -42,8 +42,11 @@ $(document).ready(function() {
 
 
     }
+	setTimeout(function() {
+			
     items = document.getElementsByClassName("item");
     for (var i = 0; i < items.length; i++) {
+	
         $(".previous").on('touch', function(event) {
             event.stopPropagation();
             event.stopImmediatePropagation();
@@ -89,7 +92,7 @@ $(document).ready(function() {
 
     }
 
-
+	}, 1000);
 
 
 });
@@ -173,7 +176,7 @@ $('.selectobj').change(function() {
             selectedevent.adddsubmitbtn();
         }
     };
-    xhttp.open("GET", "https://srivat2001.github.io/pinacle20kk/js/details1.json", true);
+    xhttp.open("GET", "details1.json", true);
     xhttp.send();
 
 });
