@@ -51,10 +51,14 @@
                         obj.email =document.getElementsByClassName("cyberpunk email")[0].value;
                         obj.institute =document.getElementsByClassName("cyberpunk college")[0].value;
                         obj.mobile =document.getElementsByClassName("cyberpunk mobile")[0].value;
-                        var jsondata = JSON.stringify(obj);
-                        			//	  $.post("https://6f08-2400-6180-100-d0-00-aa3-1001.in.ngrok.io/api/v1/register-me",{"name":obj.name,
                         var url = "https://6f08-2400-6180-100-d0-00-aa3-1001.in.ngrok.io/api/v1/register-me";
-                        
+                        var today = new Date();
+                        var dd = String(today.getDate()).padStart(2, '0');
+                        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                        var yyyy = today.getFullYear();
+			today = mm + '-' + dd + '-' + yyyy;
+			myDate = today.split("-");
+                        var newDate = new Date( myDate[2], myDate[1] - 1, myDate[0]);
                         var xhr = new XMLHttpRequest();
                         xhr.open("POST", url);
                         
@@ -79,6 +83,7 @@
                         "name":"`+obj.name+`",
                         "email":"`+obj.email+`",
                         "mobile":`+obj.mobile+`,
+                        "dob":`+newDate.getTime()+`,
                         "institute":"`+obj.institute+`"
                         }`;
                         
