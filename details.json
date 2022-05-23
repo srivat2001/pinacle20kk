@@ -103,9 +103,7 @@
 },  "NonTechnical": {
 	 "Futsal": {
       "name": "Futsal",
-      "subline": "Game",      "desc":[
-
-      ],
+      "subline": "Game",      "desc":["A 3's football match of duration 4 mins per half where any team can participate with 2 rolling substitutes and the fixtures will be based on the number of teams registered."],
 	 "contents":[{
       "rules": [         "Team length-3+2 (rolling substitutes)",
         "Time : 4 - 1 - 4",
