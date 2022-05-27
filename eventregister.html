@@ -4,8 +4,10 @@
       <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	   <script src="js/nav.js"></script>
+	   <script type="text/javascript" src="js/loading.js"></script>
       <link rel="stylesheet" href="css/common.css">
       <link rel="stylesheet" href="css/register.css">
+
    </head>
    <body>
       <div class="stripe">
@@ -17,9 +19,10 @@
                      <div class="navitem"><a class="link" href="index.html">Home</a></div>
                      <div class="navitem"><a   href="technicalevents.html">Technical Events</a></div>
                      <div class="navitem"><a  class="link" href="nontechnicalevents.html">Non Technical Events</a></div>
+					     <div class="navitem"><a class="linkmain"    href="onlineevents.html">Online Events</a></div>
                      <div class="navitem"><a class="link" href="sponsors.html">Sponsors</a></div>
                      <div class="navitem"><a class="link" href="contactus.html">Contact us</a></div>
-                     <div class="navitem main"><a class="linkmain mainlink" class="link" href="#">Registration</a></div>
+                     <div class="navitem main"><a class="linkmain mainlink" class="link" href="eventregister.html">Registration</a></div>
                   </div>
                </div>
             </div>
@@ -28,13 +31,21 @@
             </div>
             <div class="topic1">
                <div class="mainpagecontainer">
+				    <div class="loading">
+                     <div class="obj"></div>
+                     <div class="obj"></div>
+                     <div class="obj"></div>
+                     <div class="obj"></div>
+                     <div class="obj"></div>
+                     <div class="obj"></div>
+                     <div class="obj"></div>
+                     <div class="obj"></div>
+                 </div>
+               
                   <div class="mainintro" id="typedtext" class="desc">
                      <div class="eventdetails tech">
                         <h1>Registration</h1>
                         <h3 class="eventdetailstopic" ></h3>
-                        <script>
-                           document.getElementsByClassName("eventdetailstopic")[0].innerHTML ="[ "+ localStorage.getItem("eventtype") + " - " +localStorage.getItem("eventname")+"]";
-                        </script>
                         <input class="cyberpunk name" placeholder="Enter Your Name" name="name" type="text">
                         <div class="validerror name">Enter Valid name</div>
                         <input class="cyberpunk email" placeholder="Enter Your Email" name="Email" type="text">
@@ -45,6 +56,7 @@
                      </div>
                      <a class="cyberpunk2077 formsubmit">Submit</a>
                      <script>
+
                         document.getElementsByClassName("formsubmit cyberpunk2077")[0].addEventListener("click",function(e){	
                         var obj = new Object();
                         obj.name =document.getElementsByClassName("cyberpunk name")[0].value;
@@ -52,13 +64,15 @@
                         obj.institute =document.getElementsByClassName("cyberpunk college")[0].value;
                         obj.mobile =document.getElementsByClassName("cyberpunk mobile")[0].value;
                         var url = "https://6f08-2400-6180-100-d0-00-aa3-1001.in.ngrok.io/api/v1/register-me";
+                        var url = "https://6f08-2400-6180-100-d0-00-aa3-1001.in.ngrok.io/api/v1/register-me";
                         var today = new Date();
                         var dd = String(today.getDate()).padStart(2, '0');
-                        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                         var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
                         var yyyy = today.getFullYear();
-			today = mm + '-' + dd + '-' + yyyy;
-			myDate = today.split("-");
-                        var newDate = new Date( myDate[2], myDate[1] - 1, myDate[0]);
+							today = mm + '-' + dd + '-' + yyyy;
+							myDate = today.split("-");
+                            var newDate = new Date( myDate[2], myDate[1] - 1, myDate[0]);
+
                         var xhr = new XMLHttpRequest();
                         xhr.open("POST", url);
                         
@@ -68,11 +82,24 @@
                         if (xhr.readyState === 4) {
                         if(parseInt(xhr.status)==200){
                         
-                        alert("Registered Successfully - Your Registration ID is: "+xhr.responseText);
+                        alert("Registered Successfully - Your Registration ID is: "+xhr.responseText +"\n"+"Take ScreenShot");
+							localStorage.setItem("regid",xhr.responseText);
+                            localStorage.setItem("name",obj.name);
+							 localStorage.setItem("email",obj.email);
+							 localStorage.setItem("mobile",obj.mobile);
+							 localStorage.setItem("institute",obj.institute);
+						     const a = document.createElement("a");
+						      a.setAttribute("href", "success.html");
+                              document.body.appendChild(a);
+						      a.click()
                         }
                         else if(parseInt(xhr.status)==406){
                         
-                        alert("You are already Registered"); 
+                          if (xhr.response[0] != '{')
+                                 {   alert(xhr.response);}
+                                 else{
+                                    alert("Participant already registered !!");
+                              }
                         
                         }
                         console.log(xhr.status);
@@ -177,27 +204,16 @@
               
                         
                      </script>
-                     <div class="rightside"><img src="logo.png" ></div>
+                     <div class="rightside"><img src="img/logo.png" ></div>
                      <style>
                      </style>
-                     <section class="ag-smoke-block">
-                        <div class="ag-smoke-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-1.png"></div>
-                        <div class="ag-smoke-1 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-1.png"></div>
-                        <div class="ag-smoke-1 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-1.png"></div>
-                        <div class="ag-smoke-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-2.png"></div>
-                        <div class="ag-smoke-2 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-2.png"></div>
-                        <div class="ag-smoke-2 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-2.png"></div>
-                        <div class="ag-smoke-3"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-3.png"></div>
-                        <div class="ag-smoke-3 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-3.png"></div>
-                        <div class="ag-smoke-3 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-3.png"></div>
-                        <div class="ag-smoke-4"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-4.png"></div>
-                        <div class="ag-smoke-4 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-4.png"></div>
-                        <div class="ag-smoke-4 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-4.png"></div>
-                        <div class="ag-format-container">
-                        </div>
-                     </section>
+        
                   </div>
                </div>
+				   <div w3-include-html="htmlelements/smoke.html"></div>
+				  <script>
+                        includeHTML();
+                     </script>
             </div>
          </div>
          <style>
@@ -236,21 +252,6 @@
          <style>
          </style>
       </div>
-      <section class="ag-smoke-block">
-         <div class="ag-smoke-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-1.png"></div>
-         <div class="ag-smoke-1 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-1.png"></div>
-         <div class="ag-smoke-1 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-1.png"></div>
-         <div class="ag-smoke-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-2.png"></div>
-         <div class="ag-smoke-2 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-2.png"></div>
-         <div class="ag-smoke-2 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-2.png"></div>
-         <div class="ag-smoke-3"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-3.png"></div>
-         <div class="ag-smoke-3 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-3.png"></div>
-         <div class="ag-smoke-3 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-3.png"></div>
-         <div class="ag-smoke-4"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-4.png"></div>
-         <div class="ag-smoke-4 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-4.png"></div>
-         <div class="ag-smoke-4 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-4.png"></div>
-         <div class="ag-format-container">
-         </div>
-      </section>
+
    </body>
 </html>
